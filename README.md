@@ -125,8 +125,8 @@ traffic_light_rl/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/traffic-light-rl.git
-   cd traffic-light-rl
+   git clone https://github.com/AlffonsoMV/TrafficRL.git
+   cd TrafficRL
    ```
 
 2. Create a virtual environment (optional but recommended):
