@@ -168,7 +168,7 @@ class TrafficSimulation(gym.Env):
         self.observation_space = spaces.Box(
             low=0, 
             high=1, 
-            shape=(self.num_intersections, 3),
+            shape=(self.num_intersections, 5),
             dtype=np.float32
         )
         
@@ -212,6 +212,11 @@ class TrafficSimulation(gym.Env):
         
         # Track number of cars passed through each intersection
         self.cars_passed = np.zeros((self.num_intersections, 2))
+        
+        # Track traffic light switching counts
+        self.ns_green_duration = np.zeros(self.num_intersections)
+        self.ew_green_duration = np.zeros(self.num_intersections)
+        self.light_switches = 0
         
         # Simulation time
         self.sim_time = 0
@@ -269,6 +274,15 @@ class TrafficSimulation(gym.Env):
                 else:
                     # Decrease the timer
                     self.timers[i] -= 1
+                    
+            # Update duration trackers
+            for i in range(self.num_intersections):
+                if self.light_states[i] == 0:  # NS is green
+                    self.ns_green_duration[i] += 1
+                    self.ew_green_duration[i] = 0
+                else:  # EW is green
+                    self.ew_green_duration[i] += 1
+                    self.ns_green_duration[i] = 0
             
             # Simulate traffic flow
             self._update_traffic()
@@ -480,22 +494,23 @@ class TrafficSimulation(gym.Env):
         """
         try:
             # Calculate waiting time penalty (scaled down to prevent extreme negative values)
-            waiting_penalty = -np.sum(self.waiting_time) * 0.01  # Reduced from 0.1
+            waiting_penalty = -np.sum(self.waiting_time) * 0.05
             
             # Calculate throughput reward (increased to make it more impactful)
-            throughput_reward = np.sum(self.cars_passed) * 0.1  # Increased from 0.01
+            throughput_reward = np.sum(self.cars_passed) * 0.05
             
             # Calculate light switching penalty (optional)
             switching_penalty = 0  # Implement if tracking previous actions
             
-            # Reset counters for next step
-            self.waiting_time = np.zeros_like(self.waiting_time)
-            self.cars_passed = np.zeros_like(self.cars_passed)
+            # Add fairness component - penalize uneven queues
+            ns_density_avg = np.mean(self.traffic_density[:, 0])
+            ew_density_avg = np.mean(self.traffic_density[:, 1])
+            fairness_penalty = -abs(ns_density_avg - ew_density_avg) * 10.0
             
-            # Total reward with clipping to prevent extreme values
-            total_reward = np.clip(waiting_penalty + throughput_reward + switching_penalty, -10.0, 10.0)
+            # Add switching penalty to prevent rapid oscillation
+            switching_penalty = -self.light_switches * 0.01
             
-            return total_reward
+            return waiting_penalty + throughput_reward + fairness_penalty + switching_penalty
             
         except Exception as e:
             logger.error(f"Error calculating reward: {e}")
@@ -510,7 +525,7 @@ class TrafficSimulation(gym.Env):
         - EW traffic density (normalized)
         - Traffic light state (0 for NS green, 1 for EW green)
         """
-        observation = np.zeros((self.num_intersections, 3), dtype=np.float32)
+        observation = np.zeros((self.num_intersections, 5), dtype=np.float32)
         
         for i in range(self.num_intersections):
             # Traffic density for NS and EW
@@ -519,6 +534,10 @@ class TrafficSimulation(gym.Env):
             
             # Traffic light state
             observation[i, 2] = self.light_states[i]
+            
+            # Add waiting time information 
+            observation[i, 3] = self.waiting_time[i, 0] / 10.0  # Normalized NS waiting
+            observation[i, 4] = self.waiting_time[i, 1] / 10.0  # Normalized EW waiting
         
         return observation
     
@@ -2113,6 +2132,7 @@ def train(config, model_dir="models"):
                 metrics["loss_values"].append(np.mean(agent.loss_history[-episode_steps:]) if episode_steps > 0 else 0)
             
             # Log progress
+            print()
             logger.info(f"Episode {episode}/{config['num_episodes']} - "
                        f"Reward: {total_reward:.2f}, Avg Reward: {avg_reward:.2f}, "
                        f"Epsilon: {agent.epsilon:.4f}, LR: {current_lr:.6f}, "
@@ -2124,8 +2144,7 @@ def train(config, model_dir="models"):
                 progress_bar.set_postfix({
                     'reward': f"{total_reward:.2f}",
                     'avg': f"{avg_reward:.2f}",
-                    'eps': f"{agent.epsilon:.2f}",
-                    'pattern': current_pattern
+                    'eps': f"{agent.epsilon:.2f}"
                 })
             
             # Evaluate the agent periodically
