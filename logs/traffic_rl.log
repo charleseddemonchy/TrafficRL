@@ -1,0 +1,14 @@
+2025-02-26 13:31:34,237 - TrafficRL - INFO - Loaded configuration from config.json
+2025-02-26 13:31:34,237 - TrafficRL - INFO - Running with configuration: {'sim_time': 3600, 'num_episodes': 500, 'max_steps': 1000, 'learning_rate': 0.001, 'gamma': 0.99, 'epsilon_start': 1.0, 'epsilon_end': 0.01, 'epsilon_decay': 0.995, 'buffer_size': 100000, 'batch_size': 64, 'target_update': 10, 'eval_frequency': 20, 'save_frequency': 50, 'grid_size': 4, 'max_cars': 30, 'green_duration': 10, 'yellow_duration': 3, 'visualization': False, 'device': 'mps'}
+2025-02-26 13:31:34,237 - TrafficRL - INFO - Starting training...
+2025-02-26 13:31:35,569 - TrafficRL - ERROR - Training failed: expected np.ndarray (got numpy.ndarray)
+2025-02-26 13:31:35,569 - TrafficRL - ERROR - Traceback (most recent call last):
+  File "/Users/alfonsomateos/Documents/Polytechnique/M1.2/Autonomous Agents/TrafficRL/a.py", line 772, in train
+    action = agent.act(state)
+             ^^^^^^^^^^^^^^^^
+  File "/Users/alfonsomateos/Documents/Polytechnique/M1.2/Autonomous Agents/TrafficRL/a.py", line 605, in act
+    state = torch.from_numpy(state).float().unsqueeze(0).to(self.device)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected np.ndarray (got numpy.ndarray)
+
+2025-02-26 13:31:35,569 - TrafficRL - INFO - Training complete, visualizing results...
