@@ -1,0 +1,260 @@
+{
+    "RL Agent": [
+        {
+            "reward": 1442.0472350495227,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5137443530769568
+        },
+        {
+            "reward": 1442.3220949636054,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5153299573082029
+        },
+        {
+            "reward": 1439.5646186712695,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5151875878903546
+        },
+        {
+            "reward": 1437.8222098254118,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.515894910101125
+        },
+        {
+            "reward": 1447.3473499623358,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.515441464182234
+        },
+        {
+            "reward": 1443.1200677009729,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5172673210749783
+        },
+        {
+            "reward": 1436.0170238379183,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.515874067863481
+        },
+        {
+            "reward": 1444.8376442871827,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5157580572469055
+        },
+        {
+            "reward": 1444.6693587010336,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5175444799127263
+        },
+        {
+            "reward": 1438.0732358075381,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.514344272774545
+        },
+        {
+            "reward": 1442.9065481146908,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5147213300275097
+        },
+        {
+            "reward": 1440.7470772262843,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5176132556806456
+        },
+        {
+            "reward": 1438.2486289978942,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5162001792508126
+        },
+        {
+            "reward": 1441.2778611308622,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.516185018388128
+        },
+        {
+            "reward": 1442.001787390571,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5147464222284842
+        },
+        {
+            "reward": 1444.2432729442587,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5174860037827588
+        },
+        {
+            "reward": 1443.3695985775148,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5147418868859794
+        },
+        {
+            "reward": 1437.6990475851917,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5164074124070728
+        },
+        {
+            "reward": 1432.0978399112225,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5153167618438284
+        },
+        {
+            "reward": 1439.7308009199096,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5138154224864315
+        }
+    ],
+    "Fixed Timing": [
+        {
+            "reward": 2023.2412364849686,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.8018353361287108
+        },
+        {
+            "reward": 2433.08416975309,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.8447179215222624
+        },
+        {
+            "reward": 2526.048588801652,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.7371275151087995
+        },
+        {
+            "reward": 1815.5595172442418,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.989256110000674
+        },
+        {
+            "reward": 2356.348615584708,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.8474357576480949
+        },
+        {
+            "reward": 2289.1116936724216,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.7863916905394503
+        },
+        {
+            "reward": 1994.5635097364486,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.8020490454915604
+        },
+        {
+            "reward": 2611.6556279108167,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.6504992450706992
+        },
+        {
+            "reward": 2254.9290557070985,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.8400453340810328
+        },
+        {
+            "reward": 2084.541249151445,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.7170064247049508
+        },
+        {
+            "reward": 2307.194784313257,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.7045784312099364
+        },
+        {
+            "reward": 2549.271546584582,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.5888694917412252
+        },
+        {
+            "reward": 2140.444422498153,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.6829624342158462
+        },
+        {
+            "reward": 2412.5634032593034,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.7454760172139445
+        },
+        {
+            "reward": 2399.3343289181935,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.6147810675797134
+        },
+        {
+            "reward": 2163.144439720406,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.6412496623943067
+        },
+        {
+            "reward": 2191.7300140631605,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.9396972307569501
+        },
+        {
+            "reward": 2212.3893198235137,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.9042607245056298
+        },
+        {
+            "reward": 2057.2495337512873,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.7981617716179787
+        },
+        {
+            "reward": 2389.0038275999127,
+            "avg_waiting_time": 0.0,
+            "total_cars_passed": 0.0,
+            "traffic_density": 0.6494266392254847
+        }
+    ],
+    "summary": {
+        "RL Agent": {
+            "avg_reward": 1440.9071650802593,
+            "std_reward": 3.474487965834842,
+            "min_reward": 1432.0978399112225,
+            "max_reward": 1447.3473499623358
+        },
+        "Fixed Timing": {
+            "avg_reward": 2260.570444228933,
+            "std_reward": 200.7887743925388,
+            "min_reward": 1815.5595172442418,
+            "max_reward": 2611.6556279108167
+        }
+    }
+}
