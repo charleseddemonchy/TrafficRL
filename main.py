@@ -213,7 +213,7 @@ class TrafficSimulation(gym.Env):
         # Track number of cars passed through each intersection
         self.cars_passed = np.zeros((self.num_intersections, 2))
         
-        # Track traffic light switching counts
+        # Track green light durations for each direction
         self.ns_green_duration = np.zeros(self.num_intersections)
         self.ew_green_duration = np.zeros(self.num_intersections)
         self.light_switches = 0
@@ -283,7 +283,7 @@ class TrafficSimulation(gym.Env):
                 else:  # EW is green
                     self.ew_green_duration[i] += 1
                     self.ns_green_duration[i] = 0
-            
+                
             # Simulate traffic flow
             self._update_traffic()
             
@@ -495,12 +495,7 @@ class TrafficSimulation(gym.Env):
         try:
             # Calculate waiting time penalty (scaled down to prevent extreme negative values)
             waiting_penalty = -np.sum(self.waiting_time) * 0.05
-            
-            # Calculate throughput reward (increased to make it more impactful)
             throughput_reward = np.sum(self.cars_passed) * 0.05
-            
-            # Calculate light switching penalty (optional)
-            switching_penalty = 0  # Implement if tracking previous actions
             
             # Add fairness component - penalize uneven queues
             ns_density_avg = np.mean(self.traffic_density[:, 0])
@@ -511,6 +506,8 @@ class TrafficSimulation(gym.Env):
             switching_penalty = -self.light_switches * 0.01
             
             return waiting_penalty + throughput_reward + fairness_penalty + switching_penalty
+            
+            return total_reward
             
         except Exception as e:
             logger.error(f"Error calculating reward: {e}")
@@ -2030,7 +2027,7 @@ def train(config, model_dir="models"):
         
         # Initialize early stopping variables
         best_eval_reward = -float('inf')
-        patience = config.get("early_stopping_patience", 10)
+        patience = config.get("early_stopping_patience", 100)
         patience_counter = 0
         
         # Adaptive learning rate variables
@@ -2132,7 +2129,6 @@ def train(config, model_dir="models"):
                 metrics["loss_values"].append(np.mean(agent.loss_history[-episode_steps:]) if episode_steps > 0 else 0)
             
             # Log progress
-            print()
             logger.info(f"Episode {episode}/{config['num_episodes']} - "
                        f"Reward: {total_reward:.2f}, Avg Reward: {avg_reward:.2f}, "
                        f"Epsilon: {agent.epsilon:.4f}, LR: {current_lr:.6f}, "
@@ -2144,7 +2140,8 @@ def train(config, model_dir="models"):
                 progress_bar.set_postfix({
                     'reward': f"{total_reward:.2f}",
                     'avg': f"{avg_reward:.2f}",
-                    'eps': f"{agent.epsilon:.2f}"
+                    'eps': f"{agent.epsilon:.2f}",
+                    'pattern': current_pattern
                 })
             
             # Evaluate the agent periodically
