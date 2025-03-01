@@ -16,7 +16,7 @@
     "max_cars": 30,
     "green_duration": 10,
     "yellow_duration": 3,
-    "visualization": false,
+    "visualization": true,
     "device": "auto",
     "early_stopping_reward": 5000,
     "checkpoint_dir": "checkpoints",

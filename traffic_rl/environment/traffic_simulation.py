@@ -431,6 +431,16 @@ class TrafficSimulation(gym.Env):
             self.screen_width = 800
             self.screen_height = 800
 
+            # Explicitly set the cocoa driver for macOS
+            os.environ['SDL_VIDEODRIVER'] = 'cocoa'
+
+            # Initialize the display
+            if pygame.display.get_init():
+                pygame.display.quit()
+
+            pygame.display.init()
+            logger.info(f"Using video driver: {pygame.display.get_driver()}")
+
             # Try to set display mode, fall back to headless if needed
             try:
                 self.screen = pygame.display.set_mode((self.screen_width, self.screen_height))
@@ -452,14 +462,24 @@ class TrafficSimulation(gym.Env):
     
     def render(self, mode='human'):
         """Render the environment."""
+        print("Rendering")
         if not self.visualization:
+            print("Visualization is disabled")
             return None
         
         try:
             # Make sure pygame is initialized
             if not hasattr(self, 'screen') or self.screen is None:
+                print("Initializing visualization")
                 self._init_visualization()
-            # Fill background
+            
+            # Process pygame events - IMPORTANT on macOS
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    return None
+            
+            # Fill background with distinctive color first
             self.screen.fill((255, 255, 255))
             
             cell_width = self.screen_width // self.grid_size
@@ -484,12 +504,12 @@ class TrafficSimulation(gym.Env):
                     # NS road
                     pygame.draw.rect(self.screen, (100, 100, 100),
                                     (x + cell_width//2 - road_width//2, y, 
-                                     road_width, cell_height))
+                                    road_width, cell_height))
                     
                     # EW road
                     pygame.draw.rect(self.screen, (100, 100, 100),
                                     (x, y + cell_height//2 - road_width//2, 
-                                     cell_width, road_width))
+                                    cell_width, road_width))
                     
                     # Draw traffic light
                     light_radius = road_width // 2
@@ -499,17 +519,17 @@ class TrafficSimulation(gym.Env):
                     if self.light_states[idx] == 0:  # NS Green
                         # NS light green
                         pygame.draw.circle(self.screen, (0, 255, 0), 
-                                          (light_x, light_y - light_radius), light_radius // 2)
+                                        (light_x, light_y - light_radius), light_radius // 2)
                         # EW light red
                         pygame.draw.circle(self.screen, (255, 0, 0), 
-                                          (light_x + light_radius, light_y), light_radius // 2)
+                                        (light_x + light_radius, light_y), light_radius // 2)
                     else:  # EW Green
                         # NS light red
                         pygame.draw.circle(self.screen, (255, 0, 0), 
-                                          (light_x, light_y - light_radius), light_radius // 2)
+                                        (light_x, light_y - light_radius), light_radius // 2)
                         # EW light green
                         pygame.draw.circle(self.screen, (0, 255, 0), 
-                                          (light_x + light_radius, light_y), light_radius // 2)
+                                        (light_x + light_radius, light_y), light_radius // 2)
                     
                     # Display traffic density as text
                     try:
@@ -521,21 +541,30 @@ class TrafficSimulation(gym.Env):
                         self.screen.blit(ew_text, (x + 10, y + 30))
                     except Exception as e:
                         # Continue without text if font rendering fails
-                        logger.warning(f"Font rendering failed: {e}")
+                        print(f"Font rendering failed: {e}")
             
+            # IMPORTANT: Update the display
             pygame.display.flip()
-            self.clock.tick(self.metadata['render_fps'])
             
+            # Add explicit delay to make sure window is responsive
+            pygame.time.delay(10)
+            
+            # Tick the clock (control framerate)
+            self.clock.tick(self.metadata['render_fps'])
+                        
             if mode == 'rgb_array':
                 try:
                     return np.transpose(
                         np.array(pygame.surfarray.pixels3d(self.screen)), axes=(1, 0, 2)
                     )
-                except Exception:
+                except Exception as e:
+                    print(f"RGB array conversion failed: {e}")
                     return None
-                    
+                
         except Exception as e:
-            logger.error(f"Render failed: {e}")
+            print(f"Render failed: {e}")
+            import traceback
+            traceback.print_exc()
             self.visualization = False  # Disable visualization after error
             return None
     
