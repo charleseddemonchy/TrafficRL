@@ -83,7 +83,6 @@ def save_visualization(env, filename="traffic_simulation.mp4", fps=30, duration=
         
         # Make sure visualization is enabled
         old_viz_state = env.visualization
-        env.visualization = True
         
         # Reset environment
         env.reset()

@@ -27,7 +27,7 @@ DEFAULT_CONFIG = {
     "max_cars": 30,             # Maximum number of cars per lane
     "green_duration": 10,       # Default green light duration (seconds)
     "yellow_duration": 3,       # Default yellow light duration (seconds)
-    "visualization": True,     # Enable visualization during training
+    "visualization": False,     # Enable visualization during training
     "device": "mps",           # Auto-detect device (CUDA, CPU, MPS)
     "early_stopping_reward": 500,  # Reward threshold for early stopping
     "checkpoint_dir": "checkpoints",  # Directory for checkpoints

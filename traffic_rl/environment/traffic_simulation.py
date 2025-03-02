@@ -21,7 +21,8 @@ class TrafficSimulation(gym.Env):
     metadata = {'render_modes': ['human', 'rgb_array'], 'render_fps': 30}
     
     def __init__(self, grid_size=4, max_cars=30, green_duration=10, yellow_duration=3, 
-                 visualization=False, random_seed=None):
+                 visualization=False, random_seed=None, render_mode='human'):
+        self.render_mode = "human" if visualization else render_mode
         super(TrafficSimulation, self).__init__()
         
         # Environment configuration
@@ -462,9 +463,11 @@ class TrafficSimulation(gym.Env):
     
     def render(self, mode='human'):
         """Render the environment."""
-        print("Rendering")
         if not self.visualization:
             print("Visualization is disabled")
+            return None
+        
+        if self.render_mode is None:
             return None
         
         try:
@@ -473,14 +476,15 @@ class TrafficSimulation(gym.Env):
                 print("Initializing visualization")
                 self._init_visualization()
             
-            # Process pygame events - IMPORTANT on macOS
+            # Process pygame events
+            import pygame
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     return None
             
             # Fill background with distinctive color first
-            self.screen.fill((255, 255, 255))
+            self.screen.fill((60, 60, 60))  # Dark gray background
             
             cell_width = self.screen_width // self.grid_size
             cell_height = self.screen_height // self.grid_size
@@ -494,7 +498,7 @@ class TrafficSimulation(gym.Env):
                     x = j * cell_width
                     y = i * cell_height
                     
-                    # Draw intersection
+                    # Draw intersection background (gray)
                     pygame.draw.rect(self.screen, (200, 200, 200), 
                                     (x, y, cell_width, cell_height))
                     
@@ -516,6 +520,13 @@ class TrafficSimulation(gym.Env):
                     light_x = x + cell_width // 2
                     light_y = y + cell_height // 2
                     
+                    # Draw traffic light housing (black box)
+                    light_housing_size = road_width // 2
+                    pygame.draw.rect(self.screen, (0, 0, 0),
+                                    (light_x - light_housing_size//2, 
+                                    light_y - light_housing_size//2,
+                                    light_housing_size, light_housing_size))
+                    
                     if self.light_states[idx] == 0:  # NS Green
                         # NS light green
                         pygame.draw.circle(self.screen, (0, 255, 0), 
@@ -531,6 +542,35 @@ class TrafficSimulation(gym.Env):
                         pygame.draw.circle(self.screen, (0, 255, 0), 
                                         (light_x + light_radius, light_y), light_radius // 2)
                     
+                    # Draw cars based on traffic density
+                    # NS cars
+                    ns_density = self.traffic_density[idx, 0]
+                    car_count = int(ns_density * 10)  # 10 cars at max density
+                    
+                    for k in range(car_count):
+                        car_width = road_width // 3
+                        car_height = car_width * 2
+                        car_x = x + cell_width//2 - car_width//2
+                        car_y = y + (k+1) * cell_height // (car_count+2)
+                        
+                        # Draw car as rectangle with blue color
+                        pygame.draw.rect(self.screen, (50, 50, 255),
+                                        (car_x, car_y, car_width, car_height))
+                    
+                    # EW cars
+                    ew_density = self.traffic_density[idx, 1]
+                    car_count = int(ew_density * 10)
+                    
+                    for k in range(car_count):
+                        car_height = road_width // 3
+                        car_width = car_height * 2
+                        car_x = x + (k+1) * cell_width // (car_count+2)
+                        car_y = y + cell_height//2 - car_height//2
+                        
+                        # Draw car as rectangle with red color
+                        pygame.draw.rect(self.screen, (255, 50, 50),
+                                        (car_x, car_y, car_width, car_height))
+                    
                     # Display traffic density as text
                     try:
                         font = pygame.font.Font(None, 24)
@@ -542,7 +582,7 @@ class TrafficSimulation(gym.Env):
                     except Exception as e:
                         # Continue without text if font rendering fails
                         print(f"Font rendering failed: {e}")
-            
+                        
             # IMPORTANT: Update the display
             pygame.display.flip()
             
@@ -551,7 +591,7 @@ class TrafficSimulation(gym.Env):
             
             # Tick the clock (control framerate)
             self.clock.tick(self.metadata['render_fps'])
-                        
+            
             if mode == 'rgb_array':
                 try:
                     return np.transpose(
@@ -560,14 +600,14 @@ class TrafficSimulation(gym.Env):
                 except Exception as e:
                     print(f"RGB array conversion failed: {e}")
                     return None
-                
+                    
         except Exception as e:
             print(f"Render failed: {e}")
             import traceback
             traceback.print_exc()
             self.visualization = False  # Disable visualization after error
             return None
-    
+        
     def close(self):
         """Close the environment."""
         if self.visualization:

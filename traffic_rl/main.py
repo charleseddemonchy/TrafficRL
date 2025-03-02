@@ -294,11 +294,7 @@ def test(config, model_path, traffic_pattern="uniform", visualization=False):
     Returns:
         Dictionary of test results
     """
-    try:
-        # Force visualization to be enabled when requested
-        if visualization:
-            config["visualization"] = True
-            
+    try:            
         # Initialize environment
         env = TrafficSimulation(
             grid_size=config["grid_size"],
@@ -313,9 +309,11 @@ def test(config, model_path, traffic_pattern="uniform", visualization=False):
         if visualization and not hasattr(env, 'screen'):
             try:
                 env._init_visualization()
+                logger.info("Visualization initialized successfully")
             except Exception as e:
                 logger.error(f"Failed to initialize visualization: {e}")
                 logger.warning("Continuing without visualization")
+                visualization = False
                 config["visualization"] = False
         
         # Set the traffic pattern
@@ -355,18 +353,33 @@ def test(config, model_path, traffic_pattern="uniform", visualization=False):
             throughput = 0
             
             for step in range(1000):  # Max steps
+                # Process pygame events for visualization
+                if visualization:
+                    for event in pygame.event.get():
+                        if event.type == pygame.QUIT:
+                            pygame.quit()
+                            return results
+                
+                # Get action from agent
                 action = agent.act(state, eval_mode=True)
+                
+                # Take step in environment
                 next_state, reward, terminated, truncated, info = env.step(action)
                 next_state = next_state.flatten()
                 
+                # Update statistics
                 state = next_state
                 total_reward += reward
                 episode_steps += 1
                 waiting_time += info.get('average_waiting_time', 0)
                 throughput += info.get('total_cars_passed', 0)
                 
+                # Explicitly render if visualization is enabled
                 if visualization:
-                    time.sleep(0.05)  # Slow down for visualization
+                    env.render()
+                    # Add a short delay to make visualization more visible
+                    if step % 10 == 0:  # Only delay every 10 steps to maintain performance
+                        time.sleep(0.05)
                 
                 if terminated or truncated:
                     break
@@ -388,6 +401,8 @@ def test(config, model_path, traffic_pattern="uniform", visualization=False):
                   f"Avg Throughput: {results['avg_throughput']:.2f}")
         
         # Close environment
+        if visualization:
+            pygame.quit()
         env.close()
         
         return results
@@ -420,7 +435,7 @@ def record_video(config, model_path=None, output_path="traffic_simulation.mp4",
             max_cars=config["max_cars"],
             green_duration=config["green_duration"],
             yellow_duration=config["yellow_duration"],
-            visualization=True,  # Enable visualization for recording
+            visualization=config["visualization"],
             random_seed=RANDOM_SEED
         )
         
