@@ -90,7 +90,7 @@ def main():
     
     # Import the main module
     try:
-        from main import main as run_main
+        from traffic_marl.main import main as run_main
         
         # Pass arguments to main function
         sys.argv = [sys.argv[0]]  # Reset argv
