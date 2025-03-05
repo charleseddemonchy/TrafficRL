@@ -207,51 +207,69 @@ def comparative_analysis(results, save_dir="results"):
                     waiting_data[pattern].append(0)
                     throughput_data[pattern].append(0)
         
-        # Create comparative bar plots
-        bar_width = 0.35
-        index = np.arange(len(agent_types))
+        # Create comparative bar plots - FIX GROUPING BY PATTERN
+        bar_width = 0.2  # Narrow bars to fit more in each group
+        index = np.arange(len(traffic_patterns))  # X locations for patterns
         
         # Plot reward comparison
-        plt.figure(figsize=(12, 6))
-        for i, pattern in enumerate(traffic_patterns):
-            offset = (i - len(traffic_patterns)/2 + 0.5) * bar_width
-            plt.bar(index + offset, rewards_data[pattern], bar_width, label=pattern)
+        plt.figure(figsize=(12, 8))
         
-        plt.xlabel('Agent Type')
+        for i, agent in enumerate(agent_types):
+            agent_rewards = []
+            for pattern in traffic_patterns:
+                agent_idx = agent_types.index(agent)
+                agent_rewards.append(rewards_data[pattern][agent_idx])
+            
+            offset = (i - len(agent_types)/2 + 0.5) * bar_width
+            plt.bar(index + offset, agent_rewards, bar_width, label=agent)
+        
+        plt.xlabel('Traffic Pattern')
         plt.ylabel('Average Reward')
         plt.title('Reward Comparison by Agent and Traffic Pattern')
-        plt.xticks(index, agent_types)
-        plt.legend()
+        plt.xticks(index, traffic_patterns)
+        plt.legend(title="Agent")
         plt.grid(True, axis='y')
         plt.savefig(os.path.join(save_dir, "reward_comparison.png"))
         plt.close()
         
         # Plot waiting time comparison
-        plt.figure(figsize=(12, 6))
-        for i, pattern in enumerate(traffic_patterns):
-            offset = (i - len(traffic_patterns)/2 + 0.5) * bar_width
-            plt.bar(index + offset, waiting_data[pattern], bar_width, label=pattern)
+        plt.figure(figsize=(12, 8))
         
-        plt.xlabel('Agent Type')
+        for i, agent in enumerate(agent_types):
+            agent_waiting_times = []
+            for pattern in traffic_patterns:
+                agent_idx = agent_types.index(agent)
+                agent_waiting_times.append(waiting_data[pattern][agent_idx])
+            
+            offset = (i - len(agent_types)/2 + 0.5) * bar_width
+            plt.bar(index + offset, agent_waiting_times, bar_width, label=agent)
+        
+        plt.xlabel('Traffic Pattern')
         plt.ylabel('Average Waiting Time')
-        plt.title('Waiting Time Comparison by Agent and Traffic Pattern')
-        plt.xticks(index, agent_types)
-        plt.legend()
+        plt.title('Waiting Time Comparison Across Agents and Traffic Patterns')
+        plt.xticks(index, traffic_patterns)
+        plt.legend(title="Agent")
         plt.grid(True, axis='y')
         plt.savefig(os.path.join(save_dir, "waiting_time_comparison.png"))
         plt.close()
         
         # Plot throughput comparison
-        plt.figure(figsize=(12, 6))
-        for i, pattern in enumerate(traffic_patterns):
-            offset = (i - len(traffic_patterns)/2 + 0.5) * bar_width
-            plt.bar(index + offset, throughput_data[pattern], bar_width, label=pattern)
+        plt.figure(figsize=(12, 8))
         
-        plt.xlabel('Agent Type')
+        for i, agent in enumerate(agent_types):
+            agent_throughputs = []
+            for pattern in traffic_patterns:
+                agent_idx = agent_types.index(agent)
+                agent_throughputs.append(throughput_data[pattern][agent_idx])
+            
+            offset = (i - len(agent_types)/2 + 0.5) * bar_width
+            plt.bar(index + offset, agent_throughputs, bar_width, label=agent)
+        
+        plt.xlabel('Traffic Pattern')
         plt.ylabel('Average Throughput')
-        plt.title('Throughput Comparison by Agent and Traffic Pattern')
-        plt.xticks(index, agent_types)
-        plt.legend()
+        plt.title('Throughput Comparison Across Agents and Traffic Patterns')
+        plt.xticks(index, traffic_patterns)
+        plt.legend(title="Agent")
         plt.grid(True, axis='y')
         plt.savefig(os.path.join(save_dir, "throughput_comparison.png"))
         plt.close()

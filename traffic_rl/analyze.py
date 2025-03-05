@@ -34,7 +34,7 @@ def run_comprehensive_analysis(
     benchmark_dir=None,
     output_dir="results/analysis",
     traffic_patterns=None,
-    num_episodes=10
+    num_episodes=50
 ):
     """
     Run comprehensive analysis across multiple models and baselines.
@@ -152,8 +152,7 @@ def run_comprehensive_analysis(
             for i, model_path in enumerate(model_paths):
                 if os.path.exists(model_path):
                     # Extract model name from path
-                    model_name = os.path.basename(os.path.dirname(model_path))
-                    agents[f"TrainedModel_{model_name}"] = model_path
+                    agents[f"TrainedModel"] = model_path
             
             # Run benchmark
             if agents:
@@ -209,6 +208,7 @@ def run_comprehensive_analysis(
                 if os.path.exists(model_path):
                     # Extract model name from path
                     model_name = os.path.basename(os.path.dirname(model_path))
+                    print("Model name: ", model_name)
                     
                     # Create output directory for agent analysis
                     agent_output = os.path.join(analysis_dir, f"agent_{model_name}")

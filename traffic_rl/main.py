@@ -114,7 +114,7 @@ def main():
         if args.mode == 'train':
             # Train agent
             logger.info("Starting training...")
-            metrics = train(config, model_dir=os.path.join(args.output, 'models'))
+            metrics = train(config, model_dir=os.path.join(args.output))
             
             # Visualize results
             logger.info("Training complete, visualizing results...")
