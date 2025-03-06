@@ -258,8 +258,7 @@ def train(config, model_dir="models"):
 
 
 if __name__ == "__main__":
-    # Example usage
-    from traffic_rl.config import CONFIG
+    from config import CONFIG
     
     # Configure logging
     logging.basicConfig(level=logging.INFO)
@@ -269,3 +268,7 @@ if __name__ == "__main__":
     
     # Visualize results
     visualize_results(metrics["rewards"], metrics["avg_rewards"], save_path="results/training_progress.png")
+    
+    
+    
+    

@@ -176,7 +176,7 @@ if __name__ == "__main__":
     # Example usage
     import argparse
     import json
-    from traffic_rl.config import CONFIG
+    from config import CONFIG
     
     # Configure logging
     logging.basicConfig(level=logging.INFO)
