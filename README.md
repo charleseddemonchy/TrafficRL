@@ -14,47 +14,27 @@ This package provides a comprehensive framework for training and evaluating rein
 
 The package provides a unified command-line interface for all operations:
 
-### Training
+1.  **Install Dependencies:**
 
-```bash
-# Basic training
-python -m train --output results/training
+    *   It is recommended to create a virtual environment before installing the dependencies.
+    *   Run `pip install -r requirements.txt` to install all required packages.
+2.  **Training:**
 
-```
+    *   Run `python -m traffic_rl.train --output results/training` to start the training process.
+3.  **Evaluation:**
 
-### Evaluation
+    *   Run `python -m traffic_rl.evaluate --model traffic_rl/results/training/best_model.pth --episodes 20 --output results/evaluation` to evaluate a trained model.
+4.  **Visualization:**
 
-```bash
-# Evaluate a model on multiple traffic patterns
-python -m evaluate --model models/best_model.pth --episodes 20 --output results/evaluation
-```
+    *   Run `python -m traffic_rl.visualize --type environment --model traffic_rl/results/training/best_model.pth --pattern rush_hour --duration 60 --output results/visualizations` to visualize the environment with a trained model.
+    *   Run `python -m traffic_rl.visualize --type metrics --metrics traffic_rl/results/training/training_metrics.json --output results/visualizations` to visualize training metrics.
+    *   Run `python -m traffic_rl.visualize --type patterns --output results/visualizations` to visualize traffic patterns.
+5.  **Benchmarking:**
 
-### Visualization
+    *   Run `python -m traffic_rl.benchmark --model traffic_rl/results/training/best_model.pth --episodes 15 --output results/benchmark` to benchmark multiple agents.
+6.  **Analysis:**
 
-```bash
-# Visualize environment with trained model
-python -m  visualize --type environment --model models/best_model.pth --pattern rush_hour --duration 60 --output results/visualizations
-
-# Visualize training metrics
-python -m  visualize --type metrics --metrics models/training_metrics.json --output results/visualizations
-
-# Visualize traffic patterns
-python -m  visualize --type patterns --output results/visualizations
-```
-
-### Benchmarking
-
-```bash
-# Benchmark multiple agents
-python -m  benchmark --model models/best_model.pth --episodes 15 --output results/benchmark
-```
-
-### Analysis
-
-```bash
-# Comprehensive analysis
-python -m  analyze --model models/best_model.pth --metrics models/training_metrics.json --benchmark-dir results/benchmark --output results/analysis --episodes 10
-```
+    *   Run `python -m traffic_rl.analyze --model traffic_rl/results/training/best_model.pth --metrics traffic_rl/results/training/training_metrics.json --benchmark-dir results/benchmark --output results/analysis --episodes 10` to perform a comprehensive analysis.
 
 ## Model Selection
 
