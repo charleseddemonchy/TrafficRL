@@ -13,10 +13,10 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 
 # Import environment and agent
-from environment.traffic_simulation import TrafficSimulation
-from agents.dqn_agent import DQNAgent
-from utils.visualization import visualize_results
-from evaluate import evaluate
+from traffic_rl.environment.traffic_simulation import TrafficSimulation
+from traffic_rl.agents.dqn_agent import DQNAgent
+from traffic_rl.utils.visualization import visualize_results
+from traffic_rl.evaluate import evaluate
 
 logger = logging.getLogger("TrafficRL.Train")
 
@@ -258,8 +258,7 @@ def train(config, model_dir="models"):
 
 
 if __name__ == "__main__":
-    # Example usage
-    from traffic_rl.config import CONFIG
+    from config import CONFIG
     
     # Configure logging
     logging.basicConfig(level=logging.INFO)
@@ -269,3 +268,7 @@ if __name__ == "__main__":
     
     # Visualize results
     visualize_results(metrics["rewards"], metrics["avg_rewards"], save_path="results/training_progress.png")
+    
+    
+    
+    

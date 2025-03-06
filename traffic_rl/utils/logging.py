@@ -8,7 +8,7 @@ import os
 import logging
 import sys
 
-def setup_logging(log_dir="logs", log_file="traffic_rl.log", console_level=logging.INFO, file_level=logging.DEBUG):
+def setup_logging(log_dir="logs", log_file="log", console_level=logging.INFO, file_level=logging.DEBUG):
     """
     Set up logging configuration.
     

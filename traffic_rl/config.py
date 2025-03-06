@@ -38,8 +38,8 @@ CONFIG = {
     "weight_decay": 0.0001,     # L2 regularization parameter
     "grad_clip": 1.0,           # Gradient clipping value
     "use_lr_scheduler": True,   # Use learning rate scheduler
-    "lr_step_size": 100,        # LR scheduler step size
-    "lr_decay": 0.5,            # LR decay factor
+    "lr_step_size": 200,        # LR scheduler step size
+    "lr_decay": 0.95,            # LR decay factor
     "clip_rewards": True,       # Whether to clip rewards
     "reward_scale": 0.1,        # Reward scaling factor
     "traffic_patterns": {

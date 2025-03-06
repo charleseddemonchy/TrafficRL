@@ -15,15 +15,15 @@ import seaborn as sns
 from datetime import datetime
 
 # Import modules
-from config import load_config
-from utils.logging import setup_logging
-from utils.analysis import (
+from traffic_rl.config import load_config
+from traffic_rl.utils.logging import setup_logging
+from traffic_rl.utils.analysis import (
     analyze_training_metrics, 
     comparative_analysis, 
     analyze_decision_boundaries,
     create_comprehensive_report
 )
-from benchmark import benchmark_agents, create_benchmark_agents
+from traffic_rl.benchmark import benchmark_agents, create_benchmark_agents
 
 logger = logging.getLogger("Analyze")
 

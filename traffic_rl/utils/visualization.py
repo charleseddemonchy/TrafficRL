@@ -1,15 +1,20 @@
 """
-Visualization Utilities
-=====================
-Visualization tools for training results and environment rendering.
+Visualization Module
+=================
+Visualization utilities for the traffic simulation environment and training results.
+
+This module provides functions for:
+1. Visualizing training results (rewards, metrics)
+2. Creating video visualizations of the traffic simulation environment
+3. Generating static visualizations of traffic patterns and analysis
 """
 
 import os
 import numpy as np
-import matplotlib.pyplot as plt
 import logging
+import matplotlib.pyplot as plt
 
-logger = logging.getLogger("TrafficRL.Utils.Visualization")
+logger = logging.getLogger("TrafficRL")
 
 def visualize_results(rewards_history, avg_rewards_history, save_path=None):
     """
@@ -42,6 +47,7 @@ def visualize_results(rewards_history, avg_rewards_history, save_path=None):
             logger.info(f"Training visualization saved to {save_path}")
         
         plt.close()
+        return True
     except Exception as e:
         logger.error(f"Visualization failed: {e}")
         logger.info("Saving raw data instead...")
@@ -55,16 +61,118 @@ def visualize_results(rewards_history, avg_rewards_history, save_path=None):
                     for i, (r, ar) in enumerate(zip(rewards_history, avg_rewards_history)):
                         f.write(f"{i},{r},{ar}\n")
                 logger.info(f"Raw data saved to {base_path}_data.csv")
+                return True
             except Exception as e2:
                 logger.error(f"Failed to save raw data: {e2}")
+                return False
+        return False
 
+def visualize_traffic_patterns(config, save_path=None):
+    """
+    Visualize traffic patterns defined in the configuration.
+    
+    Args:
+        config: Configuration dictionary containing traffic patterns
+        save_path: Path to save the visualization
+        
+    Returns:
+        bool: True if successful, False otherwise
+    """
+    try:
+        # Extract traffic patterns
+        patterns = config.get("traffic_patterns", {})
+        
+        if not patterns:
+            logger.warning("No traffic patterns found in configuration")
+            return False
+            
+        # Time of day (x-axis)
+        time_of_day = np.linspace(0, 24, 1440)  # 24 hours with minute resolution
+        
+        # Plot traffic patterns
+        plt.figure(figsize=(12, 6))
+        
+        for pattern_name, pattern_config in patterns.items():
+            # Calculate traffic intensity based on pattern
+            if pattern_name == "uniform":
+                # Uniform pattern has constant arrival rate
+                arrival_rate = pattern_config.get("arrival_rate", 0.03)
+                variability = pattern_config.get("variability", 0.01)
+                
+                # Add some random noise for visualization
+                np.random.seed(42)  # For reproducibility
+                intensity = np.ones_like(time_of_day) * arrival_rate
+                intensity += np.random.normal(0, variability, size=len(time_of_day))
+                
+            elif pattern_name == "rush_hour":
+                # Rush hour pattern has morning and evening peaks
+                morning_peak = pattern_config.get("morning_peak", 0.33) * 24  # Convert to hours
+                evening_peak = pattern_config.get("evening_peak", 0.71) * 24  # Convert to hours
+                peak_intensity = pattern_config.get("peak_intensity", 2.0)
+                base_arrival = pattern_config.get("base_arrival", 0.03)
+                
+                # Calculate intensity based on time of day
+                morning_factor = peak_intensity * np.exp(-0.5 * ((time_of_day - morning_peak) / 1.5) ** 2)
+                evening_factor = peak_intensity * np.exp(-0.5 * ((time_of_day - evening_peak) / 1.5) ** 2)
+                intensity = base_arrival * (1 + morning_factor + evening_factor)
+                
+            elif pattern_name == "weekend":
+                # Weekend pattern has one midday peak
+                midday_peak = pattern_config.get("midday_peak", 0.5) * 24  # Convert to hours
+                peak_intensity = pattern_config.get("peak_intensity", 1.5)
+                base_arrival = pattern_config.get("base_arrival", 0.02)
+                
+                # Calculate intensity based on time of day
+                midday_factor = peak_intensity * np.exp(-0.5 * ((time_of_day - midday_peak) / 3) ** 2)
+                intensity = base_arrival * (1 + midday_factor)
+                
+            else:
+                logger.warning(f"Unknown traffic pattern: {pattern_name}")
+                continue
+            
+            # Plot this pattern
+            plt.plot(time_of_day, intensity, label=pattern_name)
+        
+        # Add labels and title
+        plt.xlabel('Time of Day (hours)')
+        plt.ylabel('Traffic Intensity')
+        plt.title('Traffic Patterns Over 24 Hours')
+        plt.legend()
+        plt.grid(True)
+        plt.xlim(0, 24)
+        plt.xticks(np.arange(0, 25, 3))
+        
+        # Add time labels (morning, noon, evening, night)
+        plt.annotate('Morning', xy=(8, plt.ylim()[0]), xytext=(8, plt.ylim()[0] - 0.01 * (plt.ylim()[1] - plt.ylim()[0])),
+                    ha='center', fontsize=10)
+        plt.annotate('Noon', xy=(12, plt.ylim()[0]), xytext=(12, plt.ylim()[0] - 0.01 * (plt.ylim()[1] - plt.ylim()[0])),
+                    ha='center', fontsize=10)
+        plt.annotate('Evening', xy=(18, plt.ylim()[0]), xytext=(18, plt.ylim()[0] - 0.01 * (plt.ylim()[1] - plt.ylim()[0])),
+                    ha='center', fontsize=10)
+        plt.annotate('Night', xy=(22, plt.ylim()[0]), xytext=(22, plt.ylim()[0] - 0.01 * (plt.ylim()[1] - plt.ylim()[0])),
+                    ha='center', fontsize=10)
+        
+        # Save the plot if path is provided
+        if save_path:
+            os.makedirs(os.path.dirname(save_path), exist_ok=True)
+            plt.savefig(save_path)
+            logger.info(f"Traffic patterns visualization saved to {save_path}")
+        
+        plt.close()
+        return True
+        
+    except Exception as e:
+        logger.error(f"Failed to visualize traffic patterns: {e}")
+        import traceback
+        logger.error(traceback.format_exc())
+        return False
 
 def save_visualization(env, filename="traffic_simulation.mp4", fps=30, duration=30):
     """
     Save a video visualization of the traffic simulation.
     
     Args:
-        env: The TrafficSimulation environment
+        env: The traffic simulation environment
         filename: Output video file name
         fps: Frames per second
         duration: Duration of video in seconds
@@ -80,11 +188,9 @@ def save_visualization(env, filename="traffic_simulation.mp4", fps=30, duration=
         from matplotlib.collections import PatchCollection
         import matplotlib.patches as mpatches
         import matplotlib.colors as mcolors
-        import numpy as np
-        import os
         
-        # Make sure output directory exists
-        os.makedirs(os.path.dirname(os.path.abspath(filename)), exist_ok=True)
+        # Make sure visualization is enabled
+        old_viz_state = env.visualization
         
         # Reset environment
         env.reset()
@@ -98,28 +204,29 @@ def save_visualization(env, filename="traffic_simulation.mp4", fps=30, duration=
             'avg_queue_length': []
         }
         
+        # Initialize simulation metrics
+        total_waiting_time = 0
+        total_cars_passed = 0
+        
         # Setup figure with grid layout
         fig = plt.figure(figsize=(16, 10), facecolor='#f8f9fa')
         gs = GridSpec(3, 4, figure=fig, height_ratios=[1, 5, 1])
-
+        
         # Header area
         ax_header = fig.add_subplot(gs[0, :])
         ax_header.axis('off')
-
+        
         # Main simulation view
-        ax_main = fig.add_subplot(gs[1, :3])
-
+        ax_main = fig.add_subplot(gs[1, :])
+        
         # Statistics panels
         ax_stats1 = fig.add_subplot(gs[2, 0])
         ax_stats2 = fig.add_subplot(gs[2, 1])
         ax_stats3 = fig.add_subplot(gs[2, 2])
-
-        # New visualization panels
-        ax_heatmap = fig.add_subplot(gs[1, 3])
-        ax_waiting_time = fig.add_subplot(gs[2, 3])
-
+        ax_stats4 = fig.add_subplot(gs[2, 3])
+        
         # Turn off axes for stat panels
-        for ax in [ax_stats1, ax_stats2, ax_stats3]:
+        for ax in [ax_stats1, ax_stats2, ax_stats3, ax_stats4]:
             ax.axis('off')
         
         # Create custom colormaps for traffic density
@@ -137,25 +244,6 @@ def save_visualization(env, filename="traffic_simulation.mp4", fps=30, duration=
         ew_cmap = mcolors.LinearSegmentedColormap.from_list(
             'ew_traffic', [(0, '#fff2e6'), (0.5, '#ffad33'), (1, '#cc7000')]
         )
-        
-        # Function to draw a heatmap of traffic density
-        def draw_density_heatmap(ax, traffic_density, grid_size):
-            """Draw a heatmap of traffic density."""
-            heatmap_data = traffic_density.reshape((grid_size, grid_size, 2)).mean(axis=2)
-            cax = ax.imshow(heatmap_data, cmap='hot', interpolation='nearest')
-            ax.set_title('Traffic Density Heatmap')
-            plt.colorbar(cax, ax=ax)
-            return ax
-
-        # Function to draw a line chart of average waiting time
-        def draw_waiting_time_chart(ax, metrics_history):
-            """Draw a line chart of average waiting time over time."""
-            if len(metrics_history['time']) > 1:
-                ax.plot(metrics_history['time'], metrics_history['waiting_time'], color='blue')
-                ax.set_title('Average Waiting Time')
-                ax.set_xlabel('Time (s)')
-                ax.set_ylabel('Waiting Time (s)')
-            return ax
         
         # Car shapes for visualization
         def get_car_shape(x, y, direction, size=0.04):
@@ -220,8 +308,6 @@ def save_visualization(env, filename="traffic_simulation.mp4", fps=30, duration=
                 car_collection = PatchCollection(car_patches, facecolor=color, edgecolor='black', 
                                                 linewidth=0.5, alpha=0.85)
                 ax.add_collection(car_collection)
-            
-            return ax
         
         # Function to update the main visualization
         def update_main_visualization(frame):
@@ -423,6 +509,7 @@ def save_visualization(env, filename="traffic_simulation.mp4", fps=30, duration=
                           loc='lower left', bbox_to_anchor=(legend_x + 0.01, legend_y + 0.01),
                           frameon=False, fontsize=8)
             
+            # Return the axis for animation
             return ax_main
         
         # Function to update the header with simulation time and status
@@ -473,6 +560,10 @@ def save_visualization(env, filename="traffic_simulation.mp4", fps=30, duration=
                 moon = Circle((0.5, 0.4), 0.03, facecolor='#f0f0f0', edgecolor='#d0d0d0',
                             alpha=0.9, transform=ax_header.transAxes)
                 ax_header.add_patch(moon)
+            
+            # Add day/night text
+            ax_header.text(0.5, 0.4, "", fontsize=8, ha='center', va='center',
+                         transform=ax_header.transAxes)
             
             # Add simulation title
             ax_header.text(0.05, 0.5, "Traffic Light Management", 
@@ -603,7 +694,47 @@ def save_visualization(env, filename="traffic_simulation.mp4", fps=30, duration=
             ax_stats3.text(0.5, 0.15, f"{throughput:.0f} cars", ha='center', va='center', 
                          fontsize=12, fontweight='bold', color='#339966')
             
-            return [ax_stats1, ax_stats2, ax_stats3]
+            # Update panel 4: Queue Lengths
+            ax_stats4.clear()
+            ax_stats4.set_xlim(0, 1)
+            ax_stats4.set_ylim(0, 1)
+            
+            # Create a simple heatmap showing queue status at each intersection
+            queue_heatmap_size = min(env.grid_size * 0.08, 0.3)  # Scale based on grid size
+            cell_size = queue_heatmap_size / env.grid_size
+            heatmap_x = 0.5 - queue_heatmap_size / 2
+            heatmap_y = 0.4
+            
+            # Draw heatmap background
+            heatmap_bg = Rectangle(
+                (heatmap_x, heatmap_y), queue_heatmap_size, queue_heatmap_size,
+                facecolor='#f0f0f0', edgecolor='#333333', linewidth=1
+            )
+            ax_stats4.add_patch(heatmap_bg)
+            
+            # Draw cells representing intersections
+            for i in range(env.grid_size):
+                for j in range(env.grid_size):
+                    idx = i * env.grid_size + j
+                    # Calculate average queue at this intersection
+                    cell_queue = (env.traffic_density[idx, 0] + env.traffic_density[idx, 1]) / 2
+                    
+                    # Draw cell with color based on queue length
+                    cell_x = heatmap_x + j * cell_size
+                    cell_y = heatmap_y + (env.grid_size - i - 1) * cell_size  # Flip y-axis for correct orientation
+                    
+                    queue_cell = Rectangle(
+                        (cell_x, cell_y), cell_size, cell_size,
+                        facecolor=density_cmap(cell_queue), edgecolor='none'
+                    )
+                    ax_stats4.add_patch(queue_cell)
+            
+            # Add panel title and average value
+            ax_stats4.text(0.5, 0.8, "Queue Status", ha='center', va='center', fontsize=10, fontweight='bold')
+            ax_stats4.text(0.5, 0.15, f"Avg: {queue_lengths*100:.1f}%", ha='center', va='center', 
+                         fontsize=12, fontweight='bold')
+            
+            return [ax_stats1, ax_stats2, ax_stats3, ax_stats4]
         
         # Main update function for animation
         def update(frame):
@@ -637,30 +768,27 @@ def save_visualization(env, filename="traffic_simulation.mp4", fps=30, duration=
             update_header(frame, frame / fps)
             update_stats(frame, metrics_history)
             
-            # Add new visualizations
-            draw_density_heatmap(ax_heatmap, env.traffic_density, env.grid_size)
-            draw_waiting_time_chart(ax_waiting_time, metrics_history)
-
             return fig
         
         # Create the animation
         ani = animation.FuncAnimation(fig, update, frames=duration*fps, 
-                                     interval=1000/fps, blit=False)
+                                    interval=1000/fps, blit=False)
         
         # Save the animation
+        os.makedirs(os.path.dirname(os.path.abspath(filename)), exist_ok=True)
+        
+        # Try to save with ffmpeg first
         try:
             from matplotlib.animation import FFMpegWriter
             writer = FFMpegWriter(fps=fps, metadata=dict(title='Traffic Simulation', artist='RL Agent'), bitrate=5000)
             ani.save(filename, writer=writer)
             logger.info(f"Animation saved to {filename} with FFMpegWriter")
-            success = True
         except Exception as e:
             logger.warning(f"FFmpeg writer failed: {e}. Trying a different approach.")
             try:
                 # Try alternative save method
                 ani.save(filename, fps=fps, dpi=120)
                 logger.info(f"Animation saved to {filename} with alternative method")
-                success = True
             except Exception as e2:
                 logger.error(f"Failed to save animation: {e2}")
                 # Save individual frames
@@ -678,15 +806,19 @@ def save_visualization(env, filename="traffic_simulation.mp4", fps=30, duration=
                         logger.info(f"Saved frame {i}/{duration*fps}")
                 
                 logger.info(f"Frames saved. Please use an external tool to combine them into a video.")
-                success = False
+                return False
         
         # Close figure
         plt.close(fig)
         
-        return success
+        # Restore original visualization state
+        env.visualization = old_viz_state
+        
+        logger.info(f"Visualization saved to {filename}")
+        return True
         
     except Exception as e:
-        logger.error(f"Error in save_visualization: {e}")
+        logger.error(f"Visualization failed: {e}")
         import traceback
         logger.error(traceback.format_exc())
         return False

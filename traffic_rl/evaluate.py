@@ -10,8 +10,8 @@ import torch
 import logging
 
 # Import environment and agent
-from environment.traffic_simulation import TrafficSimulation
-from agents.dqn_agent import DQNAgent
+from traffic_rl.environment.traffic_simulation import TrafficSimulation
+from traffic_rl.agents.dqn_agent import DQNAgent
 
 logger = logging.getLogger("Evaluate")
 
@@ -176,7 +176,7 @@ if __name__ == "__main__":
     # Example usage
     import argparse
     import json
-    from traffic_rl.config import CONFIG
+    from config import CONFIG
     
     # Configure logging
     logging.basicConfig(level=logging.INFO)

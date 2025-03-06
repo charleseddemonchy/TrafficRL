@@ -1,0 +1,1861 @@
+2025-03-06 16:04:20,476 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:04:20,476 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:04:20,477 - TrafficRL.Config - INFO - Configuration saved to results/training/training_config.json
+2025-03-06 16:04:20,477 - TrafficRL - INFO - Starting training...
+2025-03-06 16:04:20,477 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:04:20,477 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:04:20,881 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:04:21,706 - TrafficRL.Train - INFO - Episode 1/500 - Reward: 993.36, Avg Reward: 993.36, Epsilon: 0.3897, LR: 0.000300, Traffic: uniform
+2025-03-06 16:04:22,576 - TrafficRL.Train - INFO - Episode 2/500 - Reward: 992.98, Avg Reward: 993.17, Epsilon: 0.1430, LR: 0.000285, Traffic: uniform
+2025-03-06 16:04:23,429 - TrafficRL.Train - INFO - Episode 3/500 - Reward: 995.83, Avg Reward: 994.06, Epsilon: 0.0525, LR: 0.000271, Traffic: uniform
+2025-03-06 16:04:24,279 - TrafficRL.Train - INFO - Episode 4/500 - Reward: 993.79, Avg Reward: 993.99, Epsilon: 0.0193, LR: 0.000257, Traffic: uniform
+2025-03-06 16:04:25,157 - TrafficRL.Train - INFO - Episode 5/500 - Reward: 995.17, Avg Reward: 994.23, Epsilon: 0.0100, LR: 0.000244, Traffic: uniform
+2025-03-06 16:04:26,042 - TrafficRL.Train - INFO - Episode 6/500 - Reward: 993.29, Avg Reward: 994.07, Epsilon: 0.0100, LR: 0.000232, Traffic: uniform
+2025-03-06 16:04:26,955 - TrafficRL.Train - INFO - Episode 7/500 - Reward: 995.27, Avg Reward: 994.24, Epsilon: 0.0100, LR: 0.000221, Traffic: uniform
+2025-03-06 16:04:36,670 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:04:36,671 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:04:36,671 - TrafficRL.Config - INFO - Configuration saved to results/training/training_config.json
+2025-03-06 16:04:36,671 - TrafficRL - INFO - Starting training...
+2025-03-06 16:04:36,671 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:04:36,671 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:04:37,079 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:04:37,899 - TrafficRL.Train - INFO - Episode 1/500 - Reward: 993.36, Avg Reward: 993.36, Epsilon: 0.3897, LR: 0.000300, Traffic: uniform
+2025-03-06 16:05:02,947 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:05:02,948 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:05:02,948 - TrafficRL - ERROR - Model file not found: results/training/best_model.pth
+2025-03-06 16:05:43,265 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:05:43,266 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:05:43,266 - TrafficRL.Config - INFO - Configuration saved to results/training/training_config.json
+2025-03-06 16:05:43,266 - TrafficRL - INFO - Starting training...
+2025-03-06 16:05:43,267 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:05:43,267 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:05:43,707 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:05:44,513 - TrafficRL.Train - INFO - Episode 1/500 - Reward: 993.36, Avg Reward: 993.36, Epsilon: 0.3897, LR: 0.000300, Traffic: uniform
+2025-03-06 16:05:45,347 - TrafficRL.Train - INFO - Episode 2/500 - Reward: 992.98, Avg Reward: 993.17, Epsilon: 0.1430, LR: 0.000285, Traffic: uniform
+2025-03-06 16:05:46,172 - TrafficRL.Train - INFO - Episode 3/500 - Reward: 995.83, Avg Reward: 994.06, Epsilon: 0.0525, LR: 0.000271, Traffic: uniform
+2025-03-06 16:05:47,018 - TrafficRL.Train - INFO - Episode 4/500 - Reward: 993.79, Avg Reward: 993.99, Epsilon: 0.0193, LR: 0.000257, Traffic: uniform
+2025-03-06 16:05:47,883 - TrafficRL.Train - INFO - Episode 5/500 - Reward: 995.17, Avg Reward: 994.23, Epsilon: 0.0100, LR: 0.000244, Traffic: uniform
+2025-03-06 16:05:48,763 - TrafficRL.Train - INFO - Episode 6/500 - Reward: 993.29, Avg Reward: 994.07, Epsilon: 0.0100, LR: 0.000232, Traffic: uniform
+2025-03-06 16:05:49,685 - TrafficRL.Train - INFO - Episode 7/500 - Reward: 995.27, Avg Reward: 994.24, Epsilon: 0.0100, LR: 0.000221, Traffic: uniform
+2025-03-06 16:05:50,600 - TrafficRL.Train - INFO - Episode 8/500 - Reward: 992.59, Avg Reward: 994.04, Epsilon: 0.0100, LR: 0.000210, Traffic: uniform
+2025-03-06 16:05:51,529 - TrafficRL.Train - INFO - Episode 9/500 - Reward: 993.65, Avg Reward: 993.99, Epsilon: 0.0100, LR: 0.000199, Traffic: uniform
+2025-03-06 16:05:52,474 - TrafficRL.Train - INFO - Episode 10/500 - Reward: 994.15, Avg Reward: 994.01, Epsilon: 0.0100, LR: 0.000189, Traffic: uniform
+2025-03-06 16:05:53,429 - TrafficRL.Train - INFO - Episode 11/500 - Reward: 984.81, Avg Reward: 993.17, Epsilon: 0.0100, LR: 0.000180, Traffic: uniform
+2025-03-06 16:05:54,409 - TrafficRL.Train - INFO - Episode 12/500 - Reward: 995.10, Avg Reward: 993.33, Epsilon: 0.0100, LR: 0.000171, Traffic: uniform
+2025-03-06 16:05:55,405 - TrafficRL.Train - INFO - Episode 13/500 - Reward: 987.29, Avg Reward: 992.87, Epsilon: 0.0100, LR: 0.000162, Traffic: uniform
+2025-03-06 16:05:56,420 - TrafficRL.Train - INFO - Episode 14/500 - Reward: 966.01, Avg Reward: 990.95, Epsilon: 0.0100, LR: 0.000154, Traffic: uniform
+2025-03-06 16:05:57,452 - TrafficRL.Train - INFO - Episode 15/500 - Reward: 989.96, Avg Reward: 990.88, Epsilon: 0.0100, LR: 0.000146, Traffic: uniform
+2025-03-06 16:05:58,509 - TrafficRL.Train - INFO - Episode 16/500 - Reward: 992.89, Avg Reward: 991.01, Epsilon: 0.0100, LR: 0.000139, Traffic: uniform
+2025-03-06 16:05:59,587 - TrafficRL.Train - INFO - Episode 17/500 - Reward: 805.33, Avg Reward: 980.09, Epsilon: 0.0100, LR: 0.000132, Traffic: uniform
+2025-03-06 16:06:00,676 - TrafficRL.Train - INFO - Episode 18/500 - Reward: 508.63, Avg Reward: 953.90, Epsilon: 0.0100, LR: 0.000125, Traffic: uniform
+2025-03-06 16:06:01,766 - TrafficRL.Train - INFO - Episode 19/500 - Reward: 981.43, Avg Reward: 955.34, Epsilon: 0.0100, LR: 0.000119, Traffic: uniform
+2025-03-06 16:06:02,881 - TrafficRL.Train - INFO - Episode 20/500 - Reward: 992.37, Avg Reward: 957.20, Epsilon: 0.0100, LR: 0.000113, Traffic: uniform
+2025-03-06 16:06:02,881 - TrafficRL.Train - INFO - Evaluating agent at episode 20...
+2025-03-06 16:06:04,135 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 360348.29
+2025-03-06 16:06:04,143 - TrafficRL.Agent - INFO - Model saved to results/training/best_model.pth
+2025-03-06 16:06:04,143 - TrafficRL.Train - INFO - New best model saved with reward: 360348.29
+2025-03-06 16:06:05,286 - TrafficRL.Train - INFO - Episode 21/500 - Reward: 988.27, Avg Reward: 958.68, Epsilon: 0.0100, LR: 0.000108, Traffic: uniform
+2025-03-06 16:06:06,490 - TrafficRL.Train - INFO - Episode 22/500 - Reward: 991.52, Avg Reward: 960.17, Epsilon: 0.0100, LR: 0.000102, Traffic: uniform
+2025-03-06 16:06:07,656 - TrafficRL.Train - INFO - Episode 23/500 - Reward: 992.39, Avg Reward: 961.57, Epsilon: 0.0100, LR: 0.000097, Traffic: uniform
+2025-03-06 16:06:08,835 - TrafficRL.Train - INFO - Episode 24/500 - Reward: 993.85, Avg Reward: 962.91, Epsilon: 0.0100, LR: 0.000092, Traffic: uniform
+2025-03-06 16:06:10,037 - TrafficRL.Train - INFO - Episode 25/500 - Reward: 992.81, Avg Reward: 964.11, Epsilon: 0.0100, LR: 0.000088, Traffic: uniform
+2025-03-06 16:06:10,044 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_25.pth
+2025-03-06 16:06:10,044 - TrafficRL.Train - INFO - Model checkpoint saved at episode 25
+2025-03-06 16:06:11,277 - TrafficRL.Train - INFO - Episode 26/500 - Reward: 987.07, Avg Reward: 964.99, Epsilon: 0.0100, LR: 0.000083, Traffic: uniform
+2025-03-06 16:06:12,538 - TrafficRL.Train - INFO - Episode 27/500 - Reward: 990.65, Avg Reward: 965.94, Epsilon: 0.0100, LR: 0.000079, Traffic: uniform
+2025-03-06 16:06:13,807 - TrafficRL.Train - INFO - Episode 28/500 - Reward: 986.02, Avg Reward: 966.66, Epsilon: 0.0100, LR: 0.000075, Traffic: uniform
+2025-03-06 16:06:15,186 - TrafficRL.Train - INFO - Episode 29/500 - Reward: 991.83, Avg Reward: 967.53, Epsilon: 0.0100, LR: 0.000071, Traffic: uniform
+2025-03-06 16:06:16,571 - TrafficRL.Train - INFO - Episode 30/500 - Reward: 986.75, Avg Reward: 968.17, Epsilon: 0.0100, LR: 0.000068, Traffic: uniform
+2025-03-06 16:06:17,942 - TrafficRL.Train - INFO - Episode 31/500 - Reward: 992.91, Avg Reward: 968.97, Epsilon: 0.0100, LR: 0.000064, Traffic: uniform
+2025-03-06 16:06:19,309 - TrafficRL.Train - INFO - Episode 32/500 - Reward: 986.32, Avg Reward: 969.51, Epsilon: 0.0100, LR: 0.000061, Traffic: uniform
+2025-03-06 16:06:20,665 - TrafficRL.Train - INFO - Episode 33/500 - Reward: 988.60, Avg Reward: 970.09, Epsilon: 0.0100, LR: 0.000058, Traffic: uniform
+2025-03-06 16:06:22,074 - TrafficRL.Train - INFO - Episode 34/500 - Reward: 993.26, Avg Reward: 970.77, Epsilon: 0.0100, LR: 0.000055, Traffic: uniform
+2025-03-06 16:06:23,516 - TrafficRL.Train - INFO - Episode 35/500 - Reward: 989.88, Avg Reward: 971.32, Epsilon: 0.0100, LR: 0.000052, Traffic: uniform
+2025-03-06 16:06:24,967 - TrafficRL.Train - INFO - Episode 36/500 - Reward: 991.89, Avg Reward: 971.89, Epsilon: 0.0100, LR: 0.000050, Traffic: uniform
+2025-03-06 16:06:26,544 - TrafficRL.Train - INFO - Episode 37/500 - Reward: 995.92, Avg Reward: 972.54, Epsilon: 0.0100, LR: 0.000047, Traffic: uniform
+2025-03-06 16:06:28,348 - TrafficRL.Train - INFO - Episode 38/500 - Reward: 993.48, Avg Reward: 973.09, Epsilon: 0.0100, LR: 0.000045, Traffic: uniform
+2025-03-06 16:06:28,613 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:06:28,613 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:06:28,613 - TrafficRL - INFO - Evaluating on uniform traffic pattern...
+2025-03-06 16:06:28,614 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:06:28,614 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:06:29,060 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:06:29,066 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:06:29,983 - TrafficRL.Train - INFO - Episode 39/500 - Reward: 982.94, Avg Reward: 973.34, Epsilon: 0.0100, LR: 0.000043, Traffic: uniform
+2025-03-06 16:06:31,664 - TrafficRL.Train - INFO - Episode 40/500 - Reward: 990.59, Avg Reward: 973.77, Epsilon: 0.0100, LR: 0.000041, Traffic: uniform
+2025-03-06 16:06:31,665 - TrafficRL.Train - INFO - Evaluating agent at episode 40...
+2025-03-06 16:06:32,958 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 230516.59
+2025-03-06 16:06:32,958 - TrafficRL.Train - INFO - No improvement for 1 evaluations
+2025-03-06 16:06:34,426 - TrafficRL - INFO - Evaluation results for uniform:
+2025-03-06 16:06:34,426 - TrafficRL - INFO -   Average Reward: 359948.58 ± 7117.86
+2025-03-06 16:06:34,426 - TrafficRL - INFO -   Average Waiting Time: 134.51
+2025-03-06 16:06:34,426 - TrafficRL - INFO -   Average Throughput: 11653751.31
+2025-03-06 16:06:34,427 - TrafficRL - INFO - Evaluation results saved to results/evaluation/evaluation_results.json
+2025-03-06 16:06:34,463 - TrafficRL.Train - INFO - Episode 41/500 - Reward: 990.84, Avg Reward: 974.19, Epsilon: 0.0100, LR: 0.000039, Traffic: uniform
+2025-03-06 16:06:36,001 - TrafficRL.Train - INFO - Episode 42/500 - Reward: 990.92, Avg Reward: 974.59, Epsilon: 0.0100, LR: 0.000037, Traffic: uniform
+2025-03-06 16:06:37,551 - TrafficRL.Train - INFO - Episode 43/500 - Reward: 984.69, Avg Reward: 974.82, Epsilon: 0.0100, LR: 0.000035, Traffic: uniform
+2025-03-06 16:06:39,222 - TrafficRL.Train - INFO - Episode 44/500 - Reward: 994.76, Avg Reward: 975.27, Epsilon: 0.0100, LR: 0.000033, Traffic: uniform
+2025-03-06 16:06:40,951 - TrafficRL.Train - INFO - Episode 45/500 - Reward: 991.89, Avg Reward: 975.64, Epsilon: 0.0100, LR: 0.000031, Traffic: uniform
+2025-03-06 16:06:42,613 - TrafficRL.Train - INFO - Episode 46/500 - Reward: 995.96, Avg Reward: 976.09, Epsilon: 0.0100, LR: 0.000030, Traffic: uniform
+2025-03-06 16:06:44,516 - TrafficRL.Train - INFO - Episode 47/500 - Reward: 990.84, Avg Reward: 976.40, Epsilon: 0.0100, LR: 0.000028, Traffic: uniform
+2025-03-06 16:06:46,174 - TrafficRL.Train - INFO - Episode 48/500 - Reward: 990.75, Avg Reward: 976.70, Epsilon: 0.0100, LR: 0.000027, Traffic: uniform
+2025-03-06 16:06:47,826 - TrafficRL.Train - INFO - Episode 49/500 - Reward: 983.31, Avg Reward: 976.83, Epsilon: 0.0100, LR: 0.000026, Traffic: uniform
+2025-03-06 16:06:49,604 - TrafficRL.Train - INFO - Episode 50/500 - Reward: 993.68, Avg Reward: 977.17, Epsilon: 0.0100, LR: 0.000024, Traffic: uniform
+2025-03-06 16:06:49,612 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_50.pth
+2025-03-06 16:06:49,612 - TrafficRL.Train - INFO - Model checkpoint saved at episode 50
+2025-03-06 16:06:51,707 - TrafficRL.Train - INFO - Episode 51/500 - Reward: 991.14, Avg Reward: 977.44, Epsilon: 0.0100, LR: 0.000023, Traffic: uniform
+2025-03-06 16:06:53,538 - TrafficRL.Train - INFO - Episode 52/500 - Reward: 991.89, Avg Reward: 977.72, Epsilon: 0.0100, LR: 0.000022, Traffic: uniform
+2025-03-06 16:06:55,341 - TrafficRL.Train - INFO - Episode 53/500 - Reward: 992.79, Avg Reward: 978.01, Epsilon: 0.0100, LR: 0.000021, Traffic: uniform
+2025-03-06 16:06:57,092 - TrafficRL.Train - INFO - Episode 54/500 - Reward: 995.05, Avg Reward: 978.32, Epsilon: 0.0100, LR: 0.000020, Traffic: uniform
+2025-03-06 16:06:58,940 - TrafficRL.Train - INFO - Episode 55/500 - Reward: 990.23, Avg Reward: 978.54, Epsilon: 0.0100, LR: 0.000019, Traffic: uniform
+2025-03-06 16:07:00,728 - TrafficRL.Train - INFO - Episode 56/500 - Reward: 995.68, Avg Reward: 978.84, Epsilon: 0.0100, LR: 0.000018, Traffic: uniform
+2025-03-06 16:07:02,606 - TrafficRL.Train - INFO - Episode 57/500 - Reward: 993.55, Avg Reward: 979.10, Epsilon: 0.0100, LR: 0.000017, Traffic: uniform
+2025-03-06 16:07:04,470 - TrafficRL.Train - INFO - Episode 58/500 - Reward: 988.77, Avg Reward: 979.27, Epsilon: 0.0100, LR: 0.000016, Traffic: uniform
+2025-03-06 16:07:06,331 - TrafficRL.Train - INFO - Episode 59/500 - Reward: 991.02, Avg Reward: 979.47, Epsilon: 0.0100, LR: 0.000015, Traffic: uniform
+2025-03-06 16:07:08,184 - TrafficRL.Train - INFO - Episode 60/500 - Reward: 995.73, Avg Reward: 979.74, Epsilon: 0.0100, LR: 0.000015, Traffic: uniform
+2025-03-06 16:07:08,185 - TrafficRL.Train - INFO - Evaluating agent at episode 60...
+2025-03-06 16:07:09,470 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 155853.52
+2025-03-06 16:07:09,470 - TrafficRL.Train - INFO - No improvement for 2 evaluations
+2025-03-06 16:07:11,482 - TrafficRL.Train - INFO - Episode 61/500 - Reward: 985.28, Avg Reward: 979.83, Epsilon: 0.0100, LR: 0.000014, Traffic: uniform
+2025-03-06 16:07:13,525 - TrafficRL.Train - INFO - Episode 62/500 - Reward: 993.21, Avg Reward: 980.05, Epsilon: 0.0100, LR: 0.000013, Traffic: uniform
+2025-03-06 16:07:15,525 - TrafficRL.Train - INFO - Episode 63/500 - Reward: 985.43, Avg Reward: 980.13, Epsilon: 0.0100, LR: 0.000012, Traffic: uniform
+2025-03-06 16:07:17,591 - TrafficRL.Train - INFO - Episode 64/500 - Reward: 993.30, Avg Reward: 980.34, Epsilon: 0.0100, LR: 0.000012, Traffic: uniform
+2025-03-06 16:07:19,602 - TrafficRL.Train - INFO - Episode 65/500 - Reward: 989.39, Avg Reward: 980.48, Epsilon: 0.0100, LR: 0.000011, Traffic: uniform
+2025-03-06 16:07:21,638 - TrafficRL.Train - INFO - Episode 66/500 - Reward: 992.13, Avg Reward: 980.65, Epsilon: 0.0100, LR: 0.000011, Traffic: uniform
+2025-03-06 16:07:23,641 - TrafficRL.Train - INFO - Episode 67/500 - Reward: 993.89, Avg Reward: 980.85, Epsilon: 0.0100, LR: 0.000010, Traffic: uniform
+2025-03-06 16:07:25,723 - TrafficRL.Train - INFO - Episode 68/500 - Reward: 988.97, Avg Reward: 980.97, Epsilon: 0.0100, LR: 0.000010, Traffic: uniform
+2025-03-06 16:07:27,777 - TrafficRL.Train - INFO - Episode 69/500 - Reward: 994.94, Avg Reward: 981.17, Epsilon: 0.0100, LR: 0.000009, Traffic: uniform
+2025-03-06 16:07:29,846 - TrafficRL.Train - INFO - Episode 70/500 - Reward: 984.68, Avg Reward: 981.22, Epsilon: 0.0100, LR: 0.000009, Traffic: uniform
+2025-03-06 16:07:31,962 - TrafficRL.Train - INFO - Episode 71/500 - Reward: 987.38, Avg Reward: 981.31, Epsilon: 0.0100, LR: 0.000008, Traffic: uniform
+2025-03-06 16:07:34,076 - TrafficRL.Train - INFO - Episode 72/500 - Reward: 978.21, Avg Reward: 981.27, Epsilon: 0.0100, LR: 0.000008, Traffic: uniform
+2025-03-06 16:07:36,179 - TrafficRL.Train - INFO - Episode 73/500 - Reward: 989.65, Avg Reward: 981.38, Epsilon: 0.0100, LR: 0.000007, Traffic: uniform
+2025-03-06 16:07:38,356 - TrafficRL.Train - INFO - Episode 74/500 - Reward: 985.40, Avg Reward: 981.44, Epsilon: 0.0100, LR: 0.000007, Traffic: uniform
+2025-03-06 16:07:40,848 - TrafficRL.Train - INFO - Episode 75/500 - Reward: 992.40, Avg Reward: 981.58, Epsilon: 0.0100, LR: 0.000007, Traffic: uniform
+2025-03-06 16:07:40,858 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_75.pth
+2025-03-06 16:07:40,858 - TrafficRL.Train - INFO - Model checkpoint saved at episode 75
+2025-03-06 16:07:43,055 - TrafficRL.Train - INFO - Episode 76/500 - Reward: 990.90, Avg Reward: 981.70, Epsilon: 0.0100, LR: 0.000006, Traffic: uniform
+2025-03-06 16:07:45,259 - TrafficRL.Train - INFO - Episode 77/500 - Reward: 996.16, Avg Reward: 981.89, Epsilon: 0.0100, LR: 0.000006, Traffic: uniform
+2025-03-06 16:07:47,427 - TrafficRL.Train - INFO - Episode 78/500 - Reward: 991.79, Avg Reward: 982.02, Epsilon: 0.0100, LR: 0.000006, Traffic: uniform
+2025-03-06 16:07:50,184 - TrafficRL.Train - INFO - Episode 79/500 - Reward: 991.86, Avg Reward: 982.14, Epsilon: 0.0100, LR: 0.000005, Traffic: uniform
+2025-03-06 16:07:52,467 - TrafficRL.Train - INFO - Episode 80/500 - Reward: 990.12, Avg Reward: 982.24, Epsilon: 0.0100, LR: 0.000005, Traffic: uniform
+2025-03-06 16:07:52,467 - TrafficRL.Train - INFO - Evaluating agent at episode 80...
+2025-03-06 16:07:53,752 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 194654.10
+2025-03-06 16:07:53,752 - TrafficRL.Train - INFO - No improvement for 3 evaluations
+2025-03-06 16:07:56,020 - TrafficRL.Train - INFO - Episode 81/500 - Reward: 994.00, Avg Reward: 982.39, Epsilon: 0.0100, LR: 0.000005, Traffic: uniform
+2025-03-06 16:07:58,359 - TrafficRL.Train - INFO - Episode 82/500 - Reward: 988.14, Avg Reward: 982.46, Epsilon: 0.0100, LR: 0.000005, Traffic: uniform
+2025-03-06 16:08:00,798 - TrafficRL.Train - INFO - Episode 83/500 - Reward: 990.70, Avg Reward: 982.56, Epsilon: 0.0100, LR: 0.000004, Traffic: uniform
+2025-03-06 16:08:03,168 - TrafficRL.Train - INFO - Episode 84/500 - Reward: 995.05, Avg Reward: 982.71, Epsilon: 0.0100, LR: 0.000004, Traffic: uniform
+2025-03-06 16:08:05,544 - TrafficRL.Train - INFO - Episode 85/500 - Reward: 993.68, Avg Reward: 982.84, Epsilon: 0.0100, LR: 0.000004, Traffic: uniform
+2025-03-06 16:08:07,932 - TrafficRL.Train - INFO - Episode 86/500 - Reward: 980.68, Avg Reward: 982.81, Epsilon: 0.0100, LR: 0.000004, Traffic: uniform
+2025-03-06 16:08:10,395 - TrafficRL.Train - INFO - Episode 87/500 - Reward: 991.66, Avg Reward: 982.91, Epsilon: 0.0100, LR: 0.000004, Traffic: uniform
+2025-03-06 16:08:12,840 - TrafficRL.Train - INFO - Episode 88/500 - Reward: 994.92, Avg Reward: 983.05, Epsilon: 0.0100, LR: 0.000003, Traffic: uniform
+2025-03-06 16:08:15,380 - TrafficRL.Train - INFO - Episode 89/500 - Reward: 996.73, Avg Reward: 983.20, Epsilon: 0.0100, LR: 0.000003, Traffic: uniform
+2025-03-06 16:08:17,893 - TrafficRL.Train - INFO - Episode 90/500 - Reward: 988.57, Avg Reward: 983.26, Epsilon: 0.0100, LR: 0.000003, Traffic: uniform
+2025-03-06 16:08:20,533 - TrafficRL.Train - INFO - Episode 91/500 - Reward: 993.76, Avg Reward: 983.38, Epsilon: 0.0100, LR: 0.000003, Traffic: uniform
+2025-03-06 16:08:23,119 - TrafficRL.Train - INFO - Episode 92/500 - Reward: 993.96, Avg Reward: 983.49, Epsilon: 0.0100, LR: 0.000003, Traffic: uniform
+2025-03-06 16:08:25,706 - TrafficRL.Train - INFO - Episode 93/500 - Reward: 990.63, Avg Reward: 983.57, Epsilon: 0.0100, LR: 0.000003, Traffic: uniform
+2025-03-06 16:08:28,394 - TrafficRL.Train - INFO - Episode 94/500 - Reward: 993.85, Avg Reward: 983.68, Epsilon: 0.0100, LR: 0.000003, Traffic: uniform
+2025-03-06 16:08:31,102 - TrafficRL.Train - INFO - Episode 95/500 - Reward: 990.86, Avg Reward: 983.75, Epsilon: 0.0100, LR: 0.000002, Traffic: uniform
+2025-03-06 16:08:33,707 - TrafficRL.Train - INFO - Episode 96/500 - Reward: 994.70, Avg Reward: 983.87, Epsilon: 0.0100, LR: 0.000002, Traffic: uniform
+2025-03-06 16:08:36,449 - TrafficRL.Train - INFO - Episode 97/500 - Reward: 992.37, Avg Reward: 983.96, Epsilon: 0.0100, LR: 0.000002, Traffic: uniform
+2025-03-06 16:08:39,447 - TrafficRL.Train - INFO - Episode 98/500 - Reward: 995.14, Avg Reward: 984.07, Epsilon: 0.0100, LR: 0.000002, Traffic: uniform
+2025-03-06 16:08:42,110 - TrafficRL.Train - INFO - Episode 99/500 - Reward: 994.91, Avg Reward: 984.18, Epsilon: 0.0100, LR: 0.000002, Traffic: uniform
+2025-03-06 16:08:42,110 - TrafficRL.Train - INFO - Switching to rush_hour traffic pattern at episode 100
+2025-03-06 16:08:44,782 - TrafficRL.Train - INFO - Episode 100/500 - Reward: 995.46, Avg Reward: 984.29, Epsilon: 0.0100, LR: 0.000002, Traffic: rush_hour
+2025-03-06 16:08:44,782 - TrafficRL.Train - INFO - Evaluating agent at episode 100...
+2025-03-06 16:08:46,051 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 98443.74
+2025-03-06 16:08:46,051 - TrafficRL.Train - INFO - No improvement for 4 evaluations
+2025-03-06 16:08:46,061 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_100.pth
+2025-03-06 16:08:46,061 - TrafficRL.Train - INFO - Model checkpoint saved at episode 100
+2025-03-06 16:08:48,740 - TrafficRL.Train - INFO - Episode 101/500 - Reward: 993.27, Avg Reward: 984.29, Epsilon: 0.0100, LR: 0.000002, Traffic: rush_hour
+2025-03-06 16:08:51,330 - TrafficRL.Train - INFO - Episode 102/500 - Reward: 996.71, Avg Reward: 984.33, Epsilon: 0.0100, LR: 0.000002, Traffic: rush_hour
+2025-03-06 16:08:53,942 - TrafficRL.Train - INFO - Episode 103/500 - Reward: 990.11, Avg Reward: 984.27, Epsilon: 0.0100, LR: 0.000002, Traffic: rush_hour
+2025-03-06 16:08:56,497 - TrafficRL.Train - INFO - Episode 104/500 - Reward: 994.55, Avg Reward: 984.28, Epsilon: 0.0100, LR: 0.000002, Traffic: rush_hour
+2025-03-06 16:08:58,520 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:08:58,521 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:08:58,521 - TrafficRL - INFO - No model provided, using random actions
+2025-03-06 16:08:58,521 - TrafficRL - INFO - Creating environment visualization: results/visualizations/traffic_sim_uniform_random_20250306_160858.mp4
+2025-03-06 16:08:59,725 - TrafficRL.Train - INFO - Episode 105/500 - Reward: 991.80, Avg Reward: 984.24, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:02,551 - TrafficRL.Train - INFO - Episode 106/500 - Reward: 993.02, Avg Reward: 984.24, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:05,256 - TrafficRL.Train - INFO - Episode 107/500 - Reward: 995.33, Avg Reward: 984.24, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:07,992 - TrafficRL.Train - INFO - Episode 108/500 - Reward: 994.78, Avg Reward: 984.26, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:10,688 - TrafficRL.Train - INFO - Episode 109/500 - Reward: 993.29, Avg Reward: 984.26, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:13,347 - TrafficRL.Train - INFO - Episode 110/500 - Reward: 994.69, Avg Reward: 984.27, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:15,981 - TrafficRL.Train - INFO - Episode 111/500 - Reward: 992.72, Avg Reward: 984.35, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:18,571 - TrafficRL.Train - INFO - Episode 112/500 - Reward: 990.72, Avg Reward: 984.30, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:21,269 - TrafficRL.Train - INFO - Episode 113/500 - Reward: 993.27, Avg Reward: 984.36, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:23,909 - TrafficRL.Train - INFO - Episode 114/500 - Reward: 994.23, Avg Reward: 984.64, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:26,562 - TrafficRL.Train - INFO - Episode 115/500 - Reward: 992.33, Avg Reward: 984.67, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:29,137 - TrafficRL.Train - INFO - Episode 116/500 - Reward: 987.03, Avg Reward: 984.61, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:31,748 - TrafficRL.Train - INFO - Episode 117/500 - Reward: 996.74, Avg Reward: 986.52, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:34,427 - TrafficRL.Train - INFO - Episode 118/500 - Reward: 995.74, Avg Reward: 991.39, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:37,137 - TrafficRL.Train - INFO - Episode 119/500 - Reward: 992.98, Avg Reward: 991.51, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:39,888 - TrafficRL.Train - INFO - Episode 120/500 - Reward: 991.13, Avg Reward: 991.50, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:39,888 - TrafficRL.Train - INFO - Evaluating agent at episode 120...
+2025-03-06 16:09:41,113 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 106344.63
+2025-03-06 16:09:41,113 - TrafficRL.Train - INFO - No improvement for 5 evaluations
+2025-03-06 16:09:43,782 - TrafficRL.Train - INFO - Episode 121/500 - Reward: 989.46, Avg Reward: 991.51, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:46,508 - TrafficRL.Train - INFO - Episode 122/500 - Reward: 993.89, Avg Reward: 991.53, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:49,154 - TrafficRL.Train - INFO - Episode 123/500 - Reward: 993.88, Avg Reward: 991.55, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:51,850 - TrafficRL.Train - INFO - Episode 124/500 - Reward: 995.06, Avg Reward: 991.56, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:54,478 - TrafficRL.Train - INFO - Episode 125/500 - Reward: 995.11, Avg Reward: 991.58, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-06 16:09:54,488 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_125.pth
+2025-03-06 16:09:54,488 - TrafficRL.Train - INFO - Model checkpoint saved at episode 125
+2025-03-06 16:09:57,117 - TrafficRL.Train - INFO - Episode 126/500 - Reward: 993.61, Avg Reward: 991.65, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:09:59,808 - TrafficRL.Train - INFO - Episode 127/500 - Reward: 991.95, Avg Reward: 991.66, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:02,521 - TrafficRL.Train - INFO - Episode 128/500 - Reward: 991.42, Avg Reward: 991.72, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:05,116 - TrafficRL.Train - INFO - Episode 129/500 - Reward: 996.12, Avg Reward: 991.76, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:07,764 - TrafficRL.Train - INFO - Episode 130/500 - Reward: 990.08, Avg Reward: 991.79, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:10,459 - TrafficRL.Train - INFO - Episode 131/500 - Reward: 994.82, Avg Reward: 991.81, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:13,054 - TrafficRL.Train - INFO - Episode 132/500 - Reward: 996.54, Avg Reward: 991.91, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:15,809 - TrafficRL.Train - INFO - Episode 133/500 - Reward: 993.42, Avg Reward: 991.96, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:18,514 - TrafficRL.Train - INFO - Episode 134/500 - Reward: 994.95, Avg Reward: 991.98, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:21,169 - TrafficRL.Train - INFO - Episode 135/500 - Reward: 990.28, Avg Reward: 991.98, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:24,196 - TrafficRL.Train - INFO - Episode 136/500 - Reward: 993.89, Avg Reward: 992.00, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:26,811 - TrafficRL.Train - INFO - Episode 137/500 - Reward: 996.54, Avg Reward: 992.01, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:29,421 - TrafficRL.Train - INFO - Episode 138/500 - Reward: 994.40, Avg Reward: 992.02, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:32,131 - TrafficRL.Train - INFO - Episode 139/500 - Reward: 996.64, Avg Reward: 992.15, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:35,373 - TrafficRL.Train - INFO - Episode 140/500 - Reward: 994.57, Avg Reward: 992.19, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:35,374 - TrafficRL.Train - INFO - Evaluating agent at episode 140...
+2025-03-06 16:10:36,629 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 129038.54
+2025-03-06 16:10:36,629 - TrafficRL.Train - INFO - No improvement for 6 evaluations
+2025-03-06 16:10:39,508 - TrafficRL.Train - INFO - Episode 141/500 - Reward: 993.92, Avg Reward: 992.22, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:42,209 - TrafficRL.Train - INFO - Episode 142/500 - Reward: 991.50, Avg Reward: 992.23, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:44,808 - TrafficRL.Train - INFO - Episode 143/500 - Reward: 994.74, Avg Reward: 992.33, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:47,448 - TrafficRL.Train - INFO - Episode 144/500 - Reward: 995.70, Avg Reward: 992.34, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:50,071 - TrafficRL.Train - INFO - Episode 145/500 - Reward: 994.72, Avg Reward: 992.37, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:52,721 - TrafficRL.Train - INFO - Episode 146/500 - Reward: 996.32, Avg Reward: 992.37, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:55,322 - TrafficRL.Train - INFO - Episode 147/500 - Reward: 995.43, Avg Reward: 992.42, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:10:58,005 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:10:58,006 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:10:58,006 - TrafficRL - INFO - No model provided, using random actions
+2025-03-06 16:10:58,006 - TrafficRL - INFO - Creating environment visualization: results/visualizations/traffic_sim_uniform_random_20250306_161058.mp4
+2025-03-06 16:10:58,753 - TrafficRL.Train - INFO - Episode 148/500 - Reward: 995.56, Avg Reward: 992.47, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:01,884 - TrafficRL.Train - INFO - Episode 149/500 - Reward: 990.16, Avg Reward: 992.53, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:04,608 - TrafficRL.Train - INFO - Episode 150/500 - Reward: 990.50, Avg Reward: 992.50, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:04,618 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_150.pth
+2025-03-06 16:11:04,618 - TrafficRL.Train - INFO - Model checkpoint saved at episode 150
+2025-03-06 16:11:07,568 - TrafficRL.Train - INFO - Episode 151/500 - Reward: 993.10, Avg Reward: 992.52, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:10,424 - TrafficRL.Train - INFO - Episode 152/500 - Reward: 994.22, Avg Reward: 992.55, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:13,125 - TrafficRL.Train - INFO - Episode 153/500 - Reward: 995.92, Avg Reward: 992.58, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:15,974 - TrafficRL.Train - INFO - Episode 154/500 - Reward: 995.96, Avg Reward: 992.59, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:18,640 - TrafficRL.Train - INFO - Episode 155/500 - Reward: 992.21, Avg Reward: 992.61, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:21,308 - TrafficRL.Train - INFO - Episode 156/500 - Reward: 990.03, Avg Reward: 992.55, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:24,111 - TrafficRL.Train - INFO - Episode 157/500 - Reward: 995.35, Avg Reward: 992.57, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:26,820 - TrafficRL.Train - INFO - Episode 158/500 - Reward: 989.34, Avg Reward: 992.57, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:29,527 - TrafficRL.Train - INFO - Episode 159/500 - Reward: 995.40, Avg Reward: 992.62, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:30,631 - TrafficRL - INFO - Animation saved to results/visualizations/traffic_sim_uniform_random_20250306_161058.mp4 with FFMpegWriter
+2025-03-06 16:11:30,632 - TrafficRL - INFO - Visualization saved to results/visualizations/traffic_sim_uniform_random_20250306_161058.mp4
+2025-03-06 16:11:30,632 - TrafficRL - INFO - Visualization saved to results/visualizations/traffic_sim_uniform_random_20250306_161058.mp4
+2025-03-06 16:11:32,444 - TrafficRL.Train - INFO - Episode 160/500 - Reward: 993.00, Avg Reward: 992.59, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:32,445 - TrafficRL.Train - INFO - Evaluating agent at episode 160...
+2025-03-06 16:11:33,687 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 101362.45
+2025-03-06 16:11:33,687 - TrafficRL.Train - INFO - No improvement for 7 evaluations
+2025-03-06 16:11:36,347 - TrafficRL.Train - INFO - Episode 161/500 - Reward: 992.70, Avg Reward: 992.66, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:39,269 - TrafficRL.Train - INFO - Episode 162/500 - Reward: 994.39, Avg Reward: 992.68, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:41,950 - TrafficRL.Train - INFO - Episode 163/500 - Reward: 994.45, Avg Reward: 992.77, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:44,552 - TrafficRL.Train - INFO - Episode 164/500 - Reward: 992.60, Avg Reward: 992.76, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:47,169 - TrafficRL.Train - INFO - Episode 165/500 - Reward: 996.95, Avg Reward: 992.83, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:49,945 - TrafficRL.Train - INFO - Episode 166/500 - Reward: 995.65, Avg Reward: 992.87, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:52,644 - TrafficRL.Train - INFO - Episode 167/500 - Reward: 995.67, Avg Reward: 992.89, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:55,311 - TrafficRL.Train - INFO - Episode 168/500 - Reward: 994.09, Avg Reward: 992.94, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:11:57,968 - TrafficRL.Train - INFO - Episode 169/500 - Reward: 994.03, Avg Reward: 992.93, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:00,675 - TrafficRL.Train - INFO - Episode 170/500 - Reward: 994.91, Avg Reward: 993.03, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:03,354 - TrafficRL.Train - INFO - Episode 171/500 - Reward: 991.94, Avg Reward: 993.08, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:05,963 - TrafficRL.Train - INFO - Episode 172/500 - Reward: 995.27, Avg Reward: 993.25, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:08,573 - TrafficRL.Train - INFO - Episode 173/500 - Reward: 993.73, Avg Reward: 993.29, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:10,755 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:12:10,757 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:12:10,757 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:12:10,757 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:12:11,402 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:12:11,409 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:12:11,409 - TrafficRL - INFO - Model loaded from results/training/best_model.pth
+2025-03-06 16:12:11,409 - TrafficRL - INFO - Creating environment visualization: results/visualizations/traffic_sim_uniform_trained_20250306_161211.mp4
+2025-03-06 16:12:12,025 - TrafficRL.Train - INFO - Episode 174/500 - Reward: 995.39, Avg Reward: 993.39, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:14,186 - TrafficRL - INFO - Animation saved to results/visualizations/traffic_sim_uniform_random_20250306_160858.mp4 with FFMpegWriter
+2025-03-06 16:12:14,186 - TrafficRL - INFO - Visualization saved to results/visualizations/traffic_sim_uniform_random_20250306_160858.mp4
+2025-03-06 16:12:14,186 - TrafficRL - INFO - Visualization saved to results/visualizations/traffic_sim_uniform_random_20250306_160858.mp4
+2025-03-06 16:12:15,127 - TrafficRL.Train - INFO - Episode 175/500 - Reward: 994.43, Avg Reward: 993.41, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:15,139 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_175.pth
+2025-03-06 16:12:15,139 - TrafficRL.Train - INFO - Model checkpoint saved at episode 175
+2025-03-06 16:12:17,811 - TrafficRL.Train - INFO - Episode 176/500 - Reward: 995.99, Avg Reward: 993.46, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:21,079 - TrafficRL.Train - INFO - Episode 177/500 - Reward: 996.36, Avg Reward: 993.46, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:24,028 - TrafficRL.Train - INFO - Episode 178/500 - Reward: 996.30, Avg Reward: 993.51, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:27,075 - TrafficRL.Train - INFO - Episode 179/500 - Reward: 994.46, Avg Reward: 993.53, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:30,113 - TrafficRL.Train - INFO - Episode 180/500 - Reward: 993.17, Avg Reward: 993.56, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:30,113 - TrafficRL.Train - INFO - Evaluating agent at episode 180...
+2025-03-06 16:12:31,333 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 110604.08
+2025-03-06 16:12:31,333 - TrafficRL.Train - INFO - No improvement for 8 evaluations
+2025-03-06 16:12:34,023 - TrafficRL.Train - INFO - Episode 181/500 - Reward: 996.53, Avg Reward: 993.59, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:36,627 - TrafficRL.Train - INFO - Episode 182/500 - Reward: 992.07, Avg Reward: 993.63, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:39,243 - TrafficRL.Train - INFO - Episode 183/500 - Reward: 991.25, Avg Reward: 993.63, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:41,877 - TrafficRL.Train - INFO - Episode 184/500 - Reward: 991.62, Avg Reward: 993.60, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:44,465 - TrafficRL.Train - INFO - Episode 185/500 - Reward: 994.05, Avg Reward: 993.60, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:45,193 - TrafficRL - INFO - Animation saved to results/visualizations/traffic_sim_uniform_trained_20250306_161211.mp4 with FFMpegWriter
+2025-03-06 16:12:45,193 - TrafficRL - INFO - Visualization saved to results/visualizations/traffic_sim_uniform_trained_20250306_161211.mp4
+2025-03-06 16:12:45,193 - TrafficRL - INFO - Visualization saved to results/visualizations/traffic_sim_uniform_trained_20250306_161211.mp4
+2025-03-06 16:12:47,279 - TrafficRL.Train - INFO - Episode 186/500 - Reward: 989.85, Avg Reward: 993.69, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:50,041 - TrafficRL.Train - INFO - Episode 187/500 - Reward: 993.60, Avg Reward: 993.71, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:52,702 - TrafficRL.Train - INFO - Episode 188/500 - Reward: 994.91, Avg Reward: 993.71, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:55,397 - TrafficRL.Train - INFO - Episode 189/500 - Reward: 992.07, Avg Reward: 993.67, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:12:57,974 - TrafficRL.Train - INFO - Episode 190/500 - Reward: 992.99, Avg Reward: 993.71, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:13:00,697 - TrafficRL.Train - INFO - Episode 191/500 - Reward: 989.28, Avg Reward: 993.67, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:13:03,278 - TrafficRL.Train - INFO - Episode 192/500 - Reward: 996.63, Avg Reward: 993.69, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:13:06,031 - TrafficRL.Train - INFO - Episode 193/500 - Reward: 993.72, Avg Reward: 993.72, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:13:08,826 - TrafficRL.Train - INFO - Episode 194/500 - Reward: 994.74, Avg Reward: 993.73, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:13:11,463 - TrafficRL.Train - INFO - Episode 195/500 - Reward: 994.54, Avg Reward: 993.77, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:13:14,080 - TrafficRL.Train - INFO - Episode 196/500 - Reward: 992.55, Avg Reward: 993.75, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:13:16,728 - TrafficRL.Train - INFO - Episode 197/500 - Reward: 991.08, Avg Reward: 993.74, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:13:19,406 - TrafficRL.Train - INFO - Episode 198/500 - Reward: 993.70, Avg Reward: 993.72, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:13:22,121 - TrafficRL.Train - INFO - Episode 199/500 - Reward: 995.42, Avg Reward: 993.73, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-06 16:13:22,121 - TrafficRL.Train - INFO - Switching to weekend traffic pattern at episode 200
+2025-03-06 16:13:24,746 - TrafficRL.Train - INFO - Episode 200/500 - Reward: 989.71, Avg Reward: 993.67, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:13:24,746 - TrafficRL.Train - INFO - Evaluating agent at episode 200...
+2025-03-06 16:13:26,016 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 566000.76
+2025-03-06 16:13:26,027 - TrafficRL.Agent - INFO - Model saved to results/training/best_model.pth
+2025-03-06 16:13:26,027 - TrafficRL.Train - INFO - New best model saved with reward: 566000.76
+2025-03-06 16:13:26,038 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_200.pth
+2025-03-06 16:13:26,038 - TrafficRL.Train - INFO - Model checkpoint saved at episode 200
+2025-03-06 16:13:28,737 - TrafficRL.Train - INFO - Episode 201/500 - Reward: 993.83, Avg Reward: 993.67, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:13:31,318 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:13:31,319 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:13:31,319 - TrafficRL - INFO - Evaluating on uniform traffic pattern...
+2025-03-06 16:13:31,319 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:13:31,319 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:13:31,655 - TrafficRL.Train - INFO - Episode 202/500 - Reward: 993.05, Avg Reward: 993.64, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:13:31,752 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:13:31,759 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:13:34,538 - TrafficRL.Train - INFO - Episode 203/500 - Reward: 994.46, Avg Reward: 993.68, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:13:37,222 - TrafficRL - INFO - Evaluation results for uniform:
+2025-03-06 16:13:37,222 - TrafficRL - INFO -   Average Reward: 425980.29 ± 152201.22
+2025-03-06 16:13:37,222 - TrafficRL - INFO -   Average Waiting Time: 114.90
+2025-03-06 16:13:37,222 - TrafficRL - INFO -   Average Throughput: 12285538.45
+2025-03-06 16:13:37,222 - TrafficRL - INFO - Evaluation results saved to results/evaluation/evaluation_results.json
+2025-03-06 16:13:37,543 - TrafficRL.Train - INFO - Episode 204/500 - Reward: 994.60, Avg Reward: 993.68, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:13:40,350 - TrafficRL.Train - INFO - Episode 205/500 - Reward: 989.40, Avg Reward: 993.66, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:13:43,200 - TrafficRL.Train - INFO - Episode 206/500 - Reward: 991.30, Avg Reward: 993.64, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:13:46,066 - TrafficRL.Train - INFO - Episode 207/500 - Reward: 993.84, Avg Reward: 993.63, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:13:48,985 - TrafficRL.Train - INFO - Episode 208/500 - Reward: 990.68, Avg Reward: 993.58, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:13:49,740 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:13:49,740 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:13:49,741 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:13:49,741 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:13:50,202 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:13:50,209 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:13:50,209 - TrafficRL - INFO - Model loaded from results/training/best_model.pth
+2025-03-06 16:13:50,209 - TrafficRL - INFO - Creating environment visualization: results/videos/traffic_sim_uniform_trained_20250306_161350.mp4
+2025-03-06 16:13:52,273 - TrafficRL.Train - INFO - Episode 209/500 - Reward: 990.47, Avg Reward: 993.56, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:13:55,284 - TrafficRL.Train - INFO - Episode 210/500 - Reward: 990.61, Avg Reward: 993.52, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:13:58,354 - TrafficRL.Train - INFO - Episode 211/500 - Reward: 994.33, Avg Reward: 993.53, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:01,315 - TrafficRL.Train - INFO - Episode 212/500 - Reward: 989.67, Avg Reward: 993.52, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:04,352 - TrafficRL.Train - INFO - Episode 213/500 - Reward: 991.58, Avg Reward: 993.50, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:07,483 - TrafficRL.Train - INFO - Episode 214/500 - Reward: 989.71, Avg Reward: 993.46, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:10,221 - TrafficRL.Train - INFO - Episode 215/500 - Reward: 992.58, Avg Reward: 993.46, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:12,725 - TrafficRL - WARNING - FFmpeg writer failed: Command '['ffmpeg', '-f', 'rawvideo', '-vcodec', 'rawvideo', '-s', '3200x2000', '-pix_fmt', 'rgba', '-framerate', '30', '-loglevel', 'error', '-i', 'pipe:', '-vcodec', 'h264', '-pix_fmt', 'yuv420p', '-b', '5000k', '-metadata', 'title=Traffic Simulation', '-metadata', 'artist=RL Agent', '-y', 'results/videos/traffic_sim_uniform_trained_20250306_161350.mp4']' returned non-zero exit status 255.. Trying a different approach.
+2025-03-06 16:14:12,725 - TrafficRL - ERROR - Failed to save animation: [Errno 2] No such file or directory: 'results/videos'
+2025-03-06 16:14:12,725 - TrafficRL - INFO - Saving individual frames to results/videos/frames...
+2025-03-06 16:14:13,074 - TrafficRL.Train - INFO - Episode 216/500 - Reward: 991.89, Avg Reward: 993.51, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:15,781 - TrafficRL.Train - INFO - Episode 217/500 - Reward: 991.52, Avg Reward: 993.46, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:18,561 - TrafficRL.Train - INFO - Episode 218/500 - Reward: 994.02, Avg Reward: 993.44, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:21,538 - TrafficRL.Train - INFO - Episode 219/500 - Reward: 991.01, Avg Reward: 993.42, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:24,303 - TrafficRL.Train - INFO - Episode 220/500 - Reward: 990.65, Avg Reward: 993.42, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:24,303 - TrafficRL.Train - INFO - Evaluating agent at episode 220...
+2025-03-06 16:14:25,569 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 567757.29
+2025-03-06 16:14:25,580 - TrafficRL.Agent - INFO - Model saved to results/training/best_model.pth
+2025-03-06 16:14:25,580 - TrafficRL.Train - INFO - New best model saved with reward: 567757.29
+2025-03-06 16:14:28,232 - TrafficRL.Train - INFO - Episode 221/500 - Reward: 991.86, Avg Reward: 993.44, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:30,845 - TrafficRL.Train - INFO - Episode 222/500 - Reward: 991.50, Avg Reward: 993.42, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:33,465 - TrafficRL.Train - INFO - Episode 223/500 - Reward: 996.10, Avg Reward: 993.44, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:36,077 - TrafficRL.Train - INFO - Episode 224/500 - Reward: 993.71, Avg Reward: 993.43, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:38,727 - TrafficRL.Train - INFO - Episode 225/500 - Reward: 991.03, Avg Reward: 993.38, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:38,740 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_225.pth
+2025-03-06 16:14:38,740 - TrafficRL.Train - INFO - Model checkpoint saved at episode 225
+2025-03-06 16:14:41,426 - TrafficRL.Train - INFO - Episode 226/500 - Reward: 991.98, Avg Reward: 993.37, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:44,294 - TrafficRL.Train - INFO - Episode 227/500 - Reward: 991.30, Avg Reward: 993.36, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:47,200 - TrafficRL.Train - INFO - Episode 228/500 - Reward: 987.84, Avg Reward: 993.33, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:49,921 - TrafficRL.Train - INFO - Episode 229/500 - Reward: 995.41, Avg Reward: 993.32, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:52,737 - TrafficRL.Train - INFO - Episode 230/500 - Reward: 988.21, Avg Reward: 993.30, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:55,547 - TrafficRL.Train - INFO - Episode 231/500 - Reward: 990.65, Avg Reward: 993.26, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:14:58,349 - TrafficRL.Train - INFO - Episode 232/500 - Reward: 994.30, Avg Reward: 993.24, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:01,055 - TrafficRL.Train - INFO - Episode 233/500 - Reward: 992.16, Avg Reward: 993.22, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:03,922 - TrafficRL.Train - INFO - Episode 234/500 - Reward: 990.73, Avg Reward: 993.18, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:06,572 - TrafficRL.Train - INFO - Episode 235/500 - Reward: 992.28, Avg Reward: 993.20, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:09,369 - TrafficRL.Train - INFO - Episode 236/500 - Reward: 992.88, Avg Reward: 993.19, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:12,111 - TrafficRL.Train - INFO - Episode 237/500 - Reward: 992.38, Avg Reward: 993.15, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:14,749 - TrafficRL.Train - INFO - Episode 238/500 - Reward: 989.49, Avg Reward: 993.10, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:17,458 - TrafficRL.Train - INFO - Episode 239/500 - Reward: 991.89, Avg Reward: 993.05, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:19,904 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:15:19,904 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:15:19,905 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:15:19,905 - TrafficRL - INFO -   TrainedDQN: results/training/best_model.pth
+2025-03-06 16:15:19,919 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:15:19,919 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:15:20,378 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:15:20,385 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:15:20,564 - TrafficRL.Train - INFO - Episode 240/500 - Reward: 993.85, Avg Reward: 993.05, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:20,564 - TrafficRL.Train - INFO - Evaluating agent at episode 240...
+2025-03-06 16:15:21,901 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 563523.16
+2025-03-06 16:15:21,901 - TrafficRL.Train - INFO - No improvement for 1 evaluations
+2025-03-06 16:15:24,455 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on uniform:
+2025-03-06 16:15:24,455 - TrafficRL.Benchmark - INFO -   Average Reward: 414228.19 ± 146561.05
+2025-03-06 16:15:24,455 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 118.98
+2025-03-06 16:15:24,455 - TrafficRL.Benchmark - INFO -   Average Throughput: 12184889.42
+2025-03-06 16:15:24,455 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=41.7%, EW=58.3%
+2025-03-06 16:15:24,456 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:15:24,456 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:15:24,461 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:15:24,466 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:15:24,893 - TrafficRL.Train - INFO - Episode 241/500 - Reward: 992.24, Avg Reward: 993.03, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:27,757 - TrafficRL.Train - INFO - Episode 242/500 - Reward: 994.67, Avg Reward: 993.06, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:28,385 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on rush_hour:
+2025-03-06 16:15:28,385 - TrafficRL.Benchmark - INFO -   Average Reward: 102270.83 ± 21975.98
+2025-03-06 16:15:28,385 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 223.39
+2025-03-06 16:15:28,385 - TrafficRL.Benchmark - INFO -   Average Throughput: 9210352.31
+2025-03-06 16:15:28,385 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=10.4%, EW=89.6%
+2025-03-06 16:15:28,386 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:15:28,386 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:15:28,391 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:15:28,397 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:15:30,593 - TrafficRL.Train - INFO - Episode 243/500 - Reward: 994.56, Avg Reward: 993.06, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:32,422 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on weekend:
+2025-03-06 16:15:32,422 - TrafficRL.Benchmark - INFO -   Average Reward: 549818.29 ± 46599.55
+2025-03-06 16:15:32,422 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 80.71
+2025-03-06 16:15:32,422 - TrafficRL.Benchmark - INFO -   Average Throughput: 13604102.28
+2025-03-06 16:15:32,422 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=33.9%, EW=66.1%
+2025-03-06 16:15:32,438 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_161519/benchmark_results.json
+2025-03-06 16:15:33,790 - TrafficRL.Train - INFO - Episode 244/500 - Reward: 993.93, Avg Reward: 993.04, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:35,069 - TrafficRL.Benchmark - INFO - Benchmark visualizations created in results/benchmark/benchmark_20250306_161519/plots
+2025-03-06 16:15:35,069 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:15:35,069 - TrafficRL - INFO -   TrainedDQN_uniform:
+2025-03-06 16:15:35,069 - TrafficRL - INFO -     Reward: 414228.19 ± 146561.05
+2025-03-06 16:15:35,069 - TrafficRL - INFO -     Waiting Time: 118.98
+2025-03-06 16:15:35,069 - TrafficRL - INFO -     Throughput: 12184889.42
+2025-03-06 16:15:35,069 - TrafficRL - INFO -   TrainedDQN_rush_hour:
+2025-03-06 16:15:35,069 - TrafficRL - INFO -     Reward: 102270.83 ± 21975.98
+2025-03-06 16:15:35,069 - TrafficRL - INFO -     Waiting Time: 223.39
+2025-03-06 16:15:35,070 - TrafficRL - INFO -     Throughput: 9210352.31
+2025-03-06 16:15:35,070 - TrafficRL - INFO -   TrainedDQN_weekend:
+2025-03-06 16:15:35,070 - TrafficRL - INFO -     Reward: 549818.29 ± 46599.55
+2025-03-06 16:15:35,070 - TrafficRL - INFO -     Waiting Time: 80.71
+2025-03-06 16:15:35,070 - TrafficRL - INFO -     Throughput: 13604102.28
+2025-03-06 16:15:36,482 - TrafficRL.Train - INFO - Episode 245/500 - Reward: 994.46, Avg Reward: 993.04, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:39,306 - TrafficRL.Train - INFO - Episode 246/500 - Reward: 989.88, Avg Reward: 992.97, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:42,002 - TrafficRL.Train - INFO - Episode 247/500 - Reward: 989.17, Avg Reward: 992.91, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:44,790 - TrafficRL.Train - INFO - Episode 248/500 - Reward: 984.80, Avg Reward: 992.80, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:47,457 - TrafficRL.Train - INFO - Episode 249/500 - Reward: 991.55, Avg Reward: 992.82, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:50,218 - TrafficRL.Train - INFO - Episode 250/500 - Reward: 992.04, Avg Reward: 992.83, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:50,232 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_250.pth
+2025-03-06 16:15:50,232 - TrafficRL.Train - INFO - Model checkpoint saved at episode 250
+2025-03-06 16:15:52,900 - TrafficRL.Train - INFO - Episode 251/500 - Reward: 987.78, Avg Reward: 992.78, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:55,516 - TrafficRL.Train - INFO - Episode 252/500 - Reward: 988.23, Avg Reward: 992.72, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:15:58,273 - TrafficRL.Train - INFO - Episode 253/500 - Reward: 993.38, Avg Reward: 992.70, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:16:00,954 - TrafficRL.Train - INFO - Episode 254/500 - Reward: 987.60, Avg Reward: 992.61, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:16:03,685 - TrafficRL.Train - INFO - Episode 255/500 - Reward: 990.94, Avg Reward: 992.60, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:16:06,344 - TrafficRL.Train - INFO - Episode 256/500 - Reward: 991.15, Avg Reward: 992.61, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:16:09,119 - TrafficRL.Train - INFO - Episode 257/500 - Reward: 988.73, Avg Reward: 992.54, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:16:11,827 - TrafficRL.Train - INFO - Episode 258/500 - Reward: 993.39, Avg Reward: 992.58, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:16:14,562 - TrafficRL.Train - INFO - Episode 259/500 - Reward: 994.60, Avg Reward: 992.58, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:16:17,248 - TrafficRL.Train - INFO - Episode 260/500 - Reward: 993.94, Avg Reward: 992.59, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:16:17,248 - TrafficRL.Train - INFO - Evaluating agent at episode 260...
+2025-03-06 16:16:18,579 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 559163.98
+2025-03-06 16:16:18,579 - TrafficRL.Train - INFO - No improvement for 2 evaluations
+2025-03-06 16:16:21,239 - TrafficRL.Train - INFO - Episode 261/500 - Reward: 991.64, Avg Reward: 992.58, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-06 16:18:12,884 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:18:12,885 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:18:12,885 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:18:12,885 - TrafficRL - INFO -   Random: random
+2025-03-06 16:18:12,885 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:18:12,885 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:18:12,885 - TrafficRL - INFO -   TrainedDQN: results/training/best_model.pth
+2025-03-06 16:18:12,896 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:18:12,896 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:18:13,306 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:18:13,307 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:18:13,307 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:18:13,308 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:18:13,308 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:18:13,312 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:18:13,312 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:18:13,312 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:18:13,313 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:18:13,313 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:18:13,317 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:18:13,317 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:18:13,317 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:18:13,318 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:18:13,318 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:18:13,322 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:18:13,323 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:18:13,323 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:18:13,324 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:18:13,324 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:18:13,328 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:18:13,328 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:18:13,328 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:18:13,329 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:18:13,329 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:18:13,333 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:18:13,333 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:18:13,333 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:18:13,333 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:18:13,333 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:18:13,338 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:18:13,338 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:18:13,338 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:18:13,338 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:18:13,338 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:18:13,343 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:18:13,343 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:18:13,343 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:18:13,343 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:18:13,343 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:18:13,348 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:18:13,348 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:18:13,348 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:18:13,348 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:18:13,348 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:18:13,352 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:18:13,359 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:18:17,174 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on uniform:
+2025-03-06 16:18:17,174 - TrafficRL.Benchmark - INFO -   Average Reward: 414228.19 ± 146561.05
+2025-03-06 16:18:17,174 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 118.98
+2025-03-06 16:18:17,174 - TrafficRL.Benchmark - INFO -   Average Throughput: 12184889.42
+2025-03-06 16:18:17,174 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=41.7%, EW=58.3%
+2025-03-06 16:18:17,175 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:18:17,175 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:18:17,179 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:18:17,185 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:18:20,833 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on rush_hour:
+2025-03-06 16:18:20,833 - TrafficRL.Benchmark - INFO -   Average Reward: 102270.83 ± 21975.98
+2025-03-06 16:18:20,833 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 223.39
+2025-03-06 16:18:20,833 - TrafficRL.Benchmark - INFO -   Average Throughput: 9210352.31
+2025-03-06 16:18:20,833 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=10.4%, EW=89.6%
+2025-03-06 16:18:20,834 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:18:20,834 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:18:20,838 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:18:20,844 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:18:24,676 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on weekend:
+2025-03-06 16:18:24,677 - TrafficRL.Benchmark - INFO -   Average Reward: 549818.29 ± 46599.55
+2025-03-06 16:18:24,677 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 80.71
+2025-03-06 16:18:24,677 - TrafficRL.Benchmark - INFO -   Average Throughput: 13604102.28
+2025-03-06 16:18:24,677 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=33.9%, EW=66.1%
+2025-03-06 16:18:24,681 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_161812/benchmark_results.json
+2025-03-06 16:18:27,240 - TrafficRL.Benchmark - INFO - Benchmark visualizations created in results/benchmark/benchmark_20250306_161812/plots
+2025-03-06 16:18:27,240 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:18:27,240 - TrafficRL - INFO -   TrainedDQN_uniform:
+2025-03-06 16:18:27,240 - TrafficRL - INFO -     Reward: 414228.19 ± 146561.05
+2025-03-06 16:18:27,240 - TrafficRL - INFO -     Waiting Time: 118.98
+2025-03-06 16:18:27,240 - TrafficRL - INFO -     Throughput: 12184889.42
+2025-03-06 16:18:27,240 - TrafficRL - INFO -   TrainedDQN_rush_hour:
+2025-03-06 16:18:27,240 - TrafficRL - INFO -     Reward: 102270.83 ± 21975.98
+2025-03-06 16:18:27,240 - TrafficRL - INFO -     Waiting Time: 223.39
+2025-03-06 16:18:27,240 - TrafficRL - INFO -     Throughput: 9210352.31
+2025-03-06 16:18:27,240 - TrafficRL - INFO -   TrainedDQN_weekend:
+2025-03-06 16:18:27,240 - TrafficRL - INFO -     Reward: 549818.29 ± 46599.55
+2025-03-06 16:18:27,240 - TrafficRL - INFO -     Waiting Time: 80.71
+2025-03-06 16:18:27,240 - TrafficRL - INFO -     Throughput: 13604102.28
+2025-03-06 16:20:16,867 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:20:16,868 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:20:21,930 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:20:21,931 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:21:22,051 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:21:22,052 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:21:22,052 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:21:22,052 - TrafficRL - INFO -   Random: random
+2025-03-06 16:21:22,052 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:21:22,052 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:21:22,052 - TrafficRL - INFO -   TrainedDQN: results/training/best_model.pth
+2025-03-06 16:21:22,064 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:21:22,064 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:21:22,498 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:21:22,498 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:21:22,498 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:21:22,499 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:21:22,499 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:21:22,503 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:21:22,503 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:21:22,503 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:21:22,504 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:21:22,504 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:21:22,509 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:21:22,509 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:21:22,509 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:21:22,509 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:21:22,509 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:21:22,514 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:21:22,515 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:21:22,515 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:21:22,515 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:21:22,515 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:21:22,520 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:21:22,520 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:21:22,520 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:21:22,520 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:21:22,520 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:21:22,525 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:21:22,525 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:21:22,525 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:21:22,525 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:21:22,526 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:21:22,530 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:21:22,531 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:21:22,531 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:21:22,531 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:21:22,531 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:21:22,536 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:21:22,536 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:21:22,536 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:21:22,537 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:21:22,537 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:21:22,541 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:21:22,541 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:21:22,541 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:21:22,542 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:21:22,542 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:21:22,547 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:21:22,552 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:21:26,373 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on uniform:
+2025-03-06 16:21:26,373 - TrafficRL.Benchmark - INFO -   Average Reward: 414228.19 ± 146561.05
+2025-03-06 16:21:26,373 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 118.98
+2025-03-06 16:21:26,373 - TrafficRL.Benchmark - INFO -   Average Throughput: 12184889.42
+2025-03-06 16:21:26,373 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=41.7%, EW=58.3%
+2025-03-06 16:21:26,374 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:21:26,374 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:21:26,379 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:21:26,385 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:21:30,080 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on rush_hour:
+2025-03-06 16:21:30,080 - TrafficRL.Benchmark - INFO -   Average Reward: 102270.83 ± 21975.98
+2025-03-06 16:21:30,080 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 223.39
+2025-03-06 16:21:30,080 - TrafficRL.Benchmark - INFO -   Average Throughput: 9210352.31
+2025-03-06 16:21:30,080 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=10.4%, EW=89.6%
+2025-03-06 16:21:30,080 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:21:30,080 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:21:30,085 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:21:30,091 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:21:33,868 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on weekend:
+2025-03-06 16:21:33,868 - TrafficRL.Benchmark - INFO -   Average Reward: 549818.29 ± 46599.55
+2025-03-06 16:21:33,868 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 80.71
+2025-03-06 16:21:33,868 - TrafficRL.Benchmark - INFO -   Average Throughput: 13604102.28
+2025-03-06 16:21:33,868 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=33.9%, EW=66.1%
+2025-03-06 16:21:33,872 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_162122/benchmark_results.json
+2025-03-06 16:21:36,431 - TrafficRL.Benchmark - INFO - Benchmark visualizations created in results/benchmark/benchmark_20250306_162122/plots
+2025-03-06 16:21:36,432 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:21:36,432 - TrafficRL - INFO -   TrainedDQN_uniform:
+2025-03-06 16:21:36,432 - TrafficRL - INFO -     Reward: 414228.19 ± 146561.05
+2025-03-06 16:21:36,432 - TrafficRL - INFO -     Waiting Time: 118.98
+2025-03-06 16:21:36,432 - TrafficRL - INFO -     Throughput: 12184889.42
+2025-03-06 16:21:36,432 - TrafficRL - INFO -   TrainedDQN_rush_hour:
+2025-03-06 16:21:36,432 - TrafficRL - INFO -     Reward: 102270.83 ± 21975.98
+2025-03-06 16:21:36,432 - TrafficRL - INFO -     Waiting Time: 223.39
+2025-03-06 16:21:36,432 - TrafficRL - INFO -     Throughput: 9210352.31
+2025-03-06 16:21:36,432 - TrafficRL - INFO -   TrainedDQN_weekend:
+2025-03-06 16:21:36,432 - TrafficRL - INFO -     Reward: 549818.29 ± 46599.55
+2025-03-06 16:21:36,432 - TrafficRL - INFO -     Waiting Time: 80.71
+2025-03-06 16:21:36,432 - TrafficRL - INFO -     Throughput: 13604102.28
+2025-03-06 16:22:42,389 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:22:42,389 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:22:42,389 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:22:42,389 - TrafficRL - INFO -   Random: random
+2025-03-06 16:22:42,389 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:22:42,389 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:22:42,401 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:42,401 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:42,827 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:42,827 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:22:42,827 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:22:42,828 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:42,828 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:42,833 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:42,833 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:22:42,833 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:22:42,834 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:42,834 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:42,838 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:42,838 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:22:42,838 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:22:42,838 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:42,838 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:42,843 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:42,844 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:22:42,844 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:22:42,844 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:42,844 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:42,848 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:42,849 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:22:42,849 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:22:42,849 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:42,849 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:42,853 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:42,853 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:22:42,853 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:22:42,854 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:42,854 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:42,858 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:42,859 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:22:42,859 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:22:42,859 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:42,859 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:42,864 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:42,864 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:22:42,864 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:22:42,864 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:42,864 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:42,868 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:42,868 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:22:42,868 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:22:42,872 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_162242/benchmark_results.json
+2025-03-06 16:22:42,961 - TrafficRL.Benchmark - ERROR - Error creating benchmark visualizations: float division by zero
+2025-03-06 16:22:42,961 - TrafficRL.Benchmark - ERROR - Traceback (most recent call last):
+  File "/Users/alfonsomateos/Documents/Polytechnique/M1.2/Autonomous Agents/TrafficRL/traffic_rl/benchmark.py", line 293, in create_benchmark_visualizations
+    width = 0.8 / len(agents)
+            ~~~~^~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+
+2025-03-06 16:22:42,962 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:22:55,426 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:22:55,428 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:22:55,428 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:22:55,428 - TrafficRL - INFO -   Random: random
+2025-03-06 16:22:55,428 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:22:55,428 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:22:55,439 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:55,440 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:55,852 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:55,853 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:22:55,853 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:22:55,853 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:55,853 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:55,858 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:55,858 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:22:55,858 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:22:55,858 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:55,858 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:55,863 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:55,863 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:22:55,863 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:22:55,864 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:55,864 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:55,868 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:55,869 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:22:55,869 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:22:55,870 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:55,870 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:55,874 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:55,874 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:22:55,874 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:22:55,875 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:55,875 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:55,879 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:55,879 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:22:55,879 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:22:55,880 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:55,880 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:55,884 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:55,885 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:22:55,885 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:22:55,885 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:55,885 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:55,890 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:55,890 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:22:55,890 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:22:55,890 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:22:55,890 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:22:55,895 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:22:55,895 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:22:55,895 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:22:55,899 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_162255/benchmark_results.json
+2025-03-06 16:22:55,987 - TrafficRL.Benchmark - ERROR - Error creating benchmark visualizations: float division by zero
+2025-03-06 16:22:55,987 - TrafficRL.Benchmark - ERROR - Traceback (most recent call last):
+  File "/Users/alfonsomateos/Documents/Polytechnique/M1.2/Autonomous Agents/TrafficRL/traffic_rl/benchmark.py", line 293, in create_benchmark_visualizations
+    width = 0.8 / len(agents)
+            ~~~~^~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+
+2025-03-06 16:22:55,987 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:23:04,363 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:23:04,363 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:23:04,363 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:23:04,363 - TrafficRL - INFO -   Random: random
+2025-03-06 16:23:04,363 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:23:04,363 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:23:04,375 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:04,375 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:04,792 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:04,792 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:23:04,792 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:23:04,793 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:04,793 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:04,797 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:04,797 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:23:04,797 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:23:04,798 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:04,798 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:04,802 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:04,802 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:23:04,802 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:23:04,803 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:04,803 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:04,808 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:04,809 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:23:04,809 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:23:04,809 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:04,809 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:04,813 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:04,814 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:23:04,814 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:23:04,814 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:04,814 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:04,818 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:04,818 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:23:04,818 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:23:04,819 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:04,819 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:04,823 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:04,823 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:23:04,823 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:23:04,824 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:04,824 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:04,828 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:04,828 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:23:04,828 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:23:04,829 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:04,829 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:04,833 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:04,833 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:23:04,833 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:23:04,838 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_162304/benchmark_results.json
+2025-03-06 16:23:04,928 - TrafficRL.Benchmark - ERROR - Error creating benchmark visualizations: float division by zero
+2025-03-06 16:23:04,928 - TrafficRL.Benchmark - ERROR - Traceback (most recent call last):
+  File "/Users/alfonsomateos/Documents/Polytechnique/M1.2/Autonomous Agents/TrafficRL/traffic_rl/benchmark.py", line 293, in create_benchmark_visualizations
+    width = 0.8 / len(agents)
+            ~~~~^~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+
+2025-03-06 16:23:04,929 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:23:24,424 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:23:24,425 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:23:24,425 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:23:24,425 - TrafficRL - INFO -   Random: random
+2025-03-06 16:23:24,425 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:23:24,425 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:23:24,437 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:24,437 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:24,856 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:24,856 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:23:24,856 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:23:24,857 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:24,857 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:24,861 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:24,861 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:23:24,862 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:23:24,862 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:24,862 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:24,866 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:24,867 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:23:24,867 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:23:24,867 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:24,867 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:24,872 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:24,873 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:23:24,873 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:23:24,873 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:24,873 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:24,877 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:24,878 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:23:24,878 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:23:24,878 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:24,878 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:24,882 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:24,883 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:23:24,883 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:23:24,883 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:24,883 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:24,887 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:24,887 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:23:24,887 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:23:24,888 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:24,888 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:24,892 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:24,893 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:23:24,893 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:23:24,893 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:24,893 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:24,897 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:24,897 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:23:24,897 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:23:24,908 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_162324/benchmark_results.json
+2025-03-06 16:23:25,005 - TrafficRL.Benchmark - ERROR - Error creating benchmark visualizations: float division by zero
+2025-03-06 16:23:25,005 - TrafficRL.Benchmark - ERROR - Traceback (most recent call last):
+  File "/Users/alfonsomateos/Documents/Polytechnique/M1.2/Autonomous Agents/TrafficRL/traffic_rl/benchmark.py", line 293, in create_benchmark_visualizations
+    width = 0.8 / len(agents)
+            ~~~~^~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+
+2025-03-06 16:23:25,006 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:23:50,009 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:23:50,010 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:23:50,010 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:23:50,010 - TrafficRL - INFO -   Random: random
+2025-03-06 16:23:50,010 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:23:50,010 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:23:50,022 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:50,022 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:50,431 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:50,431 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:23:50,431 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:23:50,432 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:50,432 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:50,436 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:50,437 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:23:50,437 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:23:50,437 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:50,437 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:50,441 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:50,442 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:23:50,442 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:23:50,442 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:50,442 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:50,447 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:50,448 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:23:50,448 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:23:50,448 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:50,448 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:50,453 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:50,453 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:23:50,453 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:23:50,453 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:50,453 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:50,457 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:50,457 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:23:50,458 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:23:50,458 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:50,458 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:50,462 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:50,462 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:23:50,462 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:23:50,462 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:50,462 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:50,467 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:50,467 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:23:50,467 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:23:50,467 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:23:50,467 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:23:50,471 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:23:50,471 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:23:50,471 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:23:50,476 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_162350/benchmark_results.json
+2025-03-06 16:23:50,563 - TrafficRL.Benchmark - ERROR - Error creating benchmark visualizations: float division by zero
+2025-03-06 16:23:50,563 - TrafficRL.Benchmark - ERROR - Traceback (most recent call last):
+  File "/Users/alfonsomateos/Documents/Polytechnique/M1.2/Autonomous Agents/TrafficRL/traffic_rl/benchmark.py", line 293, in create_benchmark_visualizations
+    width = 0.8 / len(agents)
+            ~~~~^~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+
+2025-03-06 16:23:50,564 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:24:06,284 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:24:06,285 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:24:06,285 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:24:06,285 - TrafficRL - INFO -   Random: random
+2025-03-06 16:24:06,285 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:24:06,285 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:24:06,297 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:06,297 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:06,721 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:06,721 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:24:06,721 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:24:06,722 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:06,722 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:06,727 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:06,727 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:24:06,727 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:24:06,727 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:06,727 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:06,732 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:06,732 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:24:06,732 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:24:06,733 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:06,733 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:06,737 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:06,738 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:24:06,738 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:24:06,738 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:06,738 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:06,743 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:06,743 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:24:06,743 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:24:06,743 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:06,743 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:06,747 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:06,747 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:24:06,747 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:24:06,748 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:06,748 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:06,752 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:06,753 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:24:06,753 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:24:06,753 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:06,753 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:06,759 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:06,759 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:24:06,759 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:24:06,759 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:06,759 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:06,764 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:06,764 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:24:06,764 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:24:06,768 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_162406/benchmark_results.json
+2025-03-06 16:24:06,859 - TrafficRL.Benchmark - ERROR - Error creating benchmark visualizations: float division by zero
+2025-03-06 16:24:06,859 - TrafficRL.Benchmark - ERROR - Traceback (most recent call last):
+  File "/Users/alfonsomateos/Documents/Polytechnique/M1.2/Autonomous Agents/TrafficRL/traffic_rl/benchmark.py", line 293, in create_benchmark_visualizations
+    width = 0.8 / len(agents)
+            ~~~~^~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+
+2025-03-06 16:24:06,859 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:24:32,293 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:24:32,294 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:24:32,294 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:24:32,294 - TrafficRL - INFO -   Random: random
+2025-03-06 16:24:32,294 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:24:32,294 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:24:32,305 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:32,305 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:32,752 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:32,753 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:24:32,753 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:24:32,753 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:32,753 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:32,758 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:32,758 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:24:32,758 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:24:32,758 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:32,758 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:32,763 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:32,763 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:24:32,763 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:24:32,763 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:32,763 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:32,768 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:32,769 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:24:32,769 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:24:32,769 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:32,770 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:32,774 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:32,774 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:24:32,774 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:24:32,774 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:32,775 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:32,779 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:32,779 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:24:32,779 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:24:32,780 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:32,780 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:32,784 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:32,784 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:24:32,784 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:24:32,785 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:32,785 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:32,789 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:32,789 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:24:32,789 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:24:32,790 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:32,790 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:32,794 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:32,795 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:24:32,795 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:24:32,799 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_162432/benchmark_results.json
+2025-03-06 16:24:32,886 - TrafficRL.Benchmark - ERROR - Error creating benchmark visualizations: float division by zero
+2025-03-06 16:24:32,887 - TrafficRL.Benchmark - ERROR - Traceback (most recent call last):
+  File "/Users/alfonsomateos/Documents/Polytechnique/M1.2/Autonomous Agents/TrafficRL/traffic_rl/benchmark.py", line 294, in create_benchmark_visualizations
+    width = 0.8 / len(agents)
+            ~~~~^~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+
+2025-03-06 16:24:32,887 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:24:44,478 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:24:44,478 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:24:44,478 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:24:44,478 - TrafficRL - INFO -   Random: random
+2025-03-06 16:24:44,478 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:24:44,478 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:24:44,490 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:44,490 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:44,904 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:44,904 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:24:44,904 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:24:44,905 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:44,905 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:44,909 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:44,909 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:24:44,909 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:24:44,910 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:44,910 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:44,914 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:44,914 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:24:44,914 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:24:44,915 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:44,915 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:44,919 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:44,920 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:24:44,920 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:24:44,920 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:44,921 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:44,925 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:44,925 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:24:44,925 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:24:44,925 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:44,925 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:44,929 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:44,930 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:24:44,930 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:24:44,930 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:44,930 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:44,935 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:44,935 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:24:44,935 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:24:44,935 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:44,935 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:44,939 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:44,940 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:24:44,940 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:24:44,940 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:24:44,940 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:24:44,945 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:24:44,945 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:24:44,945 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:24:44,949 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_162444/benchmark_results.json
+2025-03-06 16:24:45,039 - TrafficRL.Benchmark - ERROR - Error creating benchmark visualizations: float division by zero
+2025-03-06 16:24:45,039 - TrafficRL.Benchmark - ERROR - Traceback (most recent call last):
+  File "/Users/alfonsomateos/Documents/Polytechnique/M1.2/Autonomous Agents/TrafficRL/traffic_rl/benchmark.py", line 294, in create_benchmark_visualizations
+    width = 0.8 / len(agents)
+            ~~~~^~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+
+2025-03-06 16:24:45,039 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:26:14,825 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:26:14,825 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:26:14,826 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:26:14,826 - TrafficRL - INFO -   Random: random
+2025-03-06 16:26:14,826 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:26:14,826 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:26:14,837 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:26:14,837 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:26:15,266 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:26:15,266 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:26:15,266 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:26:15,267 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:26:15,267 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:26:15,272 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:26:15,272 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:26:15,272 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:26:15,272 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:26:15,272 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:26:15,276 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:26:15,277 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:26:15,277 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:26:15,277 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:26:15,277 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:26:15,281 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:26:15,282 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:26:15,283 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:26:15,283 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:26:15,283 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:26:15,287 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:26:15,288 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:26:15,288 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:26:15,288 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:26:15,288 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:26:15,292 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:26:15,293 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:26:15,293 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:26:15,293 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:26:15,293 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:26:15,298 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:26:15,298 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:26:15,298 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:26:15,298 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:26:15,298 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:26:15,302 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:26:15,303 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:26:15,303 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:26:15,303 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:26:15,303 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:26:15,308 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:26:15,308 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:26:15,308 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:26:15,311 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_162614/benchmark_results.json
+2025-03-06 16:26:15,404 - TrafficRL.Benchmark - ERROR - Error creating benchmark visualizations: float division by zero
+2025-03-06 16:26:15,404 - TrafficRL.Benchmark - ERROR - Traceback (most recent call last):
+  File "/Users/alfonsomateos/Documents/Polytechnique/M1.2/Autonomous Agents/TrafficRL/traffic_rl/benchmark.py", line 294, in create_benchmark_visualizations
+    width = 0.8 / len(agents)
+            ~~~~^~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+
+2025-03-06 16:26:15,404 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:27:15,007 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:27:15,008 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:27:15,008 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:27:15,008 - TrafficRL - INFO -   Random: random
+2025-03-06 16:27:15,008 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:27:15,008 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:27:15,019 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:15,019 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:15,456 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:15,456 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:27:15,456 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:27:15,457 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:15,457 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:15,462 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:15,462 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:27:15,462 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:27:15,462 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:15,462 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:15,467 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:15,467 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:27:15,467 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:27:15,467 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:15,467 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:15,471 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:15,472 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:27:15,473 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:27:15,473 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:15,473 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:15,478 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:15,478 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:27:15,478 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:27:15,478 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:15,478 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:15,483 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:15,483 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:27:15,483 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:27:15,484 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:15,484 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:15,488 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:15,488 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:27:15,488 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:27:15,488 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:15,488 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:15,493 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:15,493 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:27:15,493 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:27:15,493 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:15,493 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:15,498 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:15,498 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:27:15,498 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:27:15,502 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_162715/benchmark_results.json
+2025-03-06 16:27:15,596 - TrafficRL.Benchmark - ERROR - Error creating benchmark visualizations: float division by zero
+2025-03-06 16:27:15,596 - TrafficRL.Benchmark - ERROR - Traceback (most recent call last):
+  File "/Users/alfonsomateos/Documents/Polytechnique/M1.2/Autonomous Agents/TrafficRL/traffic_rl/benchmark.py", line 293, in create_benchmark_visualizations
+    width = 0.8 / len(agents)
+            ~~~~^~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+
+2025-03-06 16:27:15,596 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:27:53,070 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:27:53,070 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:27:53,070 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:27:53,070 - TrafficRL - INFO -   Random: random
+2025-03-06 16:27:53,070 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:27:53,070 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:27:53,082 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:53,082 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:53,510 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:53,510 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:27:53,510 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:27:53,511 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:53,511 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:53,516 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:53,516 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:27:53,516 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:27:53,517 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:53,517 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:53,521 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:53,521 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:27:53,521 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:27:53,522 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:53,522 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:53,526 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:53,527 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:27:53,527 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:27:53,527 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:53,527 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:53,532 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:53,532 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:27:53,532 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:27:53,533 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:53,533 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:53,537 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:53,537 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:27:53,537 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:27:53,538 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:53,538 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:53,542 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:53,542 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:27:53,542 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:27:53,542 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:53,542 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:53,547 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:53,547 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:27:53,547 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:27:53,547 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:27:53,547 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:27:53,552 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:27:53,552 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:27:53,552 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:27:53,557 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_162753/benchmark_results.json
+2025-03-06 16:27:53,650 - TrafficRL.Benchmark - ERROR - Error creating benchmark visualizations: float division by zero
+2025-03-06 16:27:53,651 - TrafficRL.Benchmark - ERROR - Traceback (most recent call last):
+  File "/Users/alfonsomateos/Documents/Polytechnique/M1.2/Autonomous Agents/TrafficRL/traffic_rl/benchmark.py", line 294, in create_benchmark_visualizations
+    width = 0.8 / len(agents)
+            ~~~~^~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+
+2025-03-06 16:27:53,651 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:28:05,374 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:28:05,375 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:28:05,375 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:28:05,375 - TrafficRL - INFO -   Random: random
+2025-03-06 16:28:05,375 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:28:05,375 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:28:05,387 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:28:05,387 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:28:05,819 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:28:05,819 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:28:05,819 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:28:05,820 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:28:05,820 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:28:05,824 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:28:05,824 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:28:05,824 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:28:05,825 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:28:05,825 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:28:05,830 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:28:05,830 - TrafficRL.Agent - WARNING - Model file random not found
+2025-03-06 16:28:05,830 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'Random' from random
+2025-03-06 16:28:05,830 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:28:05,830 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:28:05,834 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:28:05,835 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:28:05,835 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:28:05,836 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:28:05,836 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:28:05,840 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:28:05,840 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:28:05,841 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:28:05,841 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:28:05,841 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:28:05,845 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:28:05,845 - TrafficRL.Agent - WARNING - Model file fixed not found
+2025-03-06 16:28:05,845 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'FixedTiming' from fixed
+2025-03-06 16:28:05,846 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:28:05,846 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:28:05,850 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:28:05,851 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:28:05,851 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:28:05,851 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:28:05,851 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:28:05,855 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:28:05,855 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:28:05,855 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:28:05,856 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:28:05,856 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:28:05,861 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:28:05,861 - TrafficRL.Agent - WARNING - Model file adaptive not found
+2025-03-06 16:28:05,861 - TrafficRL.Benchmark - ERROR - Failed to load model for agent 'AdaptiveTiming' from adaptive
+2025-03-06 16:28:05,865 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_162805/benchmark_results.json
+2025-03-06 16:28:05,959 - TrafficRL.Benchmark - ERROR - Error creating benchmark visualizations: float division by zero
+2025-03-06 16:28:05,959 - TrafficRL.Benchmark - ERROR - Traceback (most recent call last):
+  File "/Users/alfonsomateos/Documents/Polytechnique/M1.2/Autonomous Agents/TrafficRL/traffic_rl/benchmark.py", line 294, in create_benchmark_visualizations
+    width = 0.8 / len(agents)
+            ~~~~^~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+
+2025-03-06 16:28:05,959 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:30:05,180 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:30:05,181 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:30:05,181 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:30:05,181 - TrafficRL - INFO -   Random: random
+2025-03-06 16:30:05,181 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:30:05,181 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:30:05,181 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-06 16:30:05,181 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-06 16:30:05,181 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-06 16:30:05,181 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-06 16:32:25,725 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:32:25,725 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:32:25,726 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:32:25,726 - TrafficRL - INFO -   Random: random
+2025-03-06 16:32:25,726 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:32:25,726 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:32:25,726 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-06 16:32:25,726 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-06 16:32:25,726 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-06 16:32:25,726 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-06 16:32:27,037 - TrafficRL.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-06 16:32:27,037 - TrafficRL.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-06 16:32:27,037 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-06 16:32:27,037 - TrafficRL.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-06 16:32:27,037 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-06 16:32:28,251 - TrafficRL.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-06 16:32:28,251 - TrafficRL.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-06 16:32:28,252 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-06 16:32:28,252 - TrafficRL.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-06 16:32:28,252 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-06 16:32:29,542 - TrafficRL.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-06 16:32:29,543 - TrafficRL.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-06 16:32:29,543 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-06 16:32:29,543 - TrafficRL.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-06 16:32:29,543 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-06 16:32:30,809 - TrafficRL.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-06 16:32:30,810 - TrafficRL.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-06 16:32:30,810 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-06 16:32:30,810 - TrafficRL.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-06 16:32:30,810 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-06 16:32:32,012 - TrafficRL.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-06 16:32:32,012 - TrafficRL.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-06 16:32:32,012 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-06 16:32:32,012 - TrafficRL.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-06 16:32:32,012 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-06 16:32:33,356 - TrafficRL.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-06 16:32:33,356 - TrafficRL.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-06 16:32:33,356 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-06 16:32:33,356 - TrafficRL.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-06 16:32:33,356 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-06 16:32:34,665 - TrafficRL.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-06 16:32:34,665 - TrafficRL.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-06 16:32:34,665 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-06 16:32:34,665 - TrafficRL.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-06 16:32:34,665 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-06 16:32:35,926 - TrafficRL.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-06 16:32:35,926 - TrafficRL.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-06 16:32:35,926 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-06 16:32:35,926 - TrafficRL.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-06 16:32:35,926 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-06 16:32:37,187 - TrafficRL.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-06 16:32:37,188 - TrafficRL.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-06 16:32:37,188 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-06 16:32:37,188 - TrafficRL.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-06 16:32:37,188 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-06 16:32:37,188 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:32:37,188 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:32:37,611 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:32:37,618 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:32:40,193 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on uniform:
+2025-03-06 16:32:40,193 - TrafficRL.Benchmark - INFO -   Average Reward: 417194.73 ± 166931.45
+2025-03-06 16:32:40,193 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 118.55
+2025-03-06 16:32:40,193 - TrafficRL.Benchmark - INFO -   Average Throughput: 12220597.59
+2025-03-06 16:32:40,193 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=43.4%, EW=56.6%
+2025-03-06 16:32:40,194 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:32:40,194 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:32:40,198 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:32:40,204 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:32:42,624 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on rush_hour:
+2025-03-06 16:32:42,624 - TrafficRL.Benchmark - INFO -   Average Reward: 108445.99 ± 23929.26
+2025-03-06 16:32:42,624 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 222.37
+2025-03-06 16:32:42,624 - TrafficRL.Benchmark - INFO -   Average Throughput: 9301348.74
+2025-03-06 16:32:42,624 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=10.3%, EW=89.7%
+2025-03-06 16:32:42,625 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:32:42,625 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:32:42,630 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:32:42,635 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:32:45,146 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on weekend:
+2025-03-06 16:32:45,146 - TrafficRL.Benchmark - INFO -   Average Reward: 561659.41 ± 6898.47
+2025-03-06 16:32:45,146 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 77.62
+2025-03-06 16:32:45,146 - TrafficRL.Benchmark - INFO -   Average Throughput: 13740053.80
+2025-03-06 16:32:45,146 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=33.6%, EW=66.4%
+2025-03-06 16:32:45,151 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_163225/benchmark_results.json
+2025-03-06 16:32:47,964 - TrafficRL.Benchmark - INFO - Benchmark visualizations created in results/benchmark/benchmark_20250306_163225/plots
+2025-03-06 16:32:47,965 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:33:17,313 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:33:17,314 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:33:17,314 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:33:17,314 - TrafficRL - INFO -   Random: random
+2025-03-06 16:33:17,314 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:33:17,314 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:33:17,314 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-06 16:33:17,314 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-06 16:33:17,314 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-06 16:33:17,314 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-06 16:33:18,604 - TrafficRL.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-06 16:33:18,604 - TrafficRL.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-06 16:33:18,604 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-06 16:33:18,604 - TrafficRL.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-06 16:33:18,604 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-06 16:33:19,820 - TrafficRL.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-06 16:33:19,820 - TrafficRL.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-06 16:33:19,820 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-06 16:33:19,820 - TrafficRL.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-06 16:33:19,820 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-06 16:33:21,087 - TrafficRL.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-06 16:33:21,087 - TrafficRL.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-06 16:33:21,087 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-06 16:33:21,087 - TrafficRL.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-06 16:33:21,087 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-06 16:33:22,393 - TrafficRL.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-06 16:33:22,393 - TrafficRL.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-06 16:33:22,393 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-06 16:33:22,393 - TrafficRL.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-06 16:33:22,393 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-06 16:33:23,628 - TrafficRL.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-06 16:33:23,628 - TrafficRL.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-06 16:33:23,628 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-06 16:33:23,628 - TrafficRL.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-06 16:33:23,628 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-06 16:33:24,929 - TrafficRL.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-06 16:33:24,929 - TrafficRL.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-06 16:33:24,929 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-06 16:33:24,929 - TrafficRL.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-06 16:33:24,929 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-06 16:33:26,259 - TrafficRL.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-06 16:33:26,260 - TrafficRL.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-06 16:33:26,260 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-06 16:33:26,260 - TrafficRL.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-06 16:33:26,260 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-06 16:33:27,551 - TrafficRL.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-06 16:33:27,551 - TrafficRL.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-06 16:33:27,551 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-06 16:33:27,551 - TrafficRL.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-06 16:33:27,551 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-06 16:33:28,879 - TrafficRL.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-06 16:33:28,879 - TrafficRL.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-06 16:33:28,879 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-06 16:33:28,879 - TrafficRL.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-06 16:33:28,879 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-06 16:33:28,880 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:33:28,880 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:33:29,323 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:33:29,330 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:33:31,859 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on uniform:
+2025-03-06 16:33:31,859 - TrafficRL.Benchmark - INFO -   Average Reward: 417194.73 ± 166931.45
+2025-03-06 16:33:31,859 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 118.55
+2025-03-06 16:33:31,859 - TrafficRL.Benchmark - INFO -   Average Throughput: 12220597.59
+2025-03-06 16:33:31,859 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=43.4%, EW=56.6%
+2025-03-06 16:33:31,860 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:33:31,860 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:33:31,865 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:33:31,870 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:33:34,331 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on rush_hour:
+2025-03-06 16:33:34,332 - TrafficRL.Benchmark - INFO -   Average Reward: 108445.99 ± 23929.26
+2025-03-06 16:33:34,332 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 222.37
+2025-03-06 16:33:34,332 - TrafficRL.Benchmark - INFO -   Average Throughput: 9301348.74
+2025-03-06 16:33:34,332 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=10.3%, EW=89.7%
+2025-03-06 16:33:34,332 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:33:34,333 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:33:34,337 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:33:34,342 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:33:36,886 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on weekend:
+2025-03-06 16:33:36,886 - TrafficRL.Benchmark - INFO -   Average Reward: 561659.41 ± 6898.47
+2025-03-06 16:33:36,886 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 77.62
+2025-03-06 16:33:36,886 - TrafficRL.Benchmark - INFO -   Average Throughput: 13740053.80
+2025-03-06 16:33:36,886 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=33.6%, EW=66.4%
+2025-03-06 16:33:36,891 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_163317/benchmark_results.json
+2025-03-06 16:33:39,721 - TrafficRL.Benchmark - INFO - Benchmark visualizations created in results/benchmark/benchmark_20250306_163317/plots
+2025-03-06 16:33:39,722 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:33:39,722 - TrafficRL - INFO -   FixedTiming_uniform: Reward=262140.62, Waiting=175.25
+2025-03-06 16:33:39,722 - TrafficRL - INFO -   FixedTiming_rush_hour: Reward=31147.79, Waiting=237.58
+2025-03-06 16:33:39,722 - TrafficRL - INFO -   FixedTiming_weekend: Reward=296203.02, Waiting=149.49
+2025-03-06 16:33:39,722 - TrafficRL - INFO -   AdaptiveTiming_uniform: Reward=248331.34, Waiting=184.56
+2025-03-06 16:33:39,722 - TrafficRL - INFO -   AdaptiveTiming_rush_hour: Reward=59717.62, Waiting=231.81
+2025-03-06 16:33:39,722 - TrafficRL - INFO -   AdaptiveTiming_weekend: Reward=234542.63, Waiting=162.97
+2025-03-06 16:33:39,722 - TrafficRL - INFO -   Random_uniform: Reward=251697.90, Waiting=173.80
+2025-03-06 16:33:39,722 - TrafficRL - INFO -   Random_rush_hour: Reward=73914.21, Waiting=230.92
+2025-03-06 16:33:39,722 - TrafficRL - INFO -   Random_weekend: Reward=237832.00, Waiting=165.40
+2025-03-06 16:33:39,722 - TrafficRL - INFO -   TrainedDQN_uniform: Reward=417194.73, Waiting=118.55
+2025-03-06 16:33:39,722 - TrafficRL - INFO -   TrainedDQN_rush_hour: Reward=108445.99, Waiting=222.37
+2025-03-06 16:33:39,722 - TrafficRL - INFO -   TrainedDQN_weekend: Reward=561659.41, Waiting=77.62
+2025-03-06 16:34:11,438 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:34:11,439 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:34:11,439 - TrafficRL - INFO - Benchmarking agents:
+2025-03-06 16:34:11,439 - TrafficRL - INFO -   Random: random
+2025-03-06 16:34:11,439 - TrafficRL - INFO -   FixedTiming: fixed
+2025-03-06 16:34:11,439 - TrafficRL - INFO -   AdaptiveTiming: adaptive
+2025-03-06 16:34:11,439 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-06 16:34:11,439 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-06 16:34:11,439 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-06 16:34:11,439 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-06 16:34:12,760 - TrafficRL.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-06 16:34:12,761 - TrafficRL.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-06 16:34:12,761 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-06 16:34:12,761 - TrafficRL.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-06 16:34:12,761 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-06 16:34:14,014 - TrafficRL.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-06 16:34:14,014 - TrafficRL.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-06 16:34:14,014 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-06 16:34:14,014 - TrafficRL.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-06 16:34:14,014 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-06 16:34:15,314 - TrafficRL.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-06 16:34:15,314 - TrafficRL.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-06 16:34:15,314 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-06 16:34:15,314 - TrafficRL.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-06 16:34:15,314 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-06 16:34:16,654 - TrafficRL.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-06 16:34:16,654 - TrafficRL.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-06 16:34:16,654 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-06 16:34:16,655 - TrafficRL.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-06 16:34:16,655 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-06 16:34:17,902 - TrafficRL.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-06 16:34:17,902 - TrafficRL.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-06 16:34:17,902 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-06 16:34:17,902 - TrafficRL.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-06 16:34:17,902 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-06 16:34:19,204 - TrafficRL.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-06 16:34:19,204 - TrafficRL.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-06 16:34:19,204 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-06 16:34:19,204 - TrafficRL.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-06 16:34:19,204 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-06 16:34:20,509 - TrafficRL.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-06 16:34:20,509 - TrafficRL.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-06 16:34:20,509 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-06 16:34:20,509 - TrafficRL.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-06 16:34:20,509 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-06 16:34:21,790 - TrafficRL.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-06 16:34:21,790 - TrafficRL.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-06 16:34:21,790 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-06 16:34:21,790 - TrafficRL.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-06 16:34:21,790 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-06 16:34:23,091 - TrafficRL.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-06 16:34:23,091 - TrafficRL.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-06 16:34:23,091 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-06 16:34:23,091 - TrafficRL.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-06 16:34:23,091 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-06 16:34:23,092 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:34:23,092 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:34:23,499 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:34:23,506 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:34:26,017 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on uniform:
+2025-03-06 16:34:26,017 - TrafficRL.Benchmark - INFO -   Average Reward: 417194.73 ± 166931.45
+2025-03-06 16:34:26,017 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 118.55
+2025-03-06 16:34:26,017 - TrafficRL.Benchmark - INFO -   Average Throughput: 12220597.59
+2025-03-06 16:34:26,017 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=43.4%, EW=56.6%
+2025-03-06 16:34:26,018 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:34:26,018 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:34:26,023 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:34:26,028 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:34:28,474 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on rush_hour:
+2025-03-06 16:34:28,475 - TrafficRL.Benchmark - INFO -   Average Reward: 108445.99 ± 23929.26
+2025-03-06 16:34:28,475 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 222.37
+2025-03-06 16:34:28,475 - TrafficRL.Benchmark - INFO -   Average Throughput: 9301348.74
+2025-03-06 16:34:28,475 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=10.3%, EW=89.7%
+2025-03-06 16:34:28,475 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:34:28,475 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:34:28,480 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:34:28,485 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:34:31,035 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on weekend:
+2025-03-06 16:34:31,035 - TrafficRL.Benchmark - INFO -   Average Reward: 561659.41 ± 6898.47
+2025-03-06 16:34:31,035 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 77.62
+2025-03-06 16:34:31,035 - TrafficRL.Benchmark - INFO -   Average Throughput: 13740053.80
+2025-03-06 16:34:31,035 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=33.6%, EW=66.4%
+2025-03-06 16:34:31,040 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_163411/benchmark_results.json
+2025-03-06 16:34:33,890 - TrafficRL.Benchmark - INFO - Benchmark visualizations created in results/benchmark/benchmark_20250306_163411/plots
+2025-03-06 16:34:33,890 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:34:33,890 - TrafficRL - INFO -   FixedTiming_uniform: Reward=262140.62, Waiting=175.25
+2025-03-06 16:34:33,890 - TrafficRL - INFO -   FixedTiming_rush_hour: Reward=31147.79, Waiting=237.58
+2025-03-06 16:34:33,890 - TrafficRL - INFO -   FixedTiming_weekend: Reward=296203.02, Waiting=149.49
+2025-03-06 16:34:33,890 - TrafficRL - INFO -   AdaptiveTiming_uniform: Reward=248331.34, Waiting=184.56
+2025-03-06 16:34:33,890 - TrafficRL - INFO -   AdaptiveTiming_rush_hour: Reward=59717.62, Waiting=231.81
+2025-03-06 16:34:33,890 - TrafficRL - INFO -   AdaptiveTiming_weekend: Reward=234542.63, Waiting=162.97
+2025-03-06 16:34:33,890 - TrafficRL - INFO -   Random_uniform: Reward=251697.90, Waiting=173.80
+2025-03-06 16:34:33,890 - TrafficRL - INFO -   Random_rush_hour: Reward=73914.21, Waiting=230.92
+2025-03-06 16:34:33,890 - TrafficRL - INFO -   Random_weekend: Reward=237832.00, Waiting=165.40
+2025-03-06 16:34:33,890 - TrafficRL - INFO -   TrainedDQN_uniform: Reward=417194.73, Waiting=118.55
+2025-03-06 16:34:33,890 - TrafficRL - INFO -   TrainedDQN_rush_hour: Reward=108445.99, Waiting=222.37
+2025-03-06 16:34:33,891 - TrafficRL - INFO -   TrainedDQN_weekend: Reward=561659.41, Waiting=77.62
+2025-03-06 16:36:51,046 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:36:51,047 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:37:07,690 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:37:07,691 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:37:17,470 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:37:17,471 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:37:17,471 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-06 16:37:17,471 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-06 16:37:17,471 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-06 16:37:17,471 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-06 16:37:18,766 - TrafficRL.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-06 16:37:18,766 - TrafficRL.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-06 16:37:18,767 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-06 16:37:18,767 - TrafficRL.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-06 16:37:18,767 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-06 16:37:19,993 - TrafficRL.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-06 16:37:19,993 - TrafficRL.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-06 16:37:19,993 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-06 16:37:19,993 - TrafficRL.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-06 16:37:19,993 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-06 16:37:21,277 - TrafficRL.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-06 16:37:21,277 - TrafficRL.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-06 16:37:21,277 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-06 16:37:21,277 - TrafficRL.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-06 16:37:21,277 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-06 16:37:22,591 - TrafficRL.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-06 16:37:22,591 - TrafficRL.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-06 16:37:22,591 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-06 16:37:22,591 - TrafficRL.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-06 16:37:22,591 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-06 16:37:23,824 - TrafficRL.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-06 16:37:23,824 - TrafficRL.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-06 16:37:23,824 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-06 16:37:23,824 - TrafficRL.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-06 16:37:23,824 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-06 16:37:25,108 - TrafficRL.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-06 16:37:25,108 - TrafficRL.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-06 16:37:25,108 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-06 16:37:25,108 - TrafficRL.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-06 16:37:25,108 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-06 16:37:26,402 - TrafficRL.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-06 16:37:26,402 - TrafficRL.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-06 16:37:26,402 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-06 16:37:26,402 - TrafficRL.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-06 16:37:26,402 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-06 16:37:27,666 - TrafficRL.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-06 16:37:27,667 - TrafficRL.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-06 16:37:27,667 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-06 16:37:27,667 - TrafficRL.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-06 16:37:27,667 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-06 16:37:28,986 - TrafficRL.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-06 16:37:28,987 - TrafficRL.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-06 16:37:28,987 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-06 16:37:28,987 - TrafficRL.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-06 16:37:28,987 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-06 16:37:28,987 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:37:28,987 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:37:29,407 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:37:29,414 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:37:31,914 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on uniform:
+2025-03-06 16:37:31,914 - TrafficRL.Benchmark - INFO -   Average Reward: 417194.73 ± 166931.45
+2025-03-06 16:37:31,914 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 118.55
+2025-03-06 16:37:31,914 - TrafficRL.Benchmark - INFO -   Average Throughput: 12220597.59
+2025-03-06 16:37:31,914 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=43.4%, EW=56.6%
+2025-03-06 16:37:31,915 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:37:31,915 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:37:31,920 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:37:31,925 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:37:34,348 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on rush_hour:
+2025-03-06 16:37:34,348 - TrafficRL.Benchmark - INFO -   Average Reward: 108445.99 ± 23929.26
+2025-03-06 16:37:34,348 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 222.37
+2025-03-06 16:37:34,348 - TrafficRL.Benchmark - INFO -   Average Throughput: 9301348.74
+2025-03-06 16:37:34,348 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=10.3%, EW=89.7%
+2025-03-06 16:37:34,349 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:37:34,349 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:37:34,353 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:37:34,358 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:37:36,849 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedDQN on weekend:
+2025-03-06 16:37:36,849 - TrafficRL.Benchmark - INFO -   Average Reward: 561659.41 ± 6898.47
+2025-03-06 16:37:36,849 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 77.62
+2025-03-06 16:37:36,849 - TrafficRL.Benchmark - INFO -   Average Throughput: 13740053.80
+2025-03-06 16:37:36,849 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=33.6%, EW=66.4%
+2025-03-06 16:37:36,854 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/benchmark/benchmark_20250306_163717/benchmark_results.json
+2025-03-06 16:37:39,672 - TrafficRL.Benchmark - INFO - Benchmark visualizations created in results/benchmark/benchmark_20250306_163717/plots
+2025-03-06 16:37:39,672 - TrafficRL - INFO - Benchmark Summary:
+2025-03-06 16:37:39,672 - TrafficRL - INFO -   FixedTiming_uniform: Reward=262140.62, Waiting=175.25
+2025-03-06 16:37:39,672 - TrafficRL - INFO -   FixedTiming_rush_hour: Reward=31147.79, Waiting=237.58
+2025-03-06 16:37:39,672 - TrafficRL - INFO -   FixedTiming_weekend: Reward=296203.02, Waiting=149.49
+2025-03-06 16:37:39,672 - TrafficRL - INFO -   AdaptiveTiming_uniform: Reward=248331.34, Waiting=184.56
+2025-03-06 16:37:39,672 - TrafficRL - INFO -   AdaptiveTiming_rush_hour: Reward=59717.62, Waiting=231.81
+2025-03-06 16:37:39,672 - TrafficRL - INFO -   AdaptiveTiming_weekend: Reward=234542.63, Waiting=162.97
+2025-03-06 16:37:39,672 - TrafficRL - INFO -   Random_uniform: Reward=251697.90, Waiting=173.80
+2025-03-06 16:37:39,673 - TrafficRL - INFO -   Random_rush_hour: Reward=73914.21, Waiting=230.92
+2025-03-06 16:37:39,673 - TrafficRL - INFO -   Random_weekend: Reward=237832.00, Waiting=165.40
+2025-03-06 16:37:39,673 - TrafficRL - INFO -   TrainedDQN_uniform: Reward=417194.73, Waiting=118.55
+2025-03-06 16:37:39,673 - TrafficRL - INFO -   TrainedDQN_rush_hour: Reward=108445.99, Waiting=222.37
+2025-03-06 16:37:39,673 - TrafficRL - INFO -   TrainedDQN_weekend: Reward=561659.41, Waiting=77.62
+2025-03-06 16:38:12,628 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:38:12,629 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:41:20,167 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:41:20,168 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:41:47,204 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:41:47,205 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:41:59,486 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:41:59,487 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:47:41,244 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:47:41,244 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:47:54,601 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:47:54,601 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:47:54,603 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-06 16:47:54,603 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-06 16:47:54,603 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-06 16:47:54,603 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-06 16:47:55,881 - TrafficRL.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-06 16:47:55,881 - TrafficRL.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-06 16:47:55,881 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-06 16:47:55,881 - TrafficRL.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-06 16:47:55,881 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-06 16:47:57,091 - TrafficRL.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-06 16:47:57,091 - TrafficRL.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-06 16:47:57,091 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-06 16:47:57,091 - TrafficRL.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-06 16:47:57,091 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-06 16:47:58,366 - TrafficRL.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-06 16:47:58,366 - TrafficRL.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-06 16:47:58,366 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-06 16:47:58,366 - TrafficRL.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-06 16:47:58,366 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-06 16:47:59,681 - TrafficRL.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-06 16:47:59,682 - TrafficRL.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-06 16:47:59,682 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-06 16:47:59,682 - TrafficRL.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-06 16:47:59,682 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-06 16:48:00,892 - TrafficRL.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-06 16:48:00,892 - TrafficRL.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-06 16:48:00,892 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-06 16:48:00,892 - TrafficRL.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-06 16:48:00,892 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-06 16:48:02,144 - TrafficRL.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-06 16:48:02,145 - TrafficRL.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-06 16:48:02,145 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-06 16:48:02,145 - TrafficRL.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-06 16:48:02,145 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-06 16:48:03,411 - TrafficRL.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-06 16:48:03,411 - TrafficRL.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-06 16:48:03,411 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-06 16:48:03,411 - TrafficRL.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-06 16:48:03,411 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-06 16:48:04,638 - TrafficRL.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-06 16:48:04,638 - TrafficRL.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-06 16:48:04,638 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-06 16:48:04,638 - TrafficRL.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-06 16:48:04,638 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-06 16:48:05,906 - TrafficRL.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-06 16:48:05,906 - TrafficRL.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-06 16:48:05,906 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-06 16:48:05,906 - TrafficRL.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-06 16:48:05,906 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-06 16:48:05,906 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:48:05,906 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:48:06,313 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:48:06,320 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:48:08,822 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedModel on uniform:
+2025-03-06 16:48:08,822 - TrafficRL.Benchmark - INFO -   Average Reward: 417194.73 ± 166931.45
+2025-03-06 16:48:08,822 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 118.55
+2025-03-06 16:48:08,822 - TrafficRL.Benchmark - INFO -   Average Throughput: 12220597.59
+2025-03-06 16:48:08,822 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=43.4%, EW=56.6%
+2025-03-06 16:48:08,823 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:48:08,823 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:48:08,828 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:48:08,833 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:48:11,296 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedModel on rush_hour:
+2025-03-06 16:48:11,296 - TrafficRL.Benchmark - INFO -   Average Reward: 108445.99 ± 23929.26
+2025-03-06 16:48:11,297 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 222.37
+2025-03-06 16:48:11,297 - TrafficRL.Benchmark - INFO -   Average Throughput: 9301348.74
+2025-03-06 16:48:11,297 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=10.3%, EW=89.7%
+2025-03-06 16:48:11,297 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-06 16:48:11,297 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-06 16:48:11,302 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-06 16:48:11,307 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-06 16:48:13,804 - TrafficRL.Benchmark - INFO - Benchmark results for TrainedModel on weekend:
+2025-03-06 16:48:13,804 - TrafficRL.Benchmark - INFO -   Average Reward: 561659.41 ± 6898.47
+2025-03-06 16:48:13,804 - TrafficRL.Benchmark - INFO -   Average Waiting Time: 77.62
+2025-03-06 16:48:13,804 - TrafficRL.Benchmark - INFO -   Average Throughput: 13740053.80
+2025-03-06 16:48:13,804 - TrafficRL.Benchmark - INFO -   Action Distribution: NS=33.6%, EW=66.4%
+2025-03-06 16:48:13,811 - TrafficRL.Benchmark - INFO - Benchmark results saved to results/analysis/analysis_20250306_164754/benchmark/benchmark_20250306_164754/benchmark_results.json
+2025-03-06 16:48:16,618 - TrafficRL.Benchmark - INFO - Benchmark visualizations created in results/analysis/analysis_20250306_164754/benchmark/benchmark_20250306_164754/plots
+2025-03-06 16:48:16,774 - TrafficRL.Utils.Analysis - INFO - Comparative analysis completed and saved to results/analysis/analysis_20250306_164754/comparative
+2025-03-06 16:48:16,774 - TrafficRL.Utils.Analysis - INFO - Comprehensive report generated at results/analysis/analysis_20250306_164754/report/analysis_report.html
+2025-03-06 16:48:16,775 - TrafficRL - INFO - Analysis completed. Results available in results/analysis/analysis_20250306_164754
+2025-03-06 16:48:16,775 - TrafficRL - INFO - HTML report available at: results/analysis/analysis_20250306_164754/report/analysis_report.html
+2025-03-06 16:50:18,713 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-06 16:50:18,713 - TrafficRL - INFO - Random seed set to 42
+2025-03-06 16:50:18,714 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-06 16:50:18,714 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-06 16:50:18,714 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-06 16:50:18,714 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
