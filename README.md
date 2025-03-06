@@ -1,7 +1,6 @@
 # Traffic RL: Reinforcement Learning for Traffic Light Control
 
 This package provides a comprehensive framework for training and evaluating reinforcement learning agents for traffic light control optimization.
-```
 
 ## Features
 
