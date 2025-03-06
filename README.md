@@ -9,31 +9,75 @@ This package provides a comprehensive framework for training and evaluating rein
 - **Comprehensive Evaluation**: Tools for benchmarking and analyzing agent performance
 - **Visualization**: Extensive visualization capabilities for training metrics and traffic simulations
 
+## Installation
+
+### From Source
+
+To install the package from source:
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/traffic-rl.git
+cd traffic-rl
+
+# Install the package in development mode
+pip install -e .
+```
+
+This will install the `traffic_rl` command-line tool and all required dependencies.
+
+### Requirements
+
+- Python 3.7+
+- PyTorch
+- NumPy
+- Matplotlib
+- Gymnasium
+- Pygame
+- Pandas
+- Seaborn
+
 ## CLI Usage
 
-The package provides a unified command-line interface for all operations:
+After installation, you can use the `traffic_rl` command-line tool:
 
-1.  **Install Dependencies:**
+### Training
 
-    *   It is recommended to create a virtual environment before installing the dependencies.
-    *   Run `pip install -r requirements.txt` to install all required packages.
-2.  **Training:**
+```bash
+# Basic training
+traffic_rl train --output results/training
+```
 
-    *   Run `python -m traffic_rl.train --output results/training` to start the training process.
-3.  **Evaluation:**
+### Evaluation
 
-    *   Run `python -m traffic_rl.evaluate --model traffic_rl/results/training/best_model.pth --episodes 20 --output results/evaluation` to evaluate a trained model.
-4.  **Visualization:**
+```bash
+# Evaluate a model on multiple traffic patterns
+traffic_rl test --model results/training/best_model.pth --episodes 20 --output results/evaluation
+```
 
-    *   Run `python -m traffic_rl.visualize --type environment --model traffic_rl/results/training/best_model.pth --pattern rush_hour --duration 60 --output results/visualizations` to visualize the environment with a trained model.
-    *   Run `python -m traffic_rl.visualize --type metrics --metrics traffic_rl/results/training/training_metrics.json --output results/visualizations` to visualize training metrics.
-    *   Run `python -m traffic_rl.visualize --type patterns --output results/visualizations` to visualize traffic patterns.
-5.  **Benchmarking:**
+### Visualization
 
-    *   Run `python -m traffic_rl.benchmark --model traffic_rl/results/training/best_model.pth --episodes 15 --output results/benchmark` to benchmark multiple agents.
-6.  **Analysis:**
+```bash
+# Visualize environment with trained model
+traffic_rl visualize --model results/training/best_model.pth --traffic-pattern rush_hour --output results/visualizations
 
-    *   Run `python -m traffic_rl.analyze --model traffic_rl/results/training/best_model.pth --metrics traffic_rl/results/training/training_metrics.json --benchmark-dir results/benchmark --output results/analysis --episodes 10` to perform a comprehensive analysis.
+# Record a video of the environment
+traffic_rl record --model results/training/best_model.pth --traffic-pattern rush_hour --record-video videos/traffic_sim.mp4 --video-duration 30
+```
+
+### Benchmarking
+
+```bash
+# Benchmark multiple agents
+traffic_rl benchmark --model results/training/best_model.pth --episodes 15 --output results/benchmark
+```
+
+### Analysis
+
+```bash
+# Comprehensive analysis
+traffic_rl analyze --model results/training/best_model.pth --output results/analysis --episodes 10
+```
 
 ## Model Selection
 
@@ -43,13 +87,13 @@ When you evaluate or visualize a model, you can specify:
 
 ```bash
 # Use the best model saved during training
-traffic-rl evaluate --model results/training/best_model.pth
+traffic_rl test --model results/training/best_model.pth
 
 # Use a specific checkpoint from training
-traffic-rl evaluate --model results/training/model_episode_450.pth
+traffic_rl test --model results/training/model_episode_450.pth
 
 # Use the final model from training
-traffic-rl evaluate --model results/training/final_model.pth
+traffic_rl test --model results/training/final_model.pth
 ```
 
 ## Advanced Features
@@ -61,12 +105,16 @@ The DQN implementation includes several advanced features that can be enabled in
 - **Double DQN**: Reduces overestimation of Q-values
 - **Early Stopping**: Stops training when performance plateaus
 
-## Dependencies
+## Configuration
 
-- PyTorch
-- NumPy
-- Matplotlib
-- Gymnasium
-- Pygame
-- Pandas
-- Seaborn
+You can provide a custom configuration file using the `--config` option:
+
+```bash
+traffic_rl train --config my_config.json --output results/custom_training
+```
+
+Or override specific configuration parameters via command-line arguments:
+
+```bash
+traffic_rl train --episodes 1000 --seed 42 --output results/long_training
+```

@@ -10,8 +10,8 @@ import torch
 import logging
 
 # Import environment and agent
-from environment.traffic_simulation import TrafficSimulation
-from agents.dqn_agent import DQNAgent
+from traffic_rl.environment.traffic_simulation import TrafficSimulation
+from traffic_rl.agents.dqn_agent import DQNAgent
 
 logger = logging.getLogger("Evaluate")
 

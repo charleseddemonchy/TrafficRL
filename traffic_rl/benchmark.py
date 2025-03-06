@@ -16,12 +16,12 @@ import seaborn as sns
 from datetime import datetime
 
 # Import environment and agents
-from environment.traffic_simulation import TrafficSimulation
-from agents.dqn_agent import DQNAgent
-from agents.fixed_timing_agent import FixedTimingAgent, AdaptiveTimingAgent
-from agents.base import BaseAgent, RandomAgent
-from utils.analysis import comparative_analysis
-from config import load_config
+from traffic_rl.environment.traffic_simulation import TrafficSimulation
+from traffic_rl.agents.dqn_agent import DQNAgent
+from traffic_rl.agents.fixed_timing_agent import FixedTimingAgent, AdaptiveTimingAgent
+from traffic_rl.agents.base import BaseAgent, RandomAgent
+from traffic_rl.utils.analysis import comparative_analysis
+from traffic_rl.config import load_config
 
 logger = logging.getLogger("TrafficRL.Benchmark")
 
@@ -618,7 +618,7 @@ def create_benchmark_agents(config, model_path=None):
 if __name__ == "__main__":
     # Example usage
     import argparse
-    from utils.logging import setup_logging
+    from traffic_rl.utils.logging import setup_logging
     
     # Parse command line arguments
     parser = argparse.ArgumentParser(description="Benchmark traffic light control agents")
@@ -634,6 +634,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     # Setup logging
+    from traffic_rl.utils.logging import setup_logging
     logger = setup_logging()
     
     # Load configuration

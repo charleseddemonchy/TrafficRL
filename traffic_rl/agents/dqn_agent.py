@@ -12,12 +12,12 @@ import random
 import logging
 
 # Import models
-from models.dqn import DQN
-from models.dueling_dqn import DuelingDQN
+from traffic_rl.models.dqn import DQN
+from traffic_rl.models.dueling_dqn import DuelingDQN
 
 # Import memory buffers
-from memory.replay_buffer import ReplayBuffer
-from memory.prioritized_buffer import PrioritizedReplayBuffer
+from traffic_rl.memory.replay_buffer import ReplayBuffer
+from traffic_rl.memory.prioritized_buffer import PrioritizedReplayBuffer
 
 logger = logging.getLogger("TrafficRL.Agent")
 

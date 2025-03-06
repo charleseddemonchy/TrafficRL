@@ -13,10 +13,10 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 
 # Import environment and agent
-from environment.traffic_simulation import TrafficSimulation
-from agents.dqn_agent import DQNAgent
-from utils.visualization import visualize_results
-from evaluate import evaluate
+from traffic_rl.environment.traffic_simulation import TrafficSimulation
+from traffic_rl.agents.dqn_agent import DQNAgent
+from traffic_rl.utils.visualization import visualize_results
+from traffic_rl.evaluate import evaluate
 
 logger = logging.getLogger("TrafficRL.Train")
 

@@ -13,14 +13,14 @@ import random
 import json
 
 # Import configuration
-from config import load_config, override_config_with_args
+from traffic_rl.config import load_config, override_config_with_args
 
 # Import modules
-from train import train
-from evaluate import evaluate_agent
-from environment.traffic_simulation import TrafficSimulation
-from agents.dqn_agent import DQNAgent
-from utils.visualization import visualize_results, save_visualization
+from traffic_rl.train import train
+from traffic_rl.evaluate import evaluate_agent
+from traffic_rl.environment.traffic_simulation import TrafficSimulation
+from traffic_rl.agents.dqn_agent import DQNAgent
+from traffic_rl.utils.visualization import visualize_results, save_visualization
 
 
 def setup_logging(log_file=None, debug=False):
