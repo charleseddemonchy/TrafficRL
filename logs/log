@@ -1859,3 +1859,644 @@ ZeroDivisionError: float division by zero
 2025-03-06 16:50:18,714 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
 2025-03-06 16:50:18,714 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
 2025-03-06 16:50:18,714 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-08 20:14:38,420 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-08 20:14:38,424 - TrafficRL - INFO - Random seed set to 42
+2025-03-08 20:14:38,425 - TrafficRL.Config - INFO - Configuration saved to results/training/training_config.json
+2025-03-08 20:14:38,425 - TrafficRL - INFO - Starting training...
+2025-03-08 20:14:38,426 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 20:14:38,426 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 20:14:40,688 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 20:14:43,585 - TrafficRL.Train - INFO - Episode 1/500 - Reward: 993.36, Avg Reward: 993.36, Epsilon: 0.3897, LR: 0.000300, Traffic: uniform
+2025-03-08 20:14:46,428 - TrafficRL.Train - INFO - Episode 2/500 - Reward: 992.98, Avg Reward: 993.17, Epsilon: 0.1430, LR: 0.000285, Traffic: uniform
+2025-03-08 20:14:49,207 - TrafficRL.Train - INFO - Episode 3/500 - Reward: 995.73, Avg Reward: 994.02, Epsilon: 0.0525, LR: 0.000271, Traffic: uniform
+2025-03-08 20:14:51,875 - TrafficRL.Train - INFO - Episode 4/500 - Reward: 855.52, Avg Reward: 959.40, Epsilon: 0.0193, LR: 0.000257, Traffic: uniform
+2025-03-08 20:14:54,624 - TrafficRL.Train - INFO - Episode 5/500 - Reward: 960.43, Avg Reward: 959.60, Epsilon: 0.0100, LR: 0.000244, Traffic: uniform
+2025-03-08 20:14:57,403 - TrafficRL.Train - INFO - Episode 6/500 - Reward: 900.34, Avg Reward: 949.73, Epsilon: 0.0100, LR: 0.000232, Traffic: uniform
+2025-03-08 20:15:00,477 - TrafficRL.Train - INFO - Episode 7/500 - Reward: 961.25, Avg Reward: 951.37, Epsilon: 0.0100, LR: 0.000221, Traffic: uniform
+2025-03-08 20:15:03,456 - TrafficRL.Train - INFO - Episode 8/500 - Reward: 983.22, Avg Reward: 955.35, Epsilon: 0.0100, LR: 0.000210, Traffic: uniform
+2025-03-08 20:15:06,416 - TrafficRL.Train - INFO - Episode 9/500 - Reward: 979.63, Avg Reward: 958.05, Epsilon: 0.0100, LR: 0.000199, Traffic: uniform
+2025-03-08 20:15:09,484 - TrafficRL.Train - INFO - Episode 10/500 - Reward: 989.09, Avg Reward: 961.15, Epsilon: 0.0100, LR: 0.000189, Traffic: uniform
+2025-03-08 20:15:12,575 - TrafficRL.Train - INFO - Episode 11/500 - Reward: 987.55, Avg Reward: 963.55, Epsilon: 0.0100, LR: 0.000180, Traffic: uniform
+2025-03-08 20:15:15,970 - TrafficRL.Train - INFO - Episode 12/500 - Reward: 994.16, Avg Reward: 966.11, Epsilon: 0.0100, LR: 0.000171, Traffic: uniform
+2025-03-08 20:15:19,388 - TrafficRL.Train - INFO - Episode 13/500 - Reward: 987.29, Avg Reward: 967.73, Epsilon: 0.0100, LR: 0.000162, Traffic: uniform
+2025-03-08 20:15:22,705 - TrafficRL.Train - INFO - Episode 14/500 - Reward: 989.86, Avg Reward: 969.32, Epsilon: 0.0100, LR: 0.000154, Traffic: uniform
+2025-03-08 20:15:26,046 - TrafficRL.Train - INFO - Episode 15/500 - Reward: 986.01, Avg Reward: 970.43, Epsilon: 0.0100, LR: 0.000146, Traffic: uniform
+2025-03-08 20:15:29,507 - TrafficRL.Train - INFO - Episode 16/500 - Reward: 990.35, Avg Reward: 971.67, Epsilon: 0.0100, LR: 0.000139, Traffic: uniform
+2025-03-08 20:15:32,938 - TrafficRL.Train - INFO - Episode 17/500 - Reward: 989.93, Avg Reward: 972.75, Epsilon: 0.0100, LR: 0.000132, Traffic: uniform
+2025-03-08 20:15:36,431 - TrafficRL.Train - INFO - Episode 18/500 - Reward: 992.79, Avg Reward: 973.86, Epsilon: 0.0100, LR: 0.000125, Traffic: uniform
+2025-03-08 20:15:39,959 - TrafficRL.Train - INFO - Episode 19/500 - Reward: 993.63, Avg Reward: 974.90, Epsilon: 0.0100, LR: 0.000119, Traffic: uniform
+2025-03-08 20:15:43,619 - TrafficRL.Train - INFO - Episode 20/500 - Reward: 989.49, Avg Reward: 975.63, Epsilon: 0.0100, LR: 0.000113, Traffic: uniform
+2025-03-08 20:15:43,620 - TrafficRL.Train - INFO - Evaluating agent at episode 20...
+2025-03-08 20:15:48,578 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 45680.13
+2025-03-08 20:15:48,610 - TrafficRL.Agent - INFO - Model saved to results/training/best_model.pth
+2025-03-08 20:15:48,611 - TrafficRL.Train - INFO - New best model saved with reward: 45680.13
+2025-03-08 20:15:52,453 - TrafficRL.Train - INFO - Episode 21/500 - Reward: 988.27, Avg Reward: 976.23, Epsilon: 0.0100, LR: 0.000108, Traffic: uniform
+2025-03-08 20:15:56,603 - TrafficRL.Train - INFO - Episode 22/500 - Reward: 994.38, Avg Reward: 977.06, Epsilon: 0.0100, LR: 0.000102, Traffic: uniform
+2025-03-08 20:16:00,874 - TrafficRL.Train - INFO - Episode 23/500 - Reward: 992.39, Avg Reward: 977.72, Epsilon: 0.0100, LR: 0.000097, Traffic: uniform
+2025-03-08 20:16:04,646 - TrafficRL.Train - INFO - Episode 24/500 - Reward: 994.41, Avg Reward: 978.42, Epsilon: 0.0100, LR: 0.000092, Traffic: uniform
+2025-03-08 20:16:08,400 - TrafficRL.Train - INFO - Episode 25/500 - Reward: 988.22, Avg Reward: 978.81, Epsilon: 0.0100, LR: 0.000088, Traffic: uniform
+2025-03-08 20:16:08,430 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_25.pth
+2025-03-08 20:16:08,430 - TrafficRL.Train - INFO - Model checkpoint saved at episode 25
+2025-03-08 20:16:12,709 - TrafficRL.Train - INFO - Episode 26/500 - Reward: 994.25, Avg Reward: 979.41, Epsilon: 0.0100, LR: 0.000083, Traffic: uniform
+2025-03-08 20:16:17,291 - TrafficRL.Train - INFO - Episode 27/500 - Reward: 994.92, Avg Reward: 979.98, Epsilon: 0.0100, LR: 0.000079, Traffic: uniform
+2025-03-08 20:16:22,124 - TrafficRL.Train - INFO - Episode 28/500 - Reward: 992.77, Avg Reward: 980.44, Epsilon: 0.0100, LR: 0.000075, Traffic: uniform
+2025-03-08 20:16:26,214 - TrafficRL.Train - INFO - Episode 29/500 - Reward: 990.01, Avg Reward: 980.77, Epsilon: 0.0100, LR: 0.000071, Traffic: uniform
+2025-03-08 20:16:30,765 - TrafficRL.Train - INFO - Episode 30/500 - Reward: 986.75, Avg Reward: 980.97, Epsilon: 0.0100, LR: 0.000068, Traffic: uniform
+2025-03-08 20:16:35,090 - TrafficRL.Train - INFO - Episode 31/500 - Reward: 993.95, Avg Reward: 981.39, Epsilon: 0.0100, LR: 0.000064, Traffic: uniform
+2025-03-08 20:16:39,461 - TrafficRL.Train - INFO - Episode 32/500 - Reward: 992.82, Avg Reward: 981.74, Epsilon: 0.0100, LR: 0.000061, Traffic: uniform
+2025-03-08 20:16:43,897 - TrafficRL.Train - INFO - Episode 33/500 - Reward: 991.74, Avg Reward: 982.05, Epsilon: 0.0100, LR: 0.000058, Traffic: uniform
+2025-03-08 20:16:48,435 - TrafficRL.Train - INFO - Episode 34/500 - Reward: 994.33, Avg Reward: 982.41, Epsilon: 0.0100, LR: 0.000055, Traffic: uniform
+2025-03-08 20:16:53,226 - TrafficRL.Train - INFO - Episode 35/500 - Reward: 993.37, Avg Reward: 982.72, Epsilon: 0.0100, LR: 0.000052, Traffic: uniform
+2025-03-08 20:16:58,659 - TrafficRL.Train - INFO - Episode 36/500 - Reward: 991.89, Avg Reward: 982.98, Epsilon: 0.0100, LR: 0.000050, Traffic: uniform
+2025-03-08 20:17:06,672 - TrafficRL.Train - INFO - Episode 37/500 - Reward: 995.92, Avg Reward: 983.32, Epsilon: 0.0100, LR: 0.000047, Traffic: uniform
+2025-03-08 20:17:13,669 - TrafficRL.Train - INFO - Episode 38/500 - Reward: 994.12, Avg Reward: 983.61, Epsilon: 0.0100, LR: 0.000045, Traffic: uniform
+2025-03-08 20:17:21,103 - TrafficRL.Train - INFO - Episode 39/500 - Reward: 988.43, Avg Reward: 983.73, Epsilon: 0.0100, LR: 0.000043, Traffic: uniform
+2025-03-08 20:17:26,179 - TrafficRL.Train - INFO - Episode 40/500 - Reward: 993.67, Avg Reward: 983.98, Epsilon: 0.0100, LR: 0.000041, Traffic: uniform
+2025-03-08 20:17:26,180 - TrafficRL.Train - INFO - Evaluating agent at episode 40...
+2025-03-08 20:17:30,923 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 41770.31
+2025-03-08 20:17:30,923 - TrafficRL.Train - INFO - No improvement for 1 evaluations
+2025-03-08 20:17:35,924 - TrafficRL.Train - INFO - Episode 41/500 - Reward: 992.78, Avg Reward: 984.20, Epsilon: 0.0100, LR: 0.000039, Traffic: uniform
+2025-03-08 20:17:42,104 - TrafficRL.Train - INFO - Episode 42/500 - Reward: 992.79, Avg Reward: 984.40, Epsilon: 0.0100, LR: 0.000037, Traffic: uniform
+2025-03-08 20:17:48,025 - TrafficRL.Train - INFO - Episode 43/500 - Reward: 989.47, Avg Reward: 984.52, Epsilon: 0.0100, LR: 0.000035, Traffic: uniform
+2025-03-08 20:17:53,586 - TrafficRL.Train - INFO - Episode 44/500 - Reward: 994.76, Avg Reward: 984.75, Epsilon: 0.0100, LR: 0.000033, Traffic: uniform
+2025-03-08 20:17:59,020 - TrafficRL.Train - INFO - Episode 45/500 - Reward: 991.89, Avg Reward: 984.91, Epsilon: 0.0100, LR: 0.000031, Traffic: uniform
+2025-03-08 20:18:04,612 - TrafficRL.Train - INFO - Episode 46/500 - Reward: 995.96, Avg Reward: 985.15, Epsilon: 0.0100, LR: 0.000030, Traffic: uniform
+2025-03-08 20:18:10,197 - TrafficRL.Train - INFO - Episode 47/500 - Reward: 992.83, Avg Reward: 985.31, Epsilon: 0.0100, LR: 0.000028, Traffic: uniform
+2025-03-08 20:18:15,725 - TrafficRL.Train - INFO - Episode 48/500 - Reward: 992.89, Avg Reward: 985.47, Epsilon: 0.0100, LR: 0.000027, Traffic: uniform
+2025-03-08 20:18:21,092 - TrafficRL.Train - INFO - Episode 49/500 - Reward: 992.62, Avg Reward: 985.62, Epsilon: 0.0100, LR: 0.000026, Traffic: uniform
+2025-03-08 20:18:26,480 - TrafficRL.Train - INFO - Episode 50/500 - Reward: 993.68, Avg Reward: 985.78, Epsilon: 0.0100, LR: 0.000024, Traffic: uniform
+2025-03-08 20:18:26,519 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_50.pth
+2025-03-08 20:18:26,519 - TrafficRL.Train - INFO - Model checkpoint saved at episode 50
+2025-03-08 20:18:32,263 - TrafficRL.Train - INFO - Episode 51/500 - Reward: 992.94, Avg Reward: 985.92, Epsilon: 0.0100, LR: 0.000023, Traffic: uniform
+2025-03-08 20:18:38,559 - TrafficRL.Train - INFO - Episode 52/500 - Reward: 991.89, Avg Reward: 986.03, Epsilon: 0.0100, LR: 0.000022, Traffic: uniform
+2025-03-08 20:18:44,684 - TrafficRL.Train - INFO - Episode 53/500 - Reward: 992.79, Avg Reward: 986.16, Epsilon: 0.0100, LR: 0.000021, Traffic: uniform
+2025-03-08 20:18:51,139 - TrafficRL.Train - INFO - Episode 54/500 - Reward: 995.05, Avg Reward: 986.33, Epsilon: 0.0100, LR: 0.000020, Traffic: uniform
+2025-03-08 20:18:57,102 - TrafficRL.Train - INFO - Episode 55/500 - Reward: 993.73, Avg Reward: 986.46, Epsilon: 0.0100, LR: 0.000019, Traffic: uniform
+2025-03-08 20:19:02,851 - TrafficRL.Train - INFO - Episode 56/500 - Reward: 995.68, Avg Reward: 986.62, Epsilon: 0.0100, LR: 0.000018, Traffic: uniform
+2025-03-08 20:19:08,960 - TrafficRL.Train - INFO - Episode 57/500 - Reward: 990.65, Avg Reward: 986.70, Epsilon: 0.0100, LR: 0.000017, Traffic: uniform
+2025-03-08 20:19:14,920 - TrafficRL.Train - INFO - Episode 58/500 - Reward: 988.77, Avg Reward: 986.73, Epsilon: 0.0100, LR: 0.000016, Traffic: uniform
+2025-03-08 20:19:21,724 - TrafficRL.Train - INFO - Episode 59/500 - Reward: 993.48, Avg Reward: 986.85, Epsilon: 0.0100, LR: 0.000015, Traffic: uniform
+2025-03-08 20:19:28,409 - TrafficRL.Train - INFO - Episode 60/500 - Reward: 995.93, Avg Reward: 987.00, Epsilon: 0.0100, LR: 0.000015, Traffic: uniform
+2025-03-08 20:19:28,409 - TrafficRL.Train - INFO - Evaluating agent at episode 60...
+2025-03-08 20:19:33,797 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 60173.50
+2025-03-08 20:19:33,828 - TrafficRL.Agent - INFO - Model saved to results/training/best_model.pth
+2025-03-08 20:19:33,828 - TrafficRL.Train - INFO - New best model saved with reward: 60173.50
+2025-03-08 20:19:41,293 - TrafficRL.Train - INFO - Episode 61/500 - Reward: 992.86, Avg Reward: 987.09, Epsilon: 0.0100, LR: 0.000014, Traffic: uniform
+2025-03-08 20:19:48,054 - TrafficRL.Train - INFO - Episode 62/500 - Reward: 993.82, Avg Reward: 987.20, Epsilon: 0.0100, LR: 0.000013, Traffic: uniform
+2025-03-08 20:19:55,540 - TrafficRL.Train - INFO - Episode 63/500 - Reward: 989.64, Avg Reward: 987.24, Epsilon: 0.0100, LR: 0.000012, Traffic: uniform
+2025-03-08 20:20:02,926 - TrafficRL.Train - INFO - Episode 64/500 - Reward: 993.30, Avg Reward: 987.34, Epsilon: 0.0100, LR: 0.000012, Traffic: uniform
+2025-03-08 20:20:10,224 - TrafficRL.Train - INFO - Episode 65/500 - Reward: 993.06, Avg Reward: 987.42, Epsilon: 0.0100, LR: 0.000011, Traffic: uniform
+2025-03-08 20:20:17,957 - TrafficRL.Train - INFO - Episode 66/500 - Reward: 993.55, Avg Reward: 987.52, Epsilon: 0.0100, LR: 0.000011, Traffic: uniform
+2025-03-08 20:20:27,793 - TrafficRL.Train - INFO - Episode 67/500 - Reward: 994.94, Avg Reward: 987.63, Epsilon: 0.0100, LR: 0.000010, Traffic: uniform
+2025-03-08 20:20:35,539 - TrafficRL.Train - INFO - Episode 68/500 - Reward: 992.95, Avg Reward: 987.71, Epsilon: 0.0100, LR: 0.000010, Traffic: uniform
+2025-03-08 20:20:43,486 - TrafficRL.Train - INFO - Episode 69/500 - Reward: 995.50, Avg Reward: 987.82, Epsilon: 0.0100, LR: 0.000009, Traffic: uniform
+2025-03-08 20:20:51,820 - TrafficRL.Train - INFO - Episode 70/500 - Reward: 993.10, Avg Reward: 987.89, Epsilon: 0.0100, LR: 0.000009, Traffic: uniform
+2025-03-08 20:20:59,766 - TrafficRL.Train - INFO - Episode 71/500 - Reward: 990.73, Avg Reward: 987.93, Epsilon: 0.0100, LR: 0.000008, Traffic: uniform
+2025-03-08 20:21:07,697 - TrafficRL.Train - INFO - Episode 72/500 - Reward: 990.93, Avg Reward: 987.98, Epsilon: 0.0100, LR: 0.000008, Traffic: uniform
+2025-03-08 20:21:16,382 - TrafficRL.Train - INFO - Episode 73/500 - Reward: 993.23, Avg Reward: 988.05, Epsilon: 0.0100, LR: 0.000007, Traffic: uniform
+2025-03-08 20:21:24,936 - TrafficRL.Train - INFO - Episode 74/500 - Reward: 993.47, Avg Reward: 988.12, Epsilon: 0.0100, LR: 0.000007, Traffic: uniform
+2025-03-08 20:21:33,704 - TrafficRL.Train - INFO - Episode 75/500 - Reward: 993.49, Avg Reward: 988.19, Epsilon: 0.0100, LR: 0.000007, Traffic: uniform
+2025-03-08 20:21:33,742 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_75.pth
+2025-03-08 20:21:33,742 - TrafficRL.Train - INFO - Model checkpoint saved at episode 75
+2025-03-08 20:21:43,014 - TrafficRL.Train - INFO - Episode 76/500 - Reward: 992.64, Avg Reward: 988.25, Epsilon: 0.0100, LR: 0.000006, Traffic: uniform
+2025-03-08 20:21:51,628 - TrafficRL.Train - INFO - Episode 77/500 - Reward: 996.16, Avg Reward: 988.35, Epsilon: 0.0100, LR: 0.000006, Traffic: uniform
+2025-03-08 20:22:00,492 - TrafficRL.Train - INFO - Episode 78/500 - Reward: 991.79, Avg Reward: 988.40, Epsilon: 0.0100, LR: 0.000006, Traffic: uniform
+2025-03-08 20:22:09,209 - TrafficRL.Train - INFO - Episode 79/500 - Reward: 994.88, Avg Reward: 988.48, Epsilon: 0.0100, LR: 0.000005, Traffic: uniform
+2025-03-08 20:22:17,954 - TrafficRL.Train - INFO - Episode 80/500 - Reward: 994.60, Avg Reward: 988.56, Epsilon: 0.0100, LR: 0.000005, Traffic: uniform
+2025-03-08 20:22:17,956 - TrafficRL.Train - INFO - Evaluating agent at episode 80...
+2025-03-08 20:22:22,955 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 63624.25
+2025-03-08 20:22:22,987 - TrafficRL.Agent - INFO - Model saved to results/training/best_model.pth
+2025-03-08 20:22:22,987 - TrafficRL.Train - INFO - New best model saved with reward: 63624.25
+2025-03-08 20:22:31,579 - TrafficRL.Train - INFO - Episode 81/500 - Reward: 994.00, Avg Reward: 988.62, Epsilon: 0.0100, LR: 0.000005, Traffic: uniform
+2025-03-08 20:22:40,060 - TrafficRL.Train - INFO - Episode 82/500 - Reward: 992.34, Avg Reward: 988.67, Epsilon: 0.0100, LR: 0.000005, Traffic: uniform
+2025-03-08 20:22:48,275 - TrafficRL.Train - INFO - Episode 83/500 - Reward: 992.52, Avg Reward: 988.71, Epsilon: 0.0100, LR: 0.000004, Traffic: uniform
+2025-03-08 20:22:57,652 - TrafficRL.Train - INFO - Episode 84/500 - Reward: 995.05, Avg Reward: 988.79, Epsilon: 0.0100, LR: 0.000004, Traffic: uniform
+2025-03-08 20:23:07,014 - TrafficRL.Train - INFO - Episode 85/500 - Reward: 994.84, Avg Reward: 988.86, Epsilon: 0.0100, LR: 0.000004, Traffic: uniform
+2025-03-08 20:23:16,030 - TrafficRL.Train - INFO - Episode 86/500 - Reward: 991.87, Avg Reward: 988.90, Epsilon: 0.0100, LR: 0.000004, Traffic: uniform
+2025-03-08 20:23:24,924 - TrafficRL.Train - INFO - Episode 87/500 - Reward: 991.66, Avg Reward: 988.93, Epsilon: 0.0100, LR: 0.000004, Traffic: uniform
+2025-03-08 20:23:34,260 - TrafficRL.Train - INFO - Episode 88/500 - Reward: 995.54, Avg Reward: 989.00, Epsilon: 0.0100, LR: 0.000003, Traffic: uniform
+2025-03-08 20:23:44,383 - TrafficRL.Train - INFO - Episode 89/500 - Reward: 996.73, Avg Reward: 989.09, Epsilon: 0.0100, LR: 0.000003, Traffic: uniform
+2025-03-08 20:23:53,548 - TrafficRL.Train - INFO - Episode 90/500 - Reward: 992.71, Avg Reward: 989.13, Epsilon: 0.0100, LR: 0.000003, Traffic: uniform
+2025-03-08 20:24:03,054 - TrafficRL.Train - INFO - Episode 91/500 - Reward: 994.33, Avg Reward: 989.19, Epsilon: 0.0100, LR: 0.000003, Traffic: uniform
+2025-03-08 20:24:11,643 - TrafficRL.Train - INFO - Episode 92/500 - Reward: 995.06, Avg Reward: 989.25, Epsilon: 0.0100, LR: 0.000003, Traffic: uniform
+2025-03-08 20:24:21,477 - TrafficRL.Train - INFO - Episode 93/500 - Reward: 993.65, Avg Reward: 989.30, Epsilon: 0.0100, LR: 0.000003, Traffic: uniform
+2025-03-08 20:24:30,905 - TrafficRL.Train - INFO - Episode 94/500 - Reward: 994.08, Avg Reward: 989.35, Epsilon: 0.0100, LR: 0.000003, Traffic: uniform
+2025-03-08 20:24:40,829 - TrafficRL.Train - INFO - Episode 95/500 - Reward: 990.86, Avg Reward: 989.37, Epsilon: 0.0100, LR: 0.000002, Traffic: uniform
+2025-03-08 20:24:51,205 - TrafficRL.Train - INFO - Episode 96/500 - Reward: 994.70, Avg Reward: 989.42, Epsilon: 0.0100, LR: 0.000002, Traffic: uniform
+2025-03-08 20:25:01,256 - TrafficRL.Train - INFO - Episode 97/500 - Reward: 994.05, Avg Reward: 989.47, Epsilon: 0.0100, LR: 0.000002, Traffic: uniform
+2025-03-08 20:25:11,390 - TrafficRL.Train - INFO - Episode 98/500 - Reward: 995.64, Avg Reward: 989.53, Epsilon: 0.0100, LR: 0.000002, Traffic: uniform
+2025-03-08 20:25:22,100 - TrafficRL.Train - INFO - Episode 99/500 - Reward: 994.91, Avg Reward: 989.59, Epsilon: 0.0100, LR: 0.000002, Traffic: uniform
+2025-03-08 20:25:22,101 - TrafficRL.Train - INFO - Switching to rush_hour traffic pattern at episode 100
+2025-03-08 20:25:32,611 - TrafficRL.Train - INFO - Episode 100/500 - Reward: 995.57, Avg Reward: 989.65, Epsilon: 0.0100, LR: 0.000002, Traffic: rush_hour
+2025-03-08 20:25:32,612 - TrafficRL.Train - INFO - Evaluating agent at episode 100...
+2025-03-08 20:25:37,990 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 254119.62
+2025-03-08 20:25:38,023 - TrafficRL.Agent - INFO - Model saved to results/training/best_model.pth
+2025-03-08 20:25:38,023 - TrafficRL.Train - INFO - New best model saved with reward: 254119.62
+2025-03-08 20:25:38,063 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_100.pth
+2025-03-08 20:25:38,064 - TrafficRL.Train - INFO - Model checkpoint saved at episode 100
+2025-03-08 20:25:49,920 - TrafficRL.Train - INFO - Episode 101/500 - Reward: 994.74, Avg Reward: 989.66, Epsilon: 0.0100, LR: 0.000002, Traffic: rush_hour
+2025-03-08 20:26:00,430 - TrafficRL.Train - INFO - Episode 102/500 - Reward: 996.71, Avg Reward: 989.70, Epsilon: 0.0100, LR: 0.000002, Traffic: rush_hour
+2025-03-08 20:26:10,164 - TrafficRL.Train - INFO - Episode 103/500 - Reward: 993.22, Avg Reward: 989.67, Epsilon: 0.0100, LR: 0.000002, Traffic: rush_hour
+2025-03-08 20:26:21,560 - TrafficRL.Train - INFO - Episode 104/500 - Reward: 994.55, Avg Reward: 991.06, Epsilon: 0.0100, LR: 0.000002, Traffic: rush_hour
+2025-03-08 20:26:31,316 - TrafficRL.Train - INFO - Episode 105/500 - Reward: 991.80, Avg Reward: 991.38, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:26:41,169 - TrafficRL.Train - INFO - Episode 106/500 - Reward: 993.02, Avg Reward: 992.30, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:26:51,064 - TrafficRL.Train - INFO - Episode 107/500 - Reward: 995.58, Avg Reward: 992.65, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:27:01,271 - TrafficRL.Train - INFO - Episode 108/500 - Reward: 994.78, Avg Reward: 992.76, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:27:11,117 - TrafficRL.Train - INFO - Episode 109/500 - Reward: 994.49, Avg Reward: 992.91, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:27:20,801 - TrafficRL.Train - INFO - Episode 110/500 - Reward: 995.29, Avg Reward: 992.97, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:27:31,042 - TrafficRL.Train - INFO - Episode 111/500 - Reward: 994.09, Avg Reward: 993.04, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:27:41,260 - TrafficRL.Train - INFO - Episode 112/500 - Reward: 993.53, Avg Reward: 993.03, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:27:53,467 - TrafficRL.Train - INFO - Episode 113/500 - Reward: 994.64, Avg Reward: 993.10, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:28:07,319 - TrafficRL.Train - INFO - Episode 114/500 - Reward: 994.94, Avg Reward: 993.16, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:28:19,729 - TrafficRL.Train - INFO - Episode 115/500 - Reward: 994.00, Avg Reward: 993.24, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:28:32,432 - TrafficRL.Train - INFO - Episode 116/500 - Reward: 991.99, Avg Reward: 993.25, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:28:43,965 - TrafficRL.Train - INFO - Episode 117/500 - Reward: 996.74, Avg Reward: 993.32, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:28:54,925 - TrafficRL.Train - INFO - Episode 118/500 - Reward: 995.76, Avg Reward: 993.35, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:29:05,733 - TrafficRL.Train - INFO - Episode 119/500 - Reward: 994.42, Avg Reward: 993.36, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:29:16,419 - TrafficRL.Train - INFO - Episode 120/500 - Reward: 993.69, Avg Reward: 993.40, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:29:16,420 - TrafficRL.Train - INFO - Evaluating agent at episode 120...
+2025-03-08 20:29:21,533 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 266974.75
+2025-03-08 20:29:21,570 - TrafficRL.Agent - INFO - Model saved to results/training/best_model.pth
+2025-03-08 20:29:21,570 - TrafficRL.Train - INFO - New best model saved with reward: 266974.75
+2025-03-08 20:29:33,515 - TrafficRL.Train - INFO - Episode 121/500 - Reward: 992.82, Avg Reward: 993.44, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:29:48,644 - TrafficRL.Train - INFO - Episode 122/500 - Reward: 993.89, Avg Reward: 993.44, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:29:59,762 - TrafficRL.Train - INFO - Episode 123/500 - Reward: 994.91, Avg Reward: 993.47, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:30:10,035 - TrafficRL.Train - INFO - Episode 124/500 - Reward: 995.41, Avg Reward: 993.48, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:30:22,093 - TrafficRL.Train - INFO - Episode 125/500 - Reward: 995.38, Avg Reward: 993.55, Epsilon: 0.0100, LR: 0.000001, Traffic: rush_hour
+2025-03-08 20:30:22,149 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_125.pth
+2025-03-08 20:30:22,156 - TrafficRL.Train - INFO - Model checkpoint saved at episode 125
+2025-03-08 20:30:33,171 - TrafficRL.Train - INFO - Episode 126/500 - Reward: 993.61, Avg Reward: 993.54, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:30:44,182 - TrafficRL.Train - INFO - Episode 127/500 - Reward: 993.99, Avg Reward: 993.53, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:30:59,513 - TrafficRL.Train - INFO - Episode 128/500 - Reward: 993.80, Avg Reward: 993.54, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:31:12,047 - TrafficRL.Train - INFO - Episode 129/500 - Reward: 996.12, Avg Reward: 993.60, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:31:24,996 - TrafficRL.Train - INFO - Episode 130/500 - Reward: 993.33, Avg Reward: 993.67, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:31:38,899 - TrafficRL.Train - INFO - Episode 131/500 - Reward: 995.37, Avg Reward: 993.68, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:31:49,235 - TrafficRL.Train - INFO - Episode 132/500 - Reward: 996.54, Avg Reward: 993.72, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:32:03,150 - TrafficRL.Train - INFO - Episode 133/500 - Reward: 994.67, Avg Reward: 993.75, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:32:17,033 - TrafficRL.Train - INFO - Episode 134/500 - Reward: 995.41, Avg Reward: 993.76, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:32:32,428 - TrafficRL.Train - INFO - Episode 135/500 - Reward: 993.49, Avg Reward: 993.76, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:32:47,416 - TrafficRL.Train - INFO - Episode 136/500 - Reward: 994.94, Avg Reward: 993.79, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:32:57,889 - TrafficRL.Train - INFO - Episode 137/500 - Reward: 996.54, Avg Reward: 993.80, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:33:12,096 - TrafficRL.Train - INFO - Episode 138/500 - Reward: 995.15, Avg Reward: 993.81, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:33:25,453 - TrafficRL.Train - INFO - Episode 139/500 - Reward: 996.64, Avg Reward: 993.89, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:33:38,496 - TrafficRL.Train - INFO - Episode 140/500 - Reward: 995.00, Avg Reward: 993.90, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:33:38,496 - TrafficRL.Train - INFO - Evaluating agent at episode 140...
+2025-03-08 20:33:45,417 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 305275.51
+2025-03-08 20:33:45,463 - TrafficRL.Agent - INFO - Model saved to results/training/best_model.pth
+2025-03-08 20:33:45,463 - TrafficRL.Train - INFO - New best model saved with reward: 305275.51
+2025-03-08 20:33:57,403 - TrafficRL.Train - INFO - Episode 141/500 - Reward: 994.94, Avg Reward: 993.92, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:34:11,551 - TrafficRL.Train - INFO - Episode 142/500 - Reward: 993.83, Avg Reward: 993.93, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:34:24,669 - TrafficRL.Train - INFO - Episode 143/500 - Reward: 995.26, Avg Reward: 993.99, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:34:41,036 - TrafficRL.Train - INFO - Episode 144/500 - Reward: 995.70, Avg Reward: 994.00, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:34:52,103 - TrafficRL.Train - INFO - Episode 145/500 - Reward: 995.23, Avg Reward: 994.04, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:35:03,913 - TrafficRL.Train - INFO - Episode 146/500 - Reward: 996.32, Avg Reward: 994.04, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:35:15,370 - TrafficRL.Train - INFO - Episode 147/500 - Reward: 995.43, Avg Reward: 994.07, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:35:26,210 - TrafficRL.Train - INFO - Episode 148/500 - Reward: 995.39, Avg Reward: 994.09, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:35:36,447 - TrafficRL.Train - INFO - Episode 149/500 - Reward: 993.42, Avg Reward: 994.10, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:35:46,557 - TrafficRL.Train - INFO - Episode 150/500 - Reward: 993.71, Avg Reward: 994.10, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:35:46,603 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_150.pth
+2025-03-08 20:35:46,603 - TrafficRL.Train - INFO - Model checkpoint saved at episode 150
+2025-03-08 20:35:57,828 - TrafficRL.Train - INFO - Episode 151/500 - Reward: 993.10, Avg Reward: 994.10, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:36:08,814 - TrafficRL.Train - INFO - Episode 152/500 - Reward: 994.22, Avg Reward: 994.12, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:36:19,810 - TrafficRL.Train - INFO - Episode 153/500 - Reward: 995.92, Avg Reward: 994.15, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:36:31,514 - TrafficRL.Train - INFO - Episode 154/500 - Reward: 995.96, Avg Reward: 994.16, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:36:42,888 - TrafficRL.Train - INFO - Episode 155/500 - Reward: 994.20, Avg Reward: 994.17, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:36:53,396 - TrafficRL.Train - INFO - Episode 156/500 - Reward: 993.12, Avg Reward: 994.14, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:37:04,007 - TrafficRL.Train - INFO - Episode 157/500 - Reward: 995.35, Avg Reward: 994.19, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:37:14,574 - TrafficRL.Train - INFO - Episode 158/500 - Reward: 992.94, Avg Reward: 994.23, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:37:24,664 - TrafficRL.Train - INFO - Episode 159/500 - Reward: 995.40, Avg Reward: 994.25, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:37:35,744 - TrafficRL.Train - INFO - Episode 160/500 - Reward: 994.46, Avg Reward: 994.24, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:37:35,751 - TrafficRL.Train - INFO - Evaluating agent at episode 160...
+2025-03-08 20:37:41,308 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 298686.95
+2025-03-08 20:37:41,308 - TrafficRL.Train - INFO - No improvement for 1 evaluations
+2025-03-08 20:37:51,934 - TrafficRL.Train - INFO - Episode 161/500 - Reward: 994.34, Avg Reward: 994.25, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:38:02,268 - TrafficRL.Train - INFO - Episode 162/500 - Reward: 994.96, Avg Reward: 994.26, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:38:12,415 - TrafficRL.Train - INFO - Episode 163/500 - Reward: 994.45, Avg Reward: 994.31, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:38:23,016 - TrafficRL.Train - INFO - Episode 164/500 - Reward: 994.29, Avg Reward: 994.32, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:38:34,894 - TrafficRL.Train - INFO - Episode 165/500 - Reward: 996.95, Avg Reward: 994.36, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:38:47,354 - TrafficRL.Train - INFO - Episode 166/500 - Reward: 995.65, Avg Reward: 994.38, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:38:57,583 - TrafficRL.Train - INFO - Episode 167/500 - Reward: 995.67, Avg Reward: 994.39, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:39:08,598 - TrafficRL.Train - INFO - Episode 168/500 - Reward: 994.09, Avg Reward: 994.40, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:39:22,060 - TrafficRL.Train - INFO - Episode 169/500 - Reward: 995.08, Avg Reward: 994.39, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:39:36,185 - TrafficRL.Train - INFO - Episode 170/500 - Reward: 994.91, Avg Reward: 994.41, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:39:50,470 - TrafficRL.Train - INFO - Episode 171/500 - Reward: 994.14, Avg Reward: 994.45, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:40:06,240 - TrafficRL.Train - INFO - Episode 172/500 - Reward: 995.57, Avg Reward: 994.49, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:40:19,622 - TrafficRL.Train - INFO - Episode 173/500 - Reward: 993.73, Avg Reward: 994.50, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:40:33,678 - TrafficRL.Train - INFO - Episode 174/500 - Reward: 995.56, Avg Reward: 994.52, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:40:46,740 - TrafficRL.Train - INFO - Episode 175/500 - Reward: 994.43, Avg Reward: 994.53, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:40:46,792 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_175.pth
+2025-03-08 20:40:46,792 - TrafficRL.Train - INFO - Model checkpoint saved at episode 175
+2025-03-08 20:40:59,967 - TrafficRL.Train - INFO - Episode 176/500 - Reward: 995.99, Avg Reward: 994.56, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:41:12,095 - TrafficRL.Train - INFO - Episode 177/500 - Reward: 996.36, Avg Reward: 994.56, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:41:27,142 - TrafficRL.Train - INFO - Episode 178/500 - Reward: 996.30, Avg Reward: 994.61, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:41:42,834 - TrafficRL.Train - INFO - Episode 179/500 - Reward: 995.17, Avg Reward: 994.61, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:41:54,401 - TrafficRL.Train - INFO - Episode 180/500 - Reward: 994.63, Avg Reward: 994.61, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:41:54,402 - TrafficRL.Train - INFO - Evaluating agent at episode 180...
+2025-03-08 20:41:59,434 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 267393.17
+2025-03-08 20:41:59,435 - TrafficRL.Train - INFO - No improvement for 2 evaluations
+2025-03-08 20:42:09,944 - TrafficRL.Train - INFO - Episode 181/500 - Reward: 996.53, Avg Reward: 994.64, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:42:21,014 - TrafficRL.Train - INFO - Episode 182/500 - Reward: 994.24, Avg Reward: 994.66, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:42:31,837 - TrafficRL.Train - INFO - Episode 183/500 - Reward: 994.12, Avg Reward: 994.67, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:42:41,798 - TrafficRL.Train - INFO - Episode 184/500 - Reward: 994.10, Avg Reward: 994.66, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:42:53,535 - TrafficRL.Train - INFO - Episode 185/500 - Reward: 994.05, Avg Reward: 994.66, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:43:08,404 - TrafficRL.Train - INFO - Episode 186/500 - Reward: 993.17, Avg Reward: 994.67, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:43:20,356 - TrafficRL.Train - INFO - Episode 187/500 - Reward: 993.60, Avg Reward: 994.69, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:43:34,721 - TrafficRL.Train - INFO - Episode 188/500 - Reward: 994.91, Avg Reward: 994.68, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:43:48,396 - TrafficRL.Train - INFO - Episode 189/500 - Reward: 994.14, Avg Reward: 994.66, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:43:58,960 - TrafficRL.Train - INFO - Episode 190/500 - Reward: 994.53, Avg Reward: 994.67, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:44:09,512 - TrafficRL.Train - INFO - Episode 191/500 - Reward: 992.95, Avg Reward: 994.66, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:44:19,815 - TrafficRL.Train - INFO - Episode 192/500 - Reward: 996.63, Avg Reward: 994.68, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:44:34,318 - TrafficRL.Train - INFO - Episode 193/500 - Reward: 994.69, Avg Reward: 994.69, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:44:50,051 - TrafficRL.Train - INFO - Episode 194/500 - Reward: 994.74, Avg Reward: 994.69, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:45:03,883 - TrafficRL.Train - INFO - Episode 195/500 - Reward: 995.08, Avg Reward: 994.73, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:45:19,101 - TrafficRL.Train - INFO - Episode 196/500 - Reward: 994.27, Avg Reward: 994.73, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:45:31,447 - TrafficRL.Train - INFO - Episode 197/500 - Reward: 993.62, Avg Reward: 994.73, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:45:46,535 - TrafficRL.Train - INFO - Episode 198/500 - Reward: 993.70, Avg Reward: 994.71, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:46:02,669 - TrafficRL.Train - INFO - Episode 199/500 - Reward: 995.50, Avg Reward: 994.71, Epsilon: 0.0100, LR: 0.000000, Traffic: rush_hour
+2025-03-08 20:46:02,670 - TrafficRL.Train - INFO - Switching to weekend traffic pattern at episode 200
+2025-03-08 20:46:15,624 - TrafficRL.Train - INFO - Episode 200/500 - Reward: 993.23, Avg Reward: 994.69, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:46:15,626 - TrafficRL.Train - INFO - Evaluating agent at episode 200...
+2025-03-08 20:46:21,173 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 114884.52
+2025-03-08 20:46:21,174 - TrafficRL.Train - INFO - No improvement for 3 evaluations
+2025-03-08 20:46:21,242 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_200.pth
+2025-03-08 20:46:21,243 - TrafficRL.Train - INFO - Model checkpoint saved at episode 200
+2025-03-08 20:46:32,778 - TrafficRL.Train - INFO - Episode 201/500 - Reward: 993.83, Avg Reward: 994.68, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:46:42,919 - TrafficRL.Train - INFO - Episode 202/500 - Reward: 993.05, Avg Reward: 994.64, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:46:53,660 - TrafficRL.Train - INFO - Episode 203/500 - Reward: 994.46, Avg Reward: 994.66, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:47:05,195 - TrafficRL.Train - INFO - Episode 204/500 - Reward: 994.60, Avg Reward: 994.66, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:47:15,559 - TrafficRL.Train - INFO - Episode 205/500 - Reward: 992.85, Avg Reward: 994.67, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:47:26,115 - TrafficRL.Train - INFO - Episode 206/500 - Reward: 991.30, Avg Reward: 994.65, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:47:38,255 - TrafficRL.Train - INFO - Episode 207/500 - Reward: 993.84, Avg Reward: 994.63, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:47:50,826 - TrafficRL.Train - INFO - Episode 208/500 - Reward: 993.57, Avg Reward: 994.62, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:48:01,710 - TrafficRL.Train - INFO - Episode 209/500 - Reward: 993.54, Avg Reward: 994.61, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:48:11,822 - TrafficRL.Train - INFO - Episode 210/500 - Reward: 990.61, Avg Reward: 994.56, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:48:22,608 - TrafficRL.Train - INFO - Episode 211/500 - Reward: 994.33, Avg Reward: 994.57, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:48:32,853 - TrafficRL.Train - INFO - Episode 212/500 - Reward: 989.67, Avg Reward: 994.53, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:48:43,949 - TrafficRL.Train - INFO - Episode 213/500 - Reward: 991.58, Avg Reward: 994.50, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:48:54,137 - TrafficRL.Train - INFO - Episode 214/500 - Reward: 993.17, Avg Reward: 994.48, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:49:05,235 - TrafficRL.Train - INFO - Episode 215/500 - Reward: 992.58, Avg Reward: 994.47, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:49:16,105 - TrafficRL.Train - INFO - Episode 216/500 - Reward: 991.89, Avg Reward: 994.46, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:49:27,975 - TrafficRL.Train - INFO - Episode 217/500 - Reward: 994.15, Avg Reward: 994.44, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:49:43,240 - TrafficRL.Train - INFO - Episode 218/500 - Reward: 994.02, Avg Reward: 994.42, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:49:53,192 - TrafficRL.Train - INFO - Episode 219/500 - Reward: 993.92, Avg Reward: 994.42, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:50:04,040 - TrafficRL.Train - INFO - Episode 220/500 - Reward: 993.73, Avg Reward: 994.42, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:50:04,042 - TrafficRL.Train - INFO - Evaluating agent at episode 220...
+2025-03-08 20:50:09,110 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 139850.41
+2025-03-08 20:50:09,111 - TrafficRL.Train - INFO - No improvement for 4 evaluations
+2025-03-08 20:50:20,519 - TrafficRL.Train - INFO - Episode 221/500 - Reward: 994.29, Avg Reward: 994.43, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:50:33,515 - TrafficRL.Train - INFO - Episode 222/500 - Reward: 993.83, Avg Reward: 994.43, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:50:49,913 - TrafficRL.Train - INFO - Episode 223/500 - Reward: 996.10, Avg Reward: 994.44, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:51:06,096 - TrafficRL.Train - INFO - Episode 224/500 - Reward: 993.71, Avg Reward: 994.43, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:51:22,085 - TrafficRL.Train - INFO - Episode 225/500 - Reward: 993.86, Avg Reward: 994.41, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:51:22,138 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_225.pth
+2025-03-08 20:51:22,138 - TrafficRL.Train - INFO - Model checkpoint saved at episode 225
+2025-03-08 20:51:37,829 - TrafficRL.Train - INFO - Episode 226/500 - Reward: 991.98, Avg Reward: 994.39, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:51:52,086 - TrafficRL.Train - INFO - Episode 227/500 - Reward: 991.30, Avg Reward: 994.37, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:52:12,823 - TrafficRL.Train - INFO - Episode 228/500 - Reward: 990.35, Avg Reward: 994.33, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:52:36,843 - TrafficRL.Train - INFO - Episode 229/500 - Reward: 994.74, Avg Reward: 994.32, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:53:01,495 - TrafficRL.Train - INFO - Episode 230/500 - Reward: 992.53, Avg Reward: 994.31, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:53:21,044 - TrafficRL.Train - INFO - Episode 231/500 - Reward: 993.76, Avg Reward: 994.29, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:53:35,711 - TrafficRL.Train - INFO - Episode 232/500 - Reward: 994.30, Avg Reward: 994.27, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:53:55,429 - TrafficRL.Train - INFO - Episode 233/500 - Reward: 994.38, Avg Reward: 994.27, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:54:18,451 - TrafficRL.Train - INFO - Episode 234/500 - Reward: 990.73, Avg Reward: 994.22, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:54:42,186 - TrafficRL.Train - INFO - Episode 235/500 - Reward: 992.28, Avg Reward: 994.21, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:55:01,759 - TrafficRL.Train - INFO - Episode 236/500 - Reward: 994.41, Avg Reward: 994.20, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:55:19,059 - TrafficRL.Train - INFO - Episode 237/500 - Reward: 992.38, Avg Reward: 994.16, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:55:34,951 - TrafficRL.Train - INFO - Episode 238/500 - Reward: 989.49, Avg Reward: 994.11, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:55:47,065 - TrafficRL.Train - INFO - Episode 239/500 - Reward: 991.89, Avg Reward: 994.06, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:55:57,403 - TrafficRL.Train - INFO - Episode 240/500 - Reward: 995.05, Avg Reward: 994.06, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:55:57,404 - TrafficRL.Train - INFO - Evaluating agent at episode 240...
+2025-03-08 20:56:02,746 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 110817.33
+2025-03-08 20:56:02,746 - TrafficRL.Train - INFO - No improvement for 5 evaluations
+2025-03-08 20:56:12,984 - TrafficRL.Train - INFO - Episode 241/500 - Reward: 992.24, Avg Reward: 994.03, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:56:22,890 - TrafficRL.Train - INFO - Episode 242/500 - Reward: 994.67, Avg Reward: 994.04, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:56:33,604 - TrafficRL.Train - INFO - Episode 243/500 - Reward: 994.56, Avg Reward: 994.03, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:56:45,014 - TrafficRL.Train - INFO - Episode 244/500 - Reward: 993.93, Avg Reward: 994.02, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:56:55,473 - TrafficRL.Train - INFO - Episode 245/500 - Reward: 994.46, Avg Reward: 994.01, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:57:05,534 - TrafficRL.Train - INFO - Episode 246/500 - Reward: 993.25, Avg Reward: 993.98, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:57:17,269 - TrafficRL.Train - INFO - Episode 247/500 - Reward: 989.17, Avg Reward: 993.92, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:57:27,711 - TrafficRL.Train - INFO - Episode 248/500 - Reward: 990.95, Avg Reward: 993.87, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:57:38,365 - TrafficRL.Train - INFO - Episode 249/500 - Reward: 991.55, Avg Reward: 993.85, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:57:48,743 - TrafficRL.Train - INFO - Episode 250/500 - Reward: 992.04, Avg Reward: 993.84, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:57:48,812 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_250.pth
+2025-03-08 20:57:48,812 - TrafficRL.Train - INFO - Model checkpoint saved at episode 250
+2025-03-08 20:58:01,842 - TrafficRL.Train - INFO - Episode 251/500 - Reward: 992.30, Avg Reward: 993.83, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:58:12,913 - TrafficRL.Train - INFO - Episode 252/500 - Reward: 992.50, Avg Reward: 993.81, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:58:24,733 - TrafficRL.Train - INFO - Episode 253/500 - Reward: 994.88, Avg Reward: 993.80, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:58:37,049 - TrafficRL.Train - INFO - Episode 254/500 - Reward: 992.30, Avg Reward: 993.76, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:58:48,819 - TrafficRL.Train - INFO - Episode 255/500 - Reward: 990.94, Avg Reward: 993.73, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:58:59,280 - TrafficRL.Train - INFO - Episode 256/500 - Reward: 993.84, Avg Reward: 993.74, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:59:09,081 - TrafficRL.Train - INFO - Episode 257/500 - Reward: 992.94, Avg Reward: 993.71, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:59:19,119 - TrafficRL.Train - INFO - Episode 258/500 - Reward: 993.39, Avg Reward: 993.72, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:59:29,289 - TrafficRL.Train - INFO - Episode 259/500 - Reward: 994.60, Avg Reward: 993.71, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:59:40,510 - TrafficRL.Train - INFO - Episode 260/500 - Reward: 995.14, Avg Reward: 993.72, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 20:59:40,511 - TrafficRL.Train - INFO - Evaluating agent at episode 260...
+2025-03-08 20:59:45,918 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 120182.61
+2025-03-08 20:59:45,919 - TrafficRL.Train - INFO - No improvement for 6 evaluations
+2025-03-08 20:59:56,996 - TrafficRL.Train - INFO - Episode 261/500 - Reward: 991.64, Avg Reward: 993.69, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:00:07,767 - TrafficRL.Train - INFO - Episode 262/500 - Reward: 994.99, Avg Reward: 993.69, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:00:17,480 - TrafficRL.Train - INFO - Episode 263/500 - Reward: 993.52, Avg Reward: 993.68, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:00:28,649 - TrafficRL.Train - INFO - Episode 264/500 - Reward: 994.65, Avg Reward: 993.69, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:00:43,235 - TrafficRL.Train - INFO - Episode 265/500 - Reward: 991.03, Avg Reward: 993.63, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:00:53,869 - TrafficRL.Train - INFO - Episode 266/500 - Reward: 995.17, Avg Reward: 993.62, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:01:04,241 - TrafficRL.Train - INFO - Episode 267/500 - Reward: 994.13, Avg Reward: 993.61, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:01:14,550 - TrafficRL.Train - INFO - Episode 268/500 - Reward: 996.95, Avg Reward: 993.63, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:01:25,465 - TrafficRL.Train - INFO - Episode 269/500 - Reward: 991.33, Avg Reward: 993.60, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:01:35,619 - TrafficRL.Train - INFO - Episode 270/500 - Reward: 992.64, Avg Reward: 993.57, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:01:46,060 - TrafficRL.Train - INFO - Episode 271/500 - Reward: 992.21, Avg Reward: 993.56, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:01:57,969 - TrafficRL.Train - INFO - Episode 272/500 - Reward: 991.96, Avg Reward: 993.52, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:02:16,599 - TrafficRL.Train - INFO - Episode 273/500 - Reward: 996.44, Avg Reward: 993.55, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:02:32,434 - TrafficRL.Train - INFO - Episode 274/500 - Reward: 992.79, Avg Reward: 993.52, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:02:48,959 - TrafficRL.Train - INFO - Episode 275/500 - Reward: 994.45, Avg Reward: 993.52, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:02:49,028 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_275.pth
+2025-03-08 21:02:49,029 - TrafficRL.Train - INFO - Model checkpoint saved at episode 275
+2025-03-08 21:03:05,916 - TrafficRL.Train - INFO - Episode 276/500 - Reward: 992.60, Avg Reward: 993.48, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:03:21,576 - TrafficRL.Train - INFO - Episode 277/500 - Reward: 994.78, Avg Reward: 993.47, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:03:37,065 - TrafficRL.Train - INFO - Episode 278/500 - Reward: 991.89, Avg Reward: 993.42, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:03:54,510 - TrafficRL.Train - INFO - Episode 279/500 - Reward: 994.38, Avg Reward: 993.42, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:04:12,381 - TrafficRL.Train - INFO - Episode 280/500 - Reward: 993.73, Avg Reward: 993.41, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:04:12,382 - TrafficRL.Train - INFO - Evaluating agent at episode 280...
+2025-03-08 21:04:18,468 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 114779.25
+2025-03-08 21:04:18,468 - TrafficRL.Train - INFO - No improvement for 7 evaluations
+2025-03-08 21:04:32,876 - TrafficRL.Train - INFO - Episode 281/500 - Reward: 991.87, Avg Reward: 993.36, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:04:46,808 - TrafficRL.Train - INFO - Episode 282/500 - Reward: 992.13, Avg Reward: 993.34, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:05:00,749 - TrafficRL.Train - INFO - Episode 283/500 - Reward: 994.22, Avg Reward: 993.34, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:05:14,282 - TrafficRL.Train - INFO - Episode 284/500 - Reward: 993.51, Avg Reward: 993.34, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:05:27,844 - TrafficRL.Train - INFO - Episode 285/500 - Reward: 995.77, Avg Reward: 993.35, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:05:41,653 - TrafficRL.Train - INFO - Episode 286/500 - Reward: 995.19, Avg Reward: 993.37, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:05:55,398 - TrafficRL.Train - INFO - Episode 287/500 - Reward: 994.53, Avg Reward: 993.38, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:06:09,582 - TrafficRL.Train - INFO - Episode 288/500 - Reward: 993.93, Avg Reward: 993.37, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:06:25,318 - TrafficRL.Train - INFO - Episode 289/500 - Reward: 992.92, Avg Reward: 993.36, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:06:41,495 - TrafficRL.Train - INFO - Episode 290/500 - Reward: 993.42, Avg Reward: 993.35, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:06:55,499 - TrafficRL.Train - INFO - Episode 291/500 - Reward: 993.66, Avg Reward: 993.36, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:07:09,800 - TrafficRL.Train - INFO - Episode 292/500 - Reward: 989.90, Avg Reward: 993.29, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:07:26,572 - TrafficRL.Train - INFO - Episode 293/500 - Reward: 992.22, Avg Reward: 993.26, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:07:42,669 - TrafficRL.Train - INFO - Episode 294/500 - Reward: 996.71, Avg Reward: 993.28, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:07:57,688 - TrafficRL.Train - INFO - Episode 295/500 - Reward: 995.02, Avg Reward: 993.28, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:08:11,919 - TrafficRL.Train - INFO - Episode 296/500 - Reward: 993.58, Avg Reward: 993.28, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:08:26,726 - TrafficRL.Train - INFO - Episode 297/500 - Reward: 993.10, Avg Reward: 993.27, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:08:40,347 - TrafficRL.Train - INFO - Episode 298/500 - Reward: 992.75, Avg Reward: 993.26, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:08:54,556 - TrafficRL.Train - INFO - Episode 299/500 - Reward: 991.36, Avg Reward: 993.22, Epsilon: 0.0100, LR: 0.000000, Traffic: weekend
+2025-03-08 21:08:54,557 - TrafficRL.Train - INFO - Switching to uniform traffic pattern at episode 300
+2025-03-08 21:09:09,909 - TrafficRL.Train - INFO - Episode 300/500 - Reward: 993.62, Avg Reward: 993.22, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:09:09,911 - TrafficRL.Train - INFO - Evaluating agent at episode 300...
+2025-03-08 21:09:16,401 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 76865.34
+2025-03-08 21:09:16,402 - TrafficRL.Train - INFO - No improvement for 8 evaluations
+2025-03-08 21:09:16,486 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_300.pth
+2025-03-08 21:09:16,487 - TrafficRL.Train - INFO - Model checkpoint saved at episode 300
+2025-03-08 21:09:32,617 - TrafficRL.Train - INFO - Episode 301/500 - Reward: 993.11, Avg Reward: 993.22, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:09:47,507 - TrafficRL.Train - INFO - Episode 302/500 - Reward: 994.28, Avg Reward: 993.23, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:10:02,099 - TrafficRL.Train - INFO - Episode 303/500 - Reward: 995.99, Avg Reward: 993.24, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:10:16,606 - TrafficRL.Train - INFO - Episode 304/500 - Reward: 994.71, Avg Reward: 993.25, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:10:31,145 - TrafficRL.Train - INFO - Episode 305/500 - Reward: 993.04, Avg Reward: 993.25, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:10:47,213 - TrafficRL.Train - INFO - Episode 306/500 - Reward: 995.21, Avg Reward: 993.29, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:11:01,533 - TrafficRL.Train - INFO - Episode 307/500 - Reward: 994.48, Avg Reward: 993.29, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:11:15,682 - TrafficRL.Train - INFO - Episode 308/500 - Reward: 994.62, Avg Reward: 993.30, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:11:30,266 - TrafficRL.Train - INFO - Episode 309/500 - Reward: 993.38, Avg Reward: 993.30, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:11:44,527 - TrafficRL.Train - INFO - Episode 310/500 - Reward: 993.80, Avg Reward: 993.33, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:11:59,477 - TrafficRL.Train - INFO - Episode 311/500 - Reward: 993.71, Avg Reward: 993.33, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:12:14,175 - TrafficRL.Train - INFO - Episode 312/500 - Reward: 988.42, Avg Reward: 993.32, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:12:29,901 - TrafficRL.Train - INFO - Episode 313/500 - Reward: 992.19, Avg Reward: 993.32, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:12:45,622 - TrafficRL.Train - INFO - Episode 314/500 - Reward: 994.73, Avg Reward: 993.34, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:13:00,610 - TrafficRL.Train - INFO - Episode 315/500 - Reward: 994.59, Avg Reward: 993.36, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:13:15,942 - TrafficRL.Train - INFO - Episode 316/500 - Reward: 993.91, Avg Reward: 993.38, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:13:31,213 - TrafficRL.Train - INFO - Episode 317/500 - Reward: 993.73, Avg Reward: 993.37, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:13:46,031 - TrafficRL.Train - INFO - Episode 318/500 - Reward: 995.30, Avg Reward: 993.39, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:14:01,385 - TrafficRL.Train - INFO - Episode 319/500 - Reward: 994.83, Avg Reward: 993.40, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:14:16,502 - TrafficRL.Train - INFO - Episode 320/500 - Reward: 995.18, Avg Reward: 993.41, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:14:16,503 - TrafficRL.Train - INFO - Evaluating agent at episode 320...
+2025-03-08 21:14:22,542 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 66278.49
+2025-03-08 21:14:22,543 - TrafficRL.Train - INFO - No improvement for 9 evaluations
+2025-03-08 21:14:37,093 - TrafficRL.Train - INFO - Episode 321/500 - Reward: 994.78, Avg Reward: 993.41, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:14:52,040 - TrafficRL.Train - INFO - Episode 322/500 - Reward: 994.62, Avg Reward: 993.42, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:15:06,842 - TrafficRL.Train - INFO - Episode 323/500 - Reward: 994.91, Avg Reward: 993.41, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:15:21,747 - TrafficRL.Train - INFO - Episode 324/500 - Reward: 993.16, Avg Reward: 993.40, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:15:36,508 - TrafficRL.Train - INFO - Episode 325/500 - Reward: 994.72, Avg Reward: 993.41, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:15:36,582 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_325.pth
+2025-03-08 21:15:36,582 - TrafficRL.Train - INFO - Model checkpoint saved at episode 325
+2025-03-08 21:15:52,937 - TrafficRL.Train - INFO - Episode 326/500 - Reward: 994.16, Avg Reward: 993.44, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:16:08,133 - TrafficRL.Train - INFO - Episode 327/500 - Reward: 992.48, Avg Reward: 993.45, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:16:23,687 - TrafficRL.Train - INFO - Episode 328/500 - Reward: 991.34, Avg Reward: 993.46, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:16:38,979 - TrafficRL.Train - INFO - Episode 329/500 - Reward: 993.84, Avg Reward: 993.45, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:16:54,233 - TrafficRL.Train - INFO - Episode 330/500 - Reward: 995.19, Avg Reward: 993.47, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:17:09,880 - TrafficRL.Train - INFO - Episode 331/500 - Reward: 993.48, Avg Reward: 993.47, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:17:25,286 - TrafficRL.Train - INFO - Episode 332/500 - Reward: 993.39, Avg Reward: 993.46, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:17:40,481 - TrafficRL.Train - INFO - Episode 333/500 - Reward: 993.18, Avg Reward: 993.45, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:17:55,800 - TrafficRL.Train - INFO - Episode 334/500 - Reward: 994.60, Avg Reward: 993.49, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:18:11,486 - TrafficRL.Train - INFO - Episode 335/500 - Reward: 995.05, Avg Reward: 993.52, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:18:27,012 - TrafficRL.Train - INFO - Episode 336/500 - Reward: 996.02, Avg Reward: 993.53, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:18:42,310 - TrafficRL.Train - INFO - Episode 337/500 - Reward: 996.15, Avg Reward: 993.57, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:18:58,221 - TrafficRL.Train - INFO - Episode 338/500 - Reward: 994.69, Avg Reward: 993.62, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:19:13,559 - TrafficRL.Train - INFO - Episode 339/500 - Reward: 995.03, Avg Reward: 993.65, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:19:29,349 - TrafficRL.Train - INFO - Episode 340/500 - Reward: 993.75, Avg Reward: 993.64, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:19:29,350 - TrafficRL.Train - INFO - Evaluating agent at episode 340...
+2025-03-08 21:19:35,918 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 58514.14
+2025-03-08 21:19:35,919 - TrafficRL.Train - INFO - No improvement for 10 evaluations
+2025-03-08 21:19:51,375 - TrafficRL.Train - INFO - Episode 341/500 - Reward: 995.02, Avg Reward: 993.67, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:20:06,650 - TrafficRL.Train - INFO - Episode 342/500 - Reward: 994.07, Avg Reward: 993.66, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:20:22,628 - TrafficRL.Train - INFO - Episode 343/500 - Reward: 995.52, Avg Reward: 993.67, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:20:37,985 - TrafficRL.Train - INFO - Episode 344/500 - Reward: 994.30, Avg Reward: 993.68, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:20:53,394 - TrafficRL.Train - INFO - Episode 345/500 - Reward: 994.54, Avg Reward: 993.68, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:21:08,940 - TrafficRL.Train - INFO - Episode 346/500 - Reward: 994.05, Avg Reward: 993.68, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:21:24,649 - TrafficRL.Train - INFO - Episode 347/500 - Reward: 996.61, Avg Reward: 993.76, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:21:41,034 - TrafficRL.Train - INFO - Episode 348/500 - Reward: 993.59, Avg Reward: 993.79, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:21:57,960 - TrafficRL.Train - INFO - Episode 349/500 - Reward: 994.42, Avg Reward: 993.81, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:22:17,945 - TrafficRL.Train - INFO - Episode 350/500 - Reward: 994.28, Avg Reward: 993.84, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:22:18,046 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_350.pth
+2025-03-08 21:22:18,046 - TrafficRL.Train - INFO - Model checkpoint saved at episode 350
+2025-03-08 21:22:39,496 - TrafficRL.Train - INFO - Episode 351/500 - Reward: 992.55, Avg Reward: 993.84, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:22:59,970 - TrafficRL.Train - INFO - Episode 352/500 - Reward: 994.34, Avg Reward: 993.86, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:23:21,161 - TrafficRL.Train - INFO - Episode 353/500 - Reward: 993.83, Avg Reward: 993.85, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:23:41,633 - TrafficRL.Train - INFO - Episode 354/500 - Reward: 993.66, Avg Reward: 993.86, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:23:59,675 - TrafficRL.Train - INFO - Episode 355/500 - Reward: 994.15, Avg Reward: 993.89, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:24:16,099 - TrafficRL.Train - INFO - Episode 356/500 - Reward: 995.65, Avg Reward: 993.91, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:24:34,512 - TrafficRL.Train - INFO - Episode 357/500 - Reward: 993.43, Avg Reward: 993.92, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:24:51,171 - TrafficRL.Train - INFO - Episode 358/500 - Reward: 992.68, Avg Reward: 993.91, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:25:08,244 - TrafficRL.Train - INFO - Episode 359/500 - Reward: 995.54, Avg Reward: 993.92, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:25:25,309 - TrafficRL.Train - INFO - Episode 360/500 - Reward: 995.42, Avg Reward: 993.92, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:25:25,310 - TrafficRL.Train - INFO - Evaluating agent at episode 360...
+2025-03-08 21:25:33,101 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 72450.49
+2025-03-08 21:25:33,101 - TrafficRL.Train - INFO - No improvement for 11 evaluations
+2025-03-08 21:25:52,441 - TrafficRL.Train - INFO - Episode 361/500 - Reward: 990.56, Avg Reward: 993.91, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:26:08,945 - TrafficRL.Train - INFO - Episode 362/500 - Reward: 992.10, Avg Reward: 993.88, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:26:27,142 - TrafficRL.Train - INFO - Episode 363/500 - Reward: 993.82, Avg Reward: 993.88, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:26:44,527 - TrafficRL.Train - INFO - Episode 364/500 - Reward: 993.42, Avg Reward: 993.87, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:27:02,465 - TrafficRL.Train - INFO - Episode 365/500 - Reward: 994.03, Avg Reward: 993.90, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:27:25,019 - TrafficRL.Train - INFO - Episode 366/500 - Reward: 996.76, Avg Reward: 993.92, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:27:52,657 - TrafficRL.Train - INFO - Episode 367/500 - Reward: 992.96, Avg Reward: 993.91, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:28:21,272 - TrafficRL.Train - INFO - Episode 368/500 - Reward: 993.48, Avg Reward: 993.87, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:28:50,043 - TrafficRL.Train - INFO - Episode 369/500 - Reward: 994.51, Avg Reward: 993.90, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:29:18,018 - TrafficRL.Train - INFO - Episode 370/500 - Reward: 994.39, Avg Reward: 993.92, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:29:46,570 - TrafficRL.Train - INFO - Episode 371/500 - Reward: 993.56, Avg Reward: 993.93, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:30:13,826 - TrafficRL.Train - INFO - Episode 372/500 - Reward: 995.15, Avg Reward: 993.97, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:30:43,993 - TrafficRL.Train - INFO - Episode 373/500 - Reward: 994.72, Avg Reward: 993.95, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:31:18,786 - TrafficRL.Train - INFO - Episode 374/500 - Reward: 995.68, Avg Reward: 993.98, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:31:41,250 - TrafficRL.Train - INFO - Episode 375/500 - Reward: 994.27, Avg Reward: 993.98, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:31:41,351 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_375.pth
+2025-03-08 21:31:41,352 - TrafficRL.Train - INFO - Model checkpoint saved at episode 375
+2025-03-08 21:32:09,149 - TrafficRL.Train - INFO - Episode 376/500 - Reward: 993.87, Avg Reward: 993.99, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:32:36,883 - TrafficRL.Train - INFO - Episode 377/500 - Reward: 993.67, Avg Reward: 993.98, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:33:07,491 - TrafficRL.Train - INFO - Episode 378/500 - Reward: 993.53, Avg Reward: 993.99, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:33:36,517 - TrafficRL.Train - INFO - Episode 379/500 - Reward: 996.46, Avg Reward: 994.01, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:34:02,071 - TrafficRL.Train - INFO - Episode 380/500 - Reward: 994.33, Avg Reward: 994.02, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:34:02,073 - TrafficRL.Train - INFO - Evaluating agent at episode 380...
+2025-03-08 21:34:13,441 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 76191.74
+2025-03-08 21:34:13,441 - TrafficRL.Train - INFO - No improvement for 12 evaluations
+2025-03-08 21:34:41,834 - TrafficRL.Train - INFO - Episode 381/500 - Reward: 995.10, Avg Reward: 994.05, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:35:14,809 - TrafficRL.Train - INFO - Episode 382/500 - Reward: 993.80, Avg Reward: 994.07, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:35:53,063 - TrafficRL.Train - INFO - Episode 383/500 - Reward: 995.79, Avg Reward: 994.09, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:36:25,867 - TrafficRL.Train - INFO - Episode 384/500 - Reward: 994.00, Avg Reward: 994.09, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:37:01,953 - TrafficRL.Train - INFO - Episode 385/500 - Reward: 992.66, Avg Reward: 994.06, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:37:30,366 - TrafficRL.Train - INFO - Episode 386/500 - Reward: 992.89, Avg Reward: 994.04, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:37:55,464 - TrafficRL.Train - INFO - Episode 387/500 - Reward: 993.60, Avg Reward: 994.03, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:38:17,865 - TrafficRL.Train - INFO - Episode 388/500 - Reward: 993.97, Avg Reward: 994.03, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:38:37,326 - TrafficRL.Train - INFO - Episode 389/500 - Reward: 994.51, Avg Reward: 994.04, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:38:56,312 - TrafficRL.Train - INFO - Episode 390/500 - Reward: 993.35, Avg Reward: 994.04, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:39:16,845 - TrafficRL.Train - INFO - Episode 391/500 - Reward: 994.03, Avg Reward: 994.05, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:39:41,999 - TrafficRL.Train - INFO - Episode 392/500 - Reward: 992.37, Avg Reward: 994.07, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:40:08,384 - TrafficRL.Train - INFO - Episode 393/500 - Reward: 995.69, Avg Reward: 994.11, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:40:35,881 - TrafficRL.Train - INFO - Episode 394/500 - Reward: 996.42, Avg Reward: 994.10, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:41:00,729 - TrafficRL.Train - INFO - Episode 395/500 - Reward: 992.36, Avg Reward: 994.08, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:41:25,700 - TrafficRL.Train - INFO - Episode 396/500 - Reward: 994.07, Avg Reward: 994.08, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:41:54,028 - TrafficRL.Train - INFO - Episode 397/500 - Reward: 994.82, Avg Reward: 994.10, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:42:22,715 - TrafficRL.Train - INFO - Episode 398/500 - Reward: 995.10, Avg Reward: 994.12, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:42:54,281 - TrafficRL.Train - INFO - Episode 399/500 - Reward: 994.44, Avg Reward: 994.15, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:43:22,965 - TrafficRL.Train - INFO - Episode 400/500 - Reward: 994.51, Avg Reward: 994.16, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:43:22,967 - TrafficRL.Train - INFO - Evaluating agent at episode 400...
+2025-03-08 21:43:34,680 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 83093.94
+2025-03-08 21:43:34,681 - TrafficRL.Train - INFO - No improvement for 13 evaluations
+2025-03-08 21:43:34,832 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_400.pth
+2025-03-08 21:43:34,832 - TrafficRL.Train - INFO - Model checkpoint saved at episode 400
+2025-03-08 21:44:01,290 - TrafficRL.Train - INFO - Episode 401/500 - Reward: 995.45, Avg Reward: 994.18, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:44:18,286 - TrafficRL.Train - INFO - Episode 402/500 - Reward: 993.20, Avg Reward: 994.17, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:44:34,092 - TrafficRL.Train - INFO - Episode 403/500 - Reward: 994.69, Avg Reward: 994.16, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:44:49,009 - TrafficRL.Train - INFO - Episode 404/500 - Reward: 993.49, Avg Reward: 994.15, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:45:03,592 - TrafficRL.Train - INFO - Episode 405/500 - Reward: 994.74, Avg Reward: 994.17, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:45:17,843 - TrafficRL.Train - INFO - Episode 406/500 - Reward: 994.42, Avg Reward: 994.16, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:45:32,468 - TrafficRL.Train - INFO - Episode 407/500 - Reward: 996.11, Avg Reward: 994.17, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:45:48,372 - TrafficRL.Train - INFO - Episode 408/500 - Reward: 995.30, Avg Reward: 994.18, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:46:00,264 - TrafficRL.Train - INFO - Episode 409/500 - Reward: 994.52, Avg Reward: 994.19, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:46:11,600 - TrafficRL.Train - INFO - Episode 410/500 - Reward: 993.24, Avg Reward: 994.19, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:46:23,202 - TrafficRL.Train - INFO - Episode 411/500 - Reward: 994.82, Avg Reward: 994.20, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:46:35,040 - TrafficRL.Train - INFO - Episode 412/500 - Reward: 993.61, Avg Reward: 994.25, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:46:45,551 - TrafficRL.Train - INFO - Episode 413/500 - Reward: 996.02, Avg Reward: 994.29, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:46:56,058 - TrafficRL.Train - INFO - Episode 414/500 - Reward: 995.14, Avg Reward: 994.29, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:47:07,920 - TrafficRL.Train - INFO - Episode 415/500 - Reward: 994.22, Avg Reward: 994.29, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:47:18,811 - TrafficRL.Train - INFO - Episode 416/500 - Reward: 994.90, Avg Reward: 994.30, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:47:29,113 - TrafficRL.Train - INFO - Episode 417/500 - Reward: 995.78, Avg Reward: 994.32, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:47:39,708 - TrafficRL.Train - INFO - Episode 418/500 - Reward: 991.91, Avg Reward: 994.28, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:47:50,054 - TrafficRL.Train - INFO - Episode 419/500 - Reward: 993.40, Avg Reward: 994.27, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:48:01,341 - TrafficRL.Train - INFO - Episode 420/500 - Reward: 993.56, Avg Reward: 994.25, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:48:01,342 - TrafficRL.Train - INFO - Evaluating agent at episode 420...
+2025-03-08 21:48:07,183 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 54922.41
+2025-03-08 21:48:07,183 - TrafficRL.Train - INFO - No improvement for 14 evaluations
+2025-03-08 21:48:18,581 - TrafficRL.Train - INFO - Episode 421/500 - Reward: 995.48, Avg Reward: 994.26, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:48:28,842 - TrafficRL.Train - INFO - Episode 422/500 - Reward: 992.75, Avg Reward: 994.24, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:48:39,189 - TrafficRL.Train - INFO - Episode 423/500 - Reward: 993.56, Avg Reward: 994.23, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:48:49,166 - TrafficRL.Train - INFO - Episode 424/500 - Reward: 996.21, Avg Reward: 994.26, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:48:59,288 - TrafficRL.Train - INFO - Episode 425/500 - Reward: 996.83, Avg Reward: 994.28, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:48:59,364 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_425.pth
+2025-03-08 21:48:59,364 - TrafficRL.Train - INFO - Model checkpoint saved at episode 425
+2025-03-08 21:49:09,118 - TrafficRL.Train - INFO - Episode 426/500 - Reward: 993.81, Avg Reward: 994.28, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:49:18,614 - TrafficRL.Train - INFO - Episode 427/500 - Reward: 995.99, Avg Reward: 994.31, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:49:28,439 - TrafficRL.Train - INFO - Episode 428/500 - Reward: 993.72, Avg Reward: 994.34, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:49:38,057 - TrafficRL.Train - INFO - Episode 429/500 - Reward: 996.51, Avg Reward: 994.36, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:49:47,589 - TrafficRL.Train - INFO - Episode 430/500 - Reward: 993.30, Avg Reward: 994.34, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:49:57,134 - TrafficRL.Train - INFO - Episode 431/500 - Reward: 995.97, Avg Reward: 994.37, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:50:06,748 - TrafficRL.Train - INFO - Episode 432/500 - Reward: 995.89, Avg Reward: 994.39, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:50:16,192 - TrafficRL.Train - INFO - Episode 433/500 - Reward: 995.81, Avg Reward: 994.42, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:50:26,135 - TrafficRL.Train - INFO - Episode 434/500 - Reward: 994.90, Avg Reward: 994.42, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:50:35,950 - TrafficRL.Train - INFO - Episode 435/500 - Reward: 994.22, Avg Reward: 994.42, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:50:45,635 - TrafficRL.Train - INFO - Episode 436/500 - Reward: 992.14, Avg Reward: 994.38, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:50:55,304 - TrafficRL.Train - INFO - Episode 437/500 - Reward: 994.63, Avg Reward: 994.36, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:51:04,756 - TrafficRL.Train - INFO - Episode 438/500 - Reward: 993.63, Avg Reward: 994.35, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:51:15,861 - TrafficRL.Train - INFO - Episode 439/500 - Reward: 996.73, Avg Reward: 994.37, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:51:26,057 - TrafficRL.Train - INFO - Episode 440/500 - Reward: 994.96, Avg Reward: 994.38, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:51:26,057 - TrafficRL.Train - INFO - Evaluating agent at episode 440...
+2025-03-08 21:51:30,953 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 71743.85
+2025-03-08 21:51:30,953 - TrafficRL.Train - INFO - No improvement for 15 evaluations
+2025-03-08 21:51:41,096 - TrafficRL.Train - INFO - Episode 441/500 - Reward: 994.75, Avg Reward: 994.38, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:51:50,843 - TrafficRL.Train - INFO - Episode 442/500 - Reward: 995.94, Avg Reward: 994.40, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:52:00,627 - TrafficRL.Train - INFO - Episode 443/500 - Reward: 993.18, Avg Reward: 994.37, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:52:10,616 - TrafficRL.Train - INFO - Episode 444/500 - Reward: 992.11, Avg Reward: 994.35, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:52:20,609 - TrafficRL.Train - INFO - Episode 445/500 - Reward: 993.07, Avg Reward: 994.34, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:52:30,964 - TrafficRL.Train - INFO - Episode 446/500 - Reward: 993.78, Avg Reward: 994.33, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:52:41,098 - TrafficRL.Train - INFO - Episode 447/500 - Reward: 994.88, Avg Reward: 994.32, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:52:50,983 - TrafficRL.Train - INFO - Episode 448/500 - Reward: 992.95, Avg Reward: 994.31, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:53:00,884 - TrafficRL.Train - INFO - Episode 449/500 - Reward: 994.93, Avg Reward: 994.31, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:53:10,748 - TrafficRL.Train - INFO - Episode 450/500 - Reward: 995.22, Avg Reward: 994.32, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:53:10,831 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_450.pth
+2025-03-08 21:53:10,831 - TrafficRL.Train - INFO - Model checkpoint saved at episode 450
+2025-03-08 21:53:20,980 - TrafficRL.Train - INFO - Episode 451/500 - Reward: 995.01, Avg Reward: 994.35, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:53:31,108 - TrafficRL.Train - INFO - Episode 452/500 - Reward: 995.62, Avg Reward: 994.36, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:53:41,116 - TrafficRL.Train - INFO - Episode 453/500 - Reward: 994.43, Avg Reward: 994.37, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:53:50,977 - TrafficRL.Train - INFO - Episode 454/500 - Reward: 994.91, Avg Reward: 994.38, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:54:00,946 - TrafficRL.Train - INFO - Episode 455/500 - Reward: 993.81, Avg Reward: 994.38, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:54:10,810 - TrafficRL.Train - INFO - Episode 456/500 - Reward: 995.54, Avg Reward: 994.38, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:54:20,659 - TrafficRL.Train - INFO - Episode 457/500 - Reward: 993.81, Avg Reward: 994.38, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:54:30,696 - TrafficRL.Train - INFO - Episode 458/500 - Reward: 994.25, Avg Reward: 994.39, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:54:40,878 - TrafficRL.Train - INFO - Episode 459/500 - Reward: 996.97, Avg Reward: 994.41, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:54:50,557 - TrafficRL.Train - INFO - Episode 460/500 - Reward: 996.06, Avg Reward: 994.42, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:54:50,557 - TrafficRL.Train - INFO - Evaluating agent at episode 460...
+2025-03-08 21:54:55,428 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 79950.53
+2025-03-08 21:54:55,428 - TrafficRL.Train - INFO - No improvement for 16 evaluations
+2025-03-08 21:55:05,262 - TrafficRL.Train - INFO - Episode 461/500 - Reward: 995.26, Avg Reward: 994.46, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:55:15,063 - TrafficRL.Train - INFO - Episode 462/500 - Reward: 993.13, Avg Reward: 994.47, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:55:25,110 - TrafficRL.Train - INFO - Episode 463/500 - Reward: 992.37, Avg Reward: 994.46, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:55:35,066 - TrafficRL.Train - INFO - Episode 464/500 - Reward: 994.52, Avg Reward: 994.47, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:55:45,163 - TrafficRL.Train - INFO - Episode 465/500 - Reward: 994.85, Avg Reward: 994.48, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:55:54,944 - TrafficRL.Train - INFO - Episode 466/500 - Reward: 996.89, Avg Reward: 994.48, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:56:04,721 - TrafficRL.Train - INFO - Episode 467/500 - Reward: 992.95, Avg Reward: 994.48, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:56:14,641 - TrafficRL.Train - INFO - Episode 468/500 - Reward: 994.63, Avg Reward: 994.49, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:56:24,602 - TrafficRL.Train - INFO - Episode 469/500 - Reward: 993.35, Avg Reward: 994.48, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:56:34,553 - TrafficRL.Train - INFO - Episode 470/500 - Reward: 994.09, Avg Reward: 994.48, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:56:44,559 - TrafficRL.Train - INFO - Episode 471/500 - Reward: 993.86, Avg Reward: 994.48, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:56:54,311 - TrafficRL.Train - INFO - Episode 472/500 - Reward: 993.91, Avg Reward: 994.47, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:57:04,505 - TrafficRL.Train - INFO - Episode 473/500 - Reward: 991.72, Avg Reward: 994.44, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:57:14,553 - TrafficRL.Train - INFO - Episode 474/500 - Reward: 993.46, Avg Reward: 994.41, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:57:24,844 - TrafficRL.Train - INFO - Episode 475/500 - Reward: 995.11, Avg Reward: 994.42, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:57:24,928 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_475.pth
+2025-03-08 21:57:24,928 - TrafficRL.Train - INFO - Model checkpoint saved at episode 475
+2025-03-08 21:57:35,158 - TrafficRL.Train - INFO - Episode 476/500 - Reward: 993.62, Avg Reward: 994.42, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:57:47,496 - TrafficRL.Train - INFO - Episode 477/500 - Reward: 993.97, Avg Reward: 994.42, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:58:04,630 - TrafficRL.Train - INFO - Episode 478/500 - Reward: 992.29, Avg Reward: 994.41, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:58:29,271 - TrafficRL.Train - INFO - Episode 479/500 - Reward: 995.54, Avg Reward: 994.40, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:58:45,823 - TrafficRL.Train - INFO - Episode 480/500 - Reward: 994.33, Avg Reward: 994.40, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:58:45,824 - TrafficRL.Train - INFO - Evaluating agent at episode 480...
+2025-03-08 21:58:51,672 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 72390.82
+2025-03-08 21:58:51,673 - TrafficRL.Train - INFO - No improvement for 17 evaluations
+2025-03-08 21:59:04,256 - TrafficRL.Train - INFO - Episode 481/500 - Reward: 994.99, Avg Reward: 994.40, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:59:16,163 - TrafficRL.Train - INFO - Episode 482/500 - Reward: 995.66, Avg Reward: 994.42, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:59:28,270 - TrafficRL.Train - INFO - Episode 483/500 - Reward: 993.76, Avg Reward: 994.40, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:59:42,086 - TrafficRL.Train - INFO - Episode 484/500 - Reward: 994.75, Avg Reward: 994.41, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 21:59:56,254 - TrafficRL.Train - INFO - Episode 485/500 - Reward: 993.49, Avg Reward: 994.41, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:00:08,989 - TrafficRL.Train - INFO - Episode 486/500 - Reward: 994.91, Avg Reward: 994.43, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:00:20,134 - TrafficRL.Train - INFO - Episode 487/500 - Reward: 991.31, Avg Reward: 994.41, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:00:33,559 - TrafficRL.Train - INFO - Episode 488/500 - Reward: 994.42, Avg Reward: 994.42, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:00:46,454 - TrafficRL.Train - INFO - Episode 489/500 - Reward: 994.13, Avg Reward: 994.41, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:01:01,829 - TrafficRL.Train - INFO - Episode 490/500 - Reward: 995.17, Avg Reward: 994.43, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:01:16,395 - TrafficRL.Train - INFO - Episode 491/500 - Reward: 993.34, Avg Reward: 994.42, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:01:29,165 - TrafficRL.Train - INFO - Episode 492/500 - Reward: 995.87, Avg Reward: 994.46, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:01:43,537 - TrafficRL.Train - INFO - Episode 493/500 - Reward: 995.02, Avg Reward: 994.45, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:01:58,366 - TrafficRL.Train - INFO - Episode 494/500 - Reward: 994.44, Avg Reward: 994.43, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:02:13,321 - TrafficRL.Train - INFO - Episode 495/500 - Reward: 994.54, Avg Reward: 994.45, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:02:29,034 - TrafficRL.Train - INFO - Episode 496/500 - Reward: 994.76, Avg Reward: 994.46, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:02:40,141 - TrafficRL.Train - INFO - Episode 497/500 - Reward: 993.67, Avg Reward: 994.45, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:02:51,276 - TrafficRL.Train - INFO - Episode 498/500 - Reward: 993.25, Avg Reward: 994.43, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:03:01,779 - TrafficRL.Train - INFO - Episode 499/500 - Reward: 993.14, Avg Reward: 994.42, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:03:12,732 - TrafficRL.Train - INFO - Episode 500/500 - Reward: 992.56, Avg Reward: 994.40, Epsilon: 0.0100, LR: 0.000000, Traffic: uniform
+2025-03-08 22:03:12,732 - TrafficRL.Train - INFO - Evaluating agent at episode 500...
+2025-03-08 22:03:18,390 - TrafficRL.Train - INFO - Evaluation - Avg Reward: 79264.06
+2025-03-08 22:03:18,390 - TrafficRL.Train - INFO - No improvement for 18 evaluations
+2025-03-08 22:03:18,477 - TrafficRL.Agent - INFO - Model saved to results/training/model_episode_500.pth
+2025-03-08 22:03:18,477 - TrafficRL.Train - INFO - Model checkpoint saved at episode 500
+2025-03-08 22:03:18,570 - TrafficRL.Agent - INFO - Model saved to results/training/final_model.pth
+2025-03-08 22:03:18,571 - TrafficRL.Train - INFO - Final model saved successfully
+2025-03-08 22:03:18,572 - TrafficRL.Train - INFO - Total training time: 6517.85 seconds
+2025-03-08 22:03:18,969 - TrafficRL - INFO - Training complete, visualizing results...
+2025-03-08 22:03:20,025 - TrafficRL - INFO - Training visualization saved to results/training/training_progress.png
+2025-03-08 22:03:20,035 - TrafficRL - INFO - Training metrics saved to results/training/training_metrics.json
+2025-03-08 22:03:20,035 - TrafficRL - INFO - Training Summary:
+2025-03-08 22:03:20,035 - TrafficRL - INFO -   Episodes Completed: 500
+2025-03-08 22:03:20,035 - TrafficRL - INFO -   Final Average Reward: 994.3985690578576
+2025-03-08 22:03:20,035 - TrafficRL - INFO -   Best Model Path: results/training/best_model.pth

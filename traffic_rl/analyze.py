@@ -23,7 +23,7 @@ from traffic_rl.utils.analysis import (
     analyze_decision_boundaries,
     create_comprehensive_report
 )
-from traffic_rl.benchmark import benchmark_agents, create_benchmark_agents
+from traffic_rl.utils.benchmark import benchmark_agents, create_benchmark_agents
 
 logger = logging.getLogger("Analyze")
 
@@ -176,15 +176,21 @@ def run_comprehensive_analysis(
                 logger.warning("No agents available for benchmarking")
                 benchmark_results = None
         
-        # 3. Run comparative analysis on benchmark results
+        # 3. Handle benchmark results - avoid recreating visualizations
         if benchmark_results:
-            logger.info("Running comparative analysis...")
+            logger.info("Processing benchmark results...")
             
             # Get results section from benchmark results
             if "results" in benchmark_results:
                 benchmark_data = benchmark_results["results"]
             else:
                 benchmark_data = benchmark_results
+            
+            # Check if we're using existing benchmark results
+            using_existing_benchmark = benchmark_dir and os.path.exists(benchmark_dir)
+            
+            # Always run comparative analysis for consistency
+            logger.info("Running comparative analysis...")
             
             # Run comparative analysis
             comparative_output = os.path.join(analysis_dir, "comparative")
