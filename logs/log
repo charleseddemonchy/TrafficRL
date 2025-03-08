@@ -2500,3 +2500,2051 @@ ZeroDivisionError: float division by zero
 2025-03-08 22:03:20,035 - TrafficRL - INFO -   Episodes Completed: 500
 2025-03-08 22:03:20,035 - TrafficRL - INFO -   Final Average Reward: 994.3985690578576
 2025-03-08 22:03:20,035 - TrafficRL - INFO -   Best Model Path: results/training/best_model.pth
+2025-03-08 22:27:29,897 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-08 22:27:29,922 - TrafficRL - INFO - Analyzing training metrics...
+2025-03-08 22:27:31,615 - TrafficRL.Utils.Analysis - INFO - Training analysis completed and saved to results/analysis/analysis_20250308_222729/training_training
+2025-03-08 22:27:31,615 - TrafficRL - INFO - Training analysis for training completed.
+2025-03-08 22:27:31,615 - TrafficRL - INFO - Running new benchmark across models and baselines...
+2025-03-08 22:27:31,615 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-08 22:27:31,615 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-08 22:27:31,615 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-08 22:27:31,617 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-08 22:27:36,446 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-08 22:27:36,447 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-08 22:27:36,447 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-08 22:27:36,447 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-08 22:27:36,447 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 22:27:41,236 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-08 22:27:41,237 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-08 22:27:41,237 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-08 22:27:41,237 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-08 22:27:41,237 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 22:27:45,922 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-08 22:27:45,923 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-08 22:27:45,923 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-08 22:27:45,924 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-08 22:27:45,924 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 22:27:50,628 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-08 22:27:50,628 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-08 22:27:50,628 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-08 22:27:50,628 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-08 22:27:50,628 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-08 22:27:55,130 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-08 22:27:55,131 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-08 22:27:55,131 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-08 22:27:55,131 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-08 22:27:55,131 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-08 22:27:59,782 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-08 22:27:59,782 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-08 22:27:59,782 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-08 22:27:59,783 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-08 22:27:59,783 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 22:28:04,792 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-08 22:28:04,793 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-08 22:28:04,793 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-08 22:28:04,793 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-08 22:28:04,793 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 22:28:09,402 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-08 22:28:09,403 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-08 22:28:09,403 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-08 22:28:09,403 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-08 22:28:09,403 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 22:28:14,157 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-08 22:28:14,158 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-08 22:28:14,158 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-08 22:28:14,159 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-08 22:28:14,159 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 22:28:14,160 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 22:28:14,160 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 22:28:16,428 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 22:28:16,464 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 22:28:27,243 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on uniform:
+2025-03-08 22:28:27,244 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 77274.61 ± 16505.91
+2025-03-08 22:28:27,244 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 220.87
+2025-03-08 22:28:27,244 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8796134.82
+2025-03-08 22:28:27,244 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.0%, EW=97.0%
+2025-03-08 22:28:27,247 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 22:28:27,247 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 22:28:27,258 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 22:28:27,273 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 22:28:37,562 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on rush_hour:
+2025-03-08 22:28:37,562 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 289406.64 ± 34200.18
+2025-03-08 22:28:37,562 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 232.06
+2025-03-08 22:28:37,562 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 13283531.94
+2025-03-08 22:28:37,562 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=2.0%, EW=98.0%
+2025-03-08 22:28:37,565 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 22:28:37,565 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 22:28:37,572 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 22:28:37,587 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 22:28:48,131 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on weekend:
+2025-03-08 22:28:48,132 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 143313.87 ± 34100.28
+2025-03-08 22:28:48,132 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 212.56
+2025-03-08 22:28:48,132 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9845543.02
+2025-03-08 22:28:48,132 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.6%, EW=96.4%
+2025-03-08 22:28:48,149 - TrafficRL.Utils.Benchmark - INFO - Benchmark results saved to results/analysis/analysis_20250308_222729/benchmark/benchmark_20250308_222731/benchmark_results.json
+2025-03-08 22:29:02,241 - TrafficRL.Utils.Benchmark - INFO - Benchmark visualizations created in results/analysis/analysis_20250308_222729/benchmark/benchmark_20250308_222731/plots
+2025-03-08 22:29:02,251 - TrafficRL - INFO - Benchmark completed.
+2025-03-08 22:29:02,252 - TrafficRL - INFO - Processing benchmark results...
+2025-03-08 22:29:02,252 - TrafficRL - INFO - Running comparative analysis...
+2025-03-08 22:29:03,611 - TrafficRL.Utils.Analysis - ERROR - Error in comparative analysis: Image data of dtype object cannot be converted to float
+2025-03-08 22:29:03,628 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 1875, in comparative_analysis
+    sns.heatmap(pattern_impact_data, annot=True, cmap="YlGnBu", fmt=".1f")
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 459, in heatmap
+    plotter.plot(ax, cbar_ax, kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 306, in plot
+    mesh = ax.pcolormesh(self.plot_data, cmap=self.cmap, **kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/__init__.py", line 1473, in inner
+    return func(
+           ^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 6434, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2146, in __init__
+    Collection.__init__(self, **kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 206, in __init__
+    self._internal_update(kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1216, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1192, in _update_props
+    ret.append(func(v))
+               ^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2020, in set_array
+    return super().set_array(A)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/cm.py", line 452, in set_array
+    raise TypeError(f"Image data of dtype {A.dtype} cannot be "
+TypeError: Image data of dtype object cannot be converted to float
+
+2025-03-08 22:29:03,628 - TrafficRL - INFO - Comparative analysis completed.
+2025-03-08 22:29:03,628 - TrafficRL - INFO - Analyzing agent behavior...
+2025-03-08 22:29:03,629 - TrafficRL - INFO - Agent analysis for training completed.
+2025-03-08 22:29:03,629 - TrafficRL - INFO - Generating comprehensive report...
+2025-03-08 22:29:03,633 - TrafficRL.Utils.Analysis - INFO - Report generation: Creating visualizations
+2025-03-08 22:29:03,633 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: reward_comparison.png
+2025-03-08 22:29:03,634 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: waiting_time_comparison.png
+2025-03-08 22:29:03,634 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: throughput_comparison.png
+2025-03-08 22:29:03,634 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution.png
+2025-03-08 22:29:03,634 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: congestion_performance.png
+2025-03-08 22:29:03,634 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: radar_chart_uniform.png
+2025-03-08 22:29:03,634 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: traffic_pattern_impact.png
+2025-03-08 22:29:03,635 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: density_waiting_correlation.png
+2025-03-08 22:29:03,635 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution_by_pattern.png
+2025-03-08 22:29:03,635 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: agent_performance_radar.png
+2025-03-08 22:29:03,635 - TrafficRL.Utils.Analysis - INFO - Found and included 0 benchmark plots in the report
+2025-03-08 22:29:03,636 - TrafficRL.Utils.Analysis - INFO - Comprehensive report generated at results/analysis/analysis_20250308_222729/report/analysis_report.html
+2025-03-08 22:29:03,637 - TrafficRL - INFO - Comprehensive analysis completed. Results in results/analysis/analysis_20250308_222729
+2025-03-08 22:29:03,637 - TrafficRL - INFO - Analysis completed. Results available in results/analysis/analysis_20250308_222729
+2025-03-08 22:29:03,638 - TrafficRL - INFO - HTML report available at: results/analysis/analysis_20250308_222729/report/analysis_report.html
+2025-03-08 22:42:03,409 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-08 22:42:03,412 - TrafficRL - INFO - Analyzing training metrics...
+2025-03-08 22:42:05,182 - TrafficRL.Utils.Analysis - INFO - Training analysis completed and saved to results/analysis/analysis_20250308_224203/training_training
+2025-03-08 22:42:05,182 - TrafficRL - INFO - Training analysis for training completed.
+2025-03-08 22:42:05,182 - TrafficRL - INFO - Running new benchmark across models and baselines...
+2025-03-08 22:42:05,182 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-08 22:42:05,183 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-08 22:42:05,183 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-08 22:42:05,183 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-08 22:42:10,231 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-08 22:42:10,231 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-08 22:42:10,231 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-08 22:42:10,231 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-08 22:42:10,231 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 22:42:14,942 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-08 22:42:14,943 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-08 22:42:14,943 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-08 22:42:14,943 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-08 22:42:14,943 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 22:42:19,811 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-08 22:42:19,812 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-08 22:42:19,812 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-08 22:42:19,812 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-08 22:42:19,812 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 22:42:24,517 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-08 22:42:24,518 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-08 22:42:24,518 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-08 22:42:24,518 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-08 22:42:24,518 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-08 22:42:29,074 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-08 22:42:29,074 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-08 22:42:29,074 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-08 22:42:29,074 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-08 22:42:29,074 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-08 22:42:33,785 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-08 22:42:33,785 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-08 22:42:33,785 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-08 22:42:33,785 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-08 22:42:33,785 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 22:42:38,622 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-08 22:42:38,622 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-08 22:42:38,622 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-08 22:42:38,622 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-08 22:42:38,623 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 22:42:43,333 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-08 22:42:43,333 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-08 22:42:43,333 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-08 22:42:43,334 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-08 22:42:43,334 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 22:42:48,184 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-08 22:42:48,184 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-08 22:42:48,184 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-08 22:42:48,185 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-08 22:42:48,185 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 22:42:48,186 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 22:42:48,186 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 22:42:50,424 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 22:42:50,461 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 22:43:00,974 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on uniform:
+2025-03-08 22:43:00,975 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 77274.61 ± 16505.91
+2025-03-08 22:43:00,975 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 220.87
+2025-03-08 22:43:00,975 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8796134.82
+2025-03-08 22:43:00,975 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.0%, EW=97.0%
+2025-03-08 22:43:00,977 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 22:43:00,978 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 22:43:00,985 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 22:43:01,003 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 22:43:11,522 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on rush_hour:
+2025-03-08 22:43:11,522 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 289406.64 ± 34200.18
+2025-03-08 22:43:11,522 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 232.06
+2025-03-08 22:43:11,523 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 13283531.94
+2025-03-08 22:43:11,523 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=2.0%, EW=98.0%
+2025-03-08 22:43:11,525 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 22:43:11,525 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 22:43:11,533 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 22:43:11,547 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 22:43:22,599 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on weekend:
+2025-03-08 22:43:22,599 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 143313.87 ± 34100.28
+2025-03-08 22:43:22,599 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 212.56
+2025-03-08 22:43:22,600 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9845543.02
+2025-03-08 22:43:22,600 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.6%, EW=96.4%
+2025-03-08 22:43:22,620 - TrafficRL.Utils.Benchmark - INFO - Benchmark results saved to results/analysis/analysis_20250308_224203/benchmark/benchmark_20250308_224205/benchmark_results.json
+2025-03-08 22:43:36,806 - TrafficRL.Utils.Benchmark - INFO - Benchmark visualizations created in results/analysis/analysis_20250308_224203/benchmark/benchmark_20250308_224205/plots
+2025-03-08 22:43:36,818 - TrafficRL - INFO - Benchmark completed.
+2025-03-08 22:43:36,818 - TrafficRL - INFO - Processing benchmark results...
+2025-03-08 22:43:36,818 - TrafficRL - INFO - Running comparative analysis...
+2025-03-08 22:43:38,158 - TrafficRL.Utils.Analysis - ERROR - Error in comparative analysis: Image data of dtype object cannot be converted to float
+2025-03-08 22:43:38,176 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 1875, in comparative_analysis
+    sns.heatmap(pattern_impact_data, annot=True, cmap="YlGnBu", fmt=".1f")
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 459, in heatmap
+    plotter.plot(ax, cbar_ax, kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 306, in plot
+    mesh = ax.pcolormesh(self.plot_data, cmap=self.cmap, **kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/__init__.py", line 1473, in inner
+    return func(
+           ^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 6434, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2146, in __init__
+    Collection.__init__(self, **kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 206, in __init__
+    self._internal_update(kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1216, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1192, in _update_props
+    ret.append(func(v))
+               ^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2020, in set_array
+    return super().set_array(A)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/cm.py", line 452, in set_array
+    raise TypeError(f"Image data of dtype {A.dtype} cannot be "
+TypeError: Image data of dtype object cannot be converted to float
+
+2025-03-08 22:43:38,177 - TrafficRL - INFO - Comparative analysis completed.
+2025-03-08 22:43:38,177 - TrafficRL - INFO - Analyzing agent behavior...
+2025-03-08 22:43:38,179 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 22:43:38,179 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 22:43:38,191 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 22:43:38,220 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 22:43:38,224 - TrafficRL - INFO - Successfully loaded model from results/training/best_model.pth for Q-value analysis
+2025-03-08 22:43:38,333 - TrafficRL.Utils.Analysis - ERROR - Error visualizing learning progress: too many indices for array: array is 2-dimensional, but 3 were indexed
+2025-03-08 22:43:38,334 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 1058, in visualize_learning_progress
+    surf = ax.plot_surface(x, y, q_values[:, :, action], cmap='viridis',
+                                ~~~~~~~~^^^^^^^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+2025-03-08 22:43:38,334 - TrafficRL - INFO - Q-value visualization saved to results/analysis/analysis_20250308_224203/agent_training/q_values
+2025-03-08 22:43:38,334 - TrafficRL - ERROR - Error in comprehensive analysis: 'DQNAgent' object has no attribute 'model'
+2025-03-08 22:43:38,336 - TrafficRL - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/analyze.py", line 282, in run_comprehensive_analysis
+    "q_values_dir": os.path.join(agent_output, "q_values") if agent.model else None
+                                                              ^^^^^^^^^^^
+AttributeError: 'DQNAgent' object has no attribute 'model'
+
+2025-03-08 22:43:38,340 - TrafficRL - ERROR - Analysis failed.
+2025-03-08 22:46:30,247 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-08 22:46:30,248 - TrafficRL - INFO - Analyzing training metrics...
+2025-03-08 22:46:32,030 - TrafficRL.Utils.Analysis - INFO - Training analysis completed and saved to results/analysis/analysis_20250308_224630/training_training
+2025-03-08 22:46:32,030 - TrafficRL - INFO - Training analysis for training completed.
+2025-03-08 22:46:32,030 - TrafficRL - INFO - Running new benchmark across models and baselines...
+2025-03-08 22:46:32,030 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-08 22:46:32,031 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-08 22:46:32,031 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-08 22:46:32,032 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-08 22:46:36,956 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-08 22:46:36,957 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-08 22:46:36,957 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-08 22:46:36,957 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-08 22:46:36,958 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 22:46:41,628 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-08 22:46:41,628 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-08 22:46:41,628 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-08 22:46:41,628 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-08 22:46:41,628 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 22:46:46,304 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-08 22:46:46,304 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-08 22:46:46,304 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-08 22:46:46,305 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-08 22:46:46,305 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 22:46:50,985 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-08 22:46:50,985 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-08 22:46:50,986 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-08 22:46:50,986 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-08 22:46:50,986 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-08 22:46:55,598 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-08 22:46:55,600 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-08 22:46:55,600 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-08 22:46:55,600 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-08 22:46:55,600 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-08 22:47:00,285 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-08 22:47:00,285 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-08 22:47:00,285 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-08 22:47:00,285 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-08 22:47:00,285 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 22:47:05,107 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-08 22:47:05,108 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-08 22:47:05,108 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-08 22:47:05,108 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-08 22:47:05,108 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 22:47:09,753 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-08 22:47:09,753 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-08 22:47:09,753 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-08 22:47:09,753 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-08 22:47:09,754 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 22:47:14,512 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-08 22:47:14,512 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-08 22:47:14,513 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-08 22:47:14,513 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-08 22:47:14,513 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 22:47:14,514 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 22:47:14,514 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 22:47:16,814 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 22:47:16,850 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 22:47:27,430 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on uniform:
+2025-03-08 22:47:27,431 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 77274.61 ± 16505.91
+2025-03-08 22:47:27,431 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 220.87
+2025-03-08 22:47:27,431 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8796134.82
+2025-03-08 22:47:27,431 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.0%, EW=97.0%
+2025-03-08 22:47:27,433 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 22:47:27,434 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 22:47:27,443 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 22:47:27,460 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 22:47:37,766 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on rush_hour:
+2025-03-08 22:47:37,767 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 289406.64 ± 34200.18
+2025-03-08 22:47:37,767 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 232.06
+2025-03-08 22:47:37,767 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 13283531.94
+2025-03-08 22:47:37,767 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=2.0%, EW=98.0%
+2025-03-08 22:47:37,771 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 22:47:37,771 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 22:47:37,782 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 22:47:37,799 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 22:47:49,083 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on weekend:
+2025-03-08 22:47:49,084 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 143313.87 ± 34100.28
+2025-03-08 22:47:49,084 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 212.56
+2025-03-08 22:47:49,084 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9845543.02
+2025-03-08 22:47:49,084 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.6%, EW=96.4%
+2025-03-08 22:47:49,102 - TrafficRL.Utils.Benchmark - INFO - Benchmark results saved to results/analysis/analysis_20250308_224630/benchmark/benchmark_20250308_224632/benchmark_results.json
+2025-03-08 22:48:03,211 - TrafficRL.Utils.Benchmark - INFO - Benchmark visualizations created in results/analysis/analysis_20250308_224630/benchmark/benchmark_20250308_224632/plots
+2025-03-08 22:48:03,221 - TrafficRL - INFO - Benchmark completed.
+2025-03-08 22:48:03,221 - TrafficRL - INFO - Processing benchmark results...
+2025-03-08 22:48:03,221 - TrafficRL - INFO - Running comparative analysis...
+2025-03-08 22:48:04,508 - TrafficRL.Utils.Analysis - ERROR - Error in comparative analysis: Image data of dtype object cannot be converted to float
+2025-03-08 22:48:04,526 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 1884, in comparative_analysis
+    sns.heatmap(pattern_impact_data, annot=True, cmap="YlGnBu", fmt=".1f")
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 459, in heatmap
+    plotter.plot(ax, cbar_ax, kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 306, in plot
+    mesh = ax.pcolormesh(self.plot_data, cmap=self.cmap, **kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/__init__.py", line 1473, in inner
+    return func(
+           ^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 6434, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2146, in __init__
+    Collection.__init__(self, **kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 206, in __init__
+    self._internal_update(kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1216, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1192, in _update_props
+    ret.append(func(v))
+               ^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2020, in set_array
+    return super().set_array(A)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/cm.py", line 452, in set_array
+    raise TypeError(f"Image data of dtype {A.dtype} cannot be "
+TypeError: Image data of dtype object cannot be converted to float
+
+2025-03-08 22:48:04,527 - TrafficRL - INFO - Comparative analysis completed.
+2025-03-08 22:48:04,527 - TrafficRL - INFO - Analyzing agent behavior...
+2025-03-08 22:48:04,528 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 22:48:04,528 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 22:48:04,536 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 22:48:04,578 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 22:48:04,583 - TrafficRL - INFO - Successfully loaded model from results/training/best_model.pth for Q-value analysis
+2025-03-08 22:48:04,718 - TrafficRL.Utils.Analysis - ERROR - Error visualizing learning progress: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (2, 100) and arg 2 with shape (10, 10).
+2025-03-08 22:48:04,724 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 1067, in visualize_learning_progress
+    surf = ax.plot_surface(x, y, q_values_reshaped, cmap='viridis',
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/mpl_toolkits/mplot3d/axes3d.py", line 2000, in plot_surface
+    X, Y, Z = np.broadcast_arrays(X, Y, Z)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/numpy/lib/stride_tricks.py", line 540, in broadcast_arrays
+    shape = _broadcast_shape(*args)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/numpy/lib/stride_tricks.py", line 422, in _broadcast_shape
+    b = np.broadcast(*args[:32])
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (2, 100) and arg 2 with shape (10, 10).
+
+2025-03-08 22:48:04,724 - TrafficRL - INFO - Q-value visualization saved to results/analysis/analysis_20250308_224630/agent_training/q_values
+2025-03-08 22:48:04,725 - TrafficRL - INFO - Agent analysis for training completed.
+2025-03-08 22:48:04,725 - TrafficRL - INFO - Generating comprehensive report...
+2025-03-08 22:48:04,730 - TrafficRL.Utils.Analysis - INFO - Report generation: Creating visualizations
+2025-03-08 22:48:04,730 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: reward_comparison.png
+2025-03-08 22:48:04,730 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: waiting_time_comparison.png
+2025-03-08 22:48:04,731 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: throughput_comparison.png
+2025-03-08 22:48:04,731 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution.png
+2025-03-08 22:48:04,731 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: congestion_performance.png
+2025-03-08 22:48:04,731 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: radar_chart_uniform.png
+2025-03-08 22:48:04,732 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: traffic_pattern_impact.png
+2025-03-08 22:48:04,732 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: density_waiting_correlation.png
+2025-03-08 22:48:04,732 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution_by_pattern.png
+2025-03-08 22:48:04,733 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: agent_performance_radar.png
+2025-03-08 22:48:04,733 - TrafficRL.Utils.Analysis - INFO - Found and included 0 benchmark plots in the report
+2025-03-08 22:48:04,733 - TrafficRL.Utils.Analysis - INFO - Comprehensive report generated at results/analysis/analysis_20250308_224630/report/analysis_report.html
+2025-03-08 22:48:04,736 - TrafficRL - INFO - Comprehensive analysis completed. Results in results/analysis/analysis_20250308_224630
+2025-03-08 22:48:04,738 - TrafficRL - INFO - Analysis completed. Results available in results/analysis/analysis_20250308_224630
+2025-03-08 22:48:04,739 - TrafficRL - INFO - HTML report available at: results/analysis/analysis_20250308_224630/report/analysis_report.html
+2025-03-08 22:49:47,345 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-08 22:49:47,347 - TrafficRL - INFO - Analyzing training metrics...
+2025-03-08 22:49:49,120 - TrafficRL.Utils.Analysis - INFO - Training analysis completed and saved to results/analysis/analysis_20250308_224947/training_training
+2025-03-08 22:49:49,120 - TrafficRL - INFO - Training analysis for training completed.
+2025-03-08 22:49:49,121 - TrafficRL - INFO - Running new benchmark across models and baselines...
+2025-03-08 22:49:49,121 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-08 22:49:49,121 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-08 22:49:49,121 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-08 22:49:49,122 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-08 22:49:54,246 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-08 22:49:54,246 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-08 22:49:54,247 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-08 22:49:54,247 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-08 22:49:54,247 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 22:49:58,955 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-08 22:49:58,955 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-08 22:49:58,955 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-08 22:49:58,955 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-08 22:49:58,955 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 22:50:03,819 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-08 22:50:03,820 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-08 22:50:03,821 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-08 22:50:03,822 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-08 22:50:03,824 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 22:50:08,658 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-08 22:50:08,659 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-08 22:50:08,659 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-08 22:50:08,659 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-08 22:50:08,659 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-08 22:50:14,116 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-08 22:50:14,117 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-08 22:50:14,117 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-08 22:50:14,117 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-08 22:50:14,117 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-08 22:50:18,912 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-08 22:50:18,912 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-08 22:50:18,912 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-08 22:50:18,912 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-08 22:50:18,912 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 22:50:23,763 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-08 22:50:23,763 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-08 22:50:23,763 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-08 22:50:23,763 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-08 22:50:23,763 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 22:50:28,449 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-08 22:50:28,449 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-08 22:50:28,449 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-08 22:50:28,449 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-08 22:50:28,449 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 22:50:33,142 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-08 22:50:33,142 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-08 22:50:33,143 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-08 22:50:33,143 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-08 22:50:33,143 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 22:50:33,144 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 22:50:33,145 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 22:50:35,593 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 22:50:35,637 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 22:50:45,584 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on uniform:
+2025-03-08 22:50:45,585 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 77274.61 ± 16505.91
+2025-03-08 22:50:45,585 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 220.87
+2025-03-08 22:50:45,585 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8796134.82
+2025-03-08 22:50:45,585 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.0%, EW=97.0%
+2025-03-08 22:50:45,587 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 22:50:45,587 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 22:50:45,594 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 22:50:45,608 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 22:50:55,506 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on rush_hour:
+2025-03-08 22:50:55,506 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 289406.64 ± 34200.18
+2025-03-08 22:50:55,506 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 232.06
+2025-03-08 22:50:55,506 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 13283531.94
+2025-03-08 22:50:55,506 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=2.0%, EW=98.0%
+2025-03-08 22:50:55,509 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 22:50:55,509 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 22:50:55,516 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 22:50:55,531 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 22:51:05,627 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on weekend:
+2025-03-08 22:51:05,627 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 143313.87 ± 34100.28
+2025-03-08 22:51:05,627 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 212.56
+2025-03-08 22:51:05,627 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9845543.02
+2025-03-08 22:51:05,627 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.6%, EW=96.4%
+2025-03-08 22:51:05,645 - TrafficRL.Utils.Benchmark - INFO - Benchmark results saved to results/analysis/analysis_20250308_224947/benchmark/benchmark_20250308_224949/benchmark_results.json
+2025-03-08 22:51:19,225 - TrafficRL.Utils.Benchmark - INFO - Benchmark visualizations created in results/analysis/analysis_20250308_224947/benchmark/benchmark_20250308_224949/plots
+2025-03-08 22:51:19,235 - TrafficRL - INFO - Benchmark completed.
+2025-03-08 22:51:19,235 - TrafficRL - INFO - Processing benchmark results...
+2025-03-08 22:51:19,235 - TrafficRL - INFO - Running comparative analysis...
+2025-03-08 22:51:20,783 - TrafficRL.Utils.Analysis - ERROR - Error in comparative analysis: Image data of dtype object cannot be converted to float
+2025-03-08 22:51:20,801 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 1890, in comparative_analysis
+    sns.heatmap(pattern_impact_data, annot=True, cmap="YlGnBu", fmt=".1f")
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 459, in heatmap
+    plotter.plot(ax, cbar_ax, kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 306, in plot
+    mesh = ax.pcolormesh(self.plot_data, cmap=self.cmap, **kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/__init__.py", line 1473, in inner
+    return func(
+           ^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 6434, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2146, in __init__
+    Collection.__init__(self, **kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 206, in __init__
+    self._internal_update(kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1216, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1192, in _update_props
+    ret.append(func(v))
+               ^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2020, in set_array
+    return super().set_array(A)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/cm.py", line 452, in set_array
+    raise TypeError(f"Image data of dtype {A.dtype} cannot be "
+TypeError: Image data of dtype object cannot be converted to float
+
+2025-03-08 22:51:20,802 - TrafficRL - INFO - Comparative analysis completed.
+2025-03-08 22:51:20,802 - TrafficRL - INFO - Analyzing agent behavior...
+2025-03-08 22:51:20,803 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 22:51:20,804 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 22:51:20,817 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 22:51:20,843 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 22:51:20,843 - TrafficRL - INFO - Successfully loaded model from results/training/best_model.pth for Q-value analysis
+2025-03-08 22:51:24,720 - TrafficRL.Utils.Analysis - INFO - Learning progress visualizations saved to results/analysis/analysis_20250308_224947/agent_training/q_values
+2025-03-08 22:51:24,721 - TrafficRL - INFO - Q-value visualization saved to results/analysis/analysis_20250308_224947/agent_training/q_values
+2025-03-08 22:51:24,723 - TrafficRL - INFO - Agent analysis for training completed.
+2025-03-08 22:51:24,725 - TrafficRL - INFO - Generating comprehensive report...
+2025-03-08 22:51:24,730 - TrafficRL.Utils.Analysis - INFO - Report generation: Creating visualizations
+2025-03-08 22:51:24,731 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: reward_comparison.png
+2025-03-08 22:51:24,731 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: waiting_time_comparison.png
+2025-03-08 22:51:24,732 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: throughput_comparison.png
+2025-03-08 22:51:24,732 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution.png
+2025-03-08 22:51:24,732 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: congestion_performance.png
+2025-03-08 22:51:24,732 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: radar_chart_uniform.png
+2025-03-08 22:51:24,732 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: traffic_pattern_impact.png
+2025-03-08 22:51:24,732 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: density_waiting_correlation.png
+2025-03-08 22:51:24,733 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution_by_pattern.png
+2025-03-08 22:51:24,733 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: agent_performance_radar.png
+2025-03-08 22:51:24,733 - TrafficRL.Utils.Analysis - INFO - Found and included 0 benchmark plots in the report
+2025-03-08 22:51:24,733 - TrafficRL.Utils.Analysis - INFO - Comprehensive report generated at results/analysis/analysis_20250308_224947/report/analysis_report.html
+2025-03-08 22:51:24,736 - TrafficRL - INFO - Comprehensive analysis completed. Results in results/analysis/analysis_20250308_224947
+2025-03-08 22:51:24,741 - TrafficRL - INFO - Analysis completed. Results available in results/analysis/analysis_20250308_224947
+2025-03-08 22:51:24,741 - TrafficRL - INFO - HTML report available at: results/analysis/analysis_20250308_224947/report/analysis_report.html
+2025-03-08 23:20:21,054 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-08 23:20:21,103 - TrafficRL - INFO - Analyzing training metrics...
+2025-03-08 23:20:22,861 - TrafficRL.Utils.Analysis - INFO - Training analysis completed and saved to results/analysis/analysis_20250308_232021/training_training
+2025-03-08 23:20:22,862 - TrafficRL - INFO - Training analysis for training completed.
+2025-03-08 23:20:22,862 - TrafficRL - INFO - Running new benchmark across models and baselines...
+2025-03-08 23:20:22,862 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-08 23:20:22,862 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-08 23:20:22,862 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-08 23:20:22,864 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-08 23:20:27,850 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-08 23:20:27,850 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-08 23:20:27,850 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-08 23:20:27,850 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-08 23:20:27,851 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:20:32,650 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-08 23:20:32,651 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-08 23:20:32,651 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-08 23:20:32,651 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-08 23:20:32,651 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:20:37,401 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-08 23:20:37,401 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-08 23:20:37,401 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-08 23:20:37,401 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-08 23:20:37,401 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:20:42,103 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-08 23:20:42,104 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-08 23:20:42,104 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-08 23:20:42,104 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-08 23:20:42,104 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-08 23:20:46,680 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-08 23:20:46,680 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-08 23:20:46,681 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-08 23:20:46,681 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-08 23:20:46,681 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-08 23:20:51,382 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-08 23:20:51,382 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-08 23:20:51,382 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-08 23:20:51,382 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-08 23:20:51,383 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:20:56,281 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-08 23:20:56,281 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-08 23:20:56,281 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-08 23:20:56,282 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-08 23:20:56,282 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:21:00,985 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-08 23:21:00,985 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-08 23:21:00,985 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-08 23:21:00,985 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-08 23:21:00,985 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:21:05,843 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-08 23:21:05,843 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-08 23:21:05,843 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-08 23:21:05,844 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-08 23:21:05,844 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:21:05,845 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:21:05,845 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:21:08,044 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:21:08,080 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:21:18,487 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on uniform:
+2025-03-08 23:21:18,487 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 77274.61 ± 16505.91
+2025-03-08 23:21:18,488 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 220.87
+2025-03-08 23:21:18,488 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8796134.82
+2025-03-08 23:21:18,488 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.0%, EW=97.0%
+2025-03-08 23:21:18,491 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:21:18,492 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:21:18,499 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:21:18,518 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:21:29,006 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on rush_hour:
+2025-03-08 23:21:29,006 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 289406.64 ± 34200.18
+2025-03-08 23:21:29,006 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 232.06
+2025-03-08 23:21:29,006 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 13283531.94
+2025-03-08 23:21:29,006 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=2.0%, EW=98.0%
+2025-03-08 23:21:29,009 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:21:29,009 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:21:29,016 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:21:29,031 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:21:39,861 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on weekend:
+2025-03-08 23:21:39,862 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 143313.87 ± 34100.28
+2025-03-08 23:21:39,862 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 212.56
+2025-03-08 23:21:39,863 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9845543.02
+2025-03-08 23:21:39,863 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.6%, EW=96.4%
+2025-03-08 23:21:39,900 - TrafficRL.Utils.Benchmark - INFO - Benchmark results saved to results/analysis/analysis_20250308_232021/benchmark/benchmark_20250308_232022/benchmark_results.json
+2025-03-08 23:21:54,230 - TrafficRL.Utils.Benchmark - INFO - Benchmark visualizations created in results/analysis/analysis_20250308_232021/benchmark/benchmark_20250308_232022/plots
+2025-03-08 23:21:54,241 - TrafficRL - INFO - Benchmark completed.
+2025-03-08 23:21:54,242 - TrafficRL - INFO - Processing benchmark results...
+2025-03-08 23:21:54,242 - TrafficRL - INFO - Running comparative analysis...
+2025-03-08 23:21:55,614 - TrafficRL.Utils.Analysis - ERROR - Error in comparative analysis: Image data of dtype object cannot be converted to float
+2025-03-08 23:21:55,629 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 1890, in comparative_analysis
+    sns.heatmap(pattern_impact_data, annot=True, cmap="YlGnBu", fmt=".1f")
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 459, in heatmap
+    plotter.plot(ax, cbar_ax, kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 306, in plot
+    mesh = ax.pcolormesh(self.plot_data, cmap=self.cmap, **kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/__init__.py", line 1473, in inner
+    return func(
+           ^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 6434, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2146, in __init__
+    Collection.__init__(self, **kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 206, in __init__
+    self._internal_update(kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1216, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1192, in _update_props
+    ret.append(func(v))
+               ^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2020, in set_array
+    return super().set_array(A)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/cm.py", line 452, in set_array
+    raise TypeError(f"Image data of dtype {A.dtype} cannot be "
+TypeError: Image data of dtype object cannot be converted to float
+
+2025-03-08 23:21:55,630 - TrafficRL - INFO - Comparative analysis completed.
+2025-03-08 23:21:55,630 - TrafficRL - INFO - Analyzing agent behavior...
+2025-03-08 23:21:55,630 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:21:55,631 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:21:55,643 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:21:55,670 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:21:55,674 - TrafficRL - INFO - Successfully loaded model from results/training/best_model.pth for Q-value analysis
+2025-03-08 23:21:56,624 - TrafficRL.Utils.Analysis - ERROR - Error visualizing learning progress: Found array with dim 3. PCA expected <= 2.
+2025-03-08 23:21:56,631 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 1123, in visualize_learning_progress
+    pca_result = pca.fit_transform(combined_states)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/utils/_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/decomposition/_pca.py", line 468, in fit_transform
+    U, S, _, X, x_is_centered, xp = self._fit(X)
+                                    ^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/decomposition/_pca.py", line 505, in _fit
+    X = validate_data(
+        ^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2944, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1101, in check_array
+    raise ValueError(
+ValueError: Found array with dim 3. PCA expected <= 2.
+
+2025-03-08 23:21:56,631 - TrafficRL - INFO - Q-value visualization saved to results/analysis/analysis_20250308_232021/agent_training/q_values
+2025-03-08 23:21:56,632 - TrafficRL - INFO - Agent analysis for training completed.
+2025-03-08 23:21:56,632 - TrafficRL - INFO - Generating comprehensive report...
+2025-03-08 23:21:56,637 - TrafficRL.Utils.Analysis - INFO - Report generation: Creating visualizations
+2025-03-08 23:21:56,638 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: reward_comparison.png
+2025-03-08 23:21:56,638 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: waiting_time_comparison.png
+2025-03-08 23:21:56,638 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: throughput_comparison.png
+2025-03-08 23:21:56,638 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution.png
+2025-03-08 23:21:56,638 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: congestion_performance.png
+2025-03-08 23:21:56,638 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: radar_chart_uniform.png
+2025-03-08 23:21:56,639 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: traffic_pattern_impact.png
+2025-03-08 23:21:56,639 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: density_waiting_correlation.png
+2025-03-08 23:21:56,639 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution_by_pattern.png
+2025-03-08 23:21:56,639 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: agent_performance_radar.png
+2025-03-08 23:21:56,639 - TrafficRL.Utils.Analysis - INFO - Found and included 0 benchmark plots in the report
+2025-03-08 23:21:56,640 - TrafficRL.Utils.Analysis - INFO - Comprehensive report generated at results/analysis/analysis_20250308_232021/report/analysis_report.html
+2025-03-08 23:21:56,642 - TrafficRL - INFO - Comprehensive analysis completed. Results in results/analysis/analysis_20250308_232021
+2025-03-08 23:21:56,646 - TrafficRL - INFO - Analysis completed. Results available in results/analysis/analysis_20250308_232021
+2025-03-08 23:21:56,646 - TrafficRL - INFO - HTML report available at: results/analysis/analysis_20250308_232021/report/analysis_report.html
+2025-03-08 23:27:03,169 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-08 23:27:03,176 - TrafficRL - INFO - Analyzing training metrics...
+2025-03-08 23:27:04,956 - TrafficRL.Utils.Analysis - INFO - Training analysis completed and saved to results/analysis/analysis_20250308_232703/training_training
+2025-03-08 23:27:04,956 - TrafficRL - INFO - Training analysis for training completed.
+2025-03-08 23:27:04,956 - TrafficRL - INFO - Running new benchmark across models and baselines...
+2025-03-08 23:27:04,956 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-08 23:27:04,956 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-08 23:27:04,957 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-08 23:27:04,958 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-08 23:27:10,031 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-08 23:27:10,031 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-08 23:27:10,032 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-08 23:27:10,032 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-08 23:27:10,032 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:27:14,713 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-08 23:27:14,714 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-08 23:27:14,714 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-08 23:27:14,714 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-08 23:27:14,714 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:27:19,457 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-08 23:27:19,457 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-08 23:27:19,458 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-08 23:27:19,458 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-08 23:27:19,458 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:27:24,116 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-08 23:27:24,116 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-08 23:27:24,116 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-08 23:27:24,116 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-08 23:27:24,116 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-08 23:27:28,608 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-08 23:27:28,608 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-08 23:27:28,608 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-08 23:27:28,608 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-08 23:27:28,608 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-08 23:27:33,249 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-08 23:27:33,249 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-08 23:27:33,249 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-08 23:27:33,249 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-08 23:27:33,250 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:27:38,044 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-08 23:27:38,044 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-08 23:27:38,045 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-08 23:27:38,045 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-08 23:27:38,045 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:27:42,636 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-08 23:27:42,636 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-08 23:27:42,636 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-08 23:27:42,636 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-08 23:27:42,636 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:27:47,399 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-08 23:27:47,399 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-08 23:27:47,399 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-08 23:27:47,399 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-08 23:27:47,399 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:27:47,401 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:27:47,401 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:27:49,663 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:27:49,700 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:28:00,067 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on uniform:
+2025-03-08 23:28:00,067 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 77274.61 ± 16505.91
+2025-03-08 23:28:00,067 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 220.87
+2025-03-08 23:28:00,068 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8796134.82
+2025-03-08 23:28:00,068 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.0%, EW=97.0%
+2025-03-08 23:28:00,070 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:28:00,071 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:28:00,080 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:28:00,096 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:28:10,510 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on rush_hour:
+2025-03-08 23:28:10,511 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 289406.64 ± 34200.18
+2025-03-08 23:28:10,511 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 232.06
+2025-03-08 23:28:10,512 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 13283531.94
+2025-03-08 23:28:10,512 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=2.0%, EW=98.0%
+2025-03-08 23:28:10,514 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:28:10,514 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:28:10,522 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:28:10,544 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:28:21,239 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on weekend:
+2025-03-08 23:28:21,240 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 143313.87 ± 34100.28
+2025-03-08 23:28:21,240 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 212.56
+2025-03-08 23:28:21,240 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9845543.02
+2025-03-08 23:28:21,240 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.6%, EW=96.4%
+2025-03-08 23:28:21,258 - TrafficRL.Utils.Benchmark - INFO - Benchmark results saved to results/analysis/analysis_20250308_232703/benchmark/benchmark_20250308_232704/benchmark_results.json
+2025-03-08 23:28:35,020 - TrafficRL.Utils.Benchmark - INFO - Benchmark visualizations created in results/analysis/analysis_20250308_232703/benchmark/benchmark_20250308_232704/plots
+2025-03-08 23:28:35,034 - TrafficRL - INFO - Benchmark completed.
+2025-03-08 23:28:35,034 - TrafficRL - INFO - Processing benchmark results...
+2025-03-08 23:28:35,034 - TrafficRL - INFO - Running comparative analysis...
+2025-03-08 23:28:36,397 - TrafficRL.Utils.Analysis - ERROR - Error in comparative analysis: Image data of dtype object cannot be converted to float
+2025-03-08 23:28:36,412 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 1933, in comparative_analysis
+    sns.heatmap(pattern_impact_data, annot=True, cmap="YlGnBu", fmt=".1f")
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 459, in heatmap
+    plotter.plot(ax, cbar_ax, kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 306, in plot
+    mesh = ax.pcolormesh(self.plot_data, cmap=self.cmap, **kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/__init__.py", line 1473, in inner
+    return func(
+           ^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 6434, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2146, in __init__
+    Collection.__init__(self, **kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 206, in __init__
+    self._internal_update(kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1216, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1192, in _update_props
+    ret.append(func(v))
+               ^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2020, in set_array
+    return super().set_array(A)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/cm.py", line 452, in set_array
+    raise TypeError(f"Image data of dtype {A.dtype} cannot be "
+TypeError: Image data of dtype object cannot be converted to float
+
+2025-03-08 23:28:36,412 - TrafficRL - INFO - Comparative analysis completed.
+2025-03-08 23:28:36,413 - TrafficRL - INFO - Analyzing agent behavior...
+2025-03-08 23:28:36,414 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:28:36,414 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:28:36,422 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:28:36,449 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:28:36,452 - TrafficRL - INFO - Successfully loaded model from results/training/best_model.pth for Q-value analysis
+2025-03-08 23:28:39,673 - TrafficRL.Utils.Analysis - ERROR - Error visualizing learning progress: Found array with dim 4. PCA expected <= 2.
+2025-03-08 23:28:39,681 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 1166, in visualize_learning_progress
+    pca_result = pca.fit_transform(combined_states)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/utils/_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/decomposition/_pca.py", line 468, in fit_transform
+    U, S, _, X, x_is_centered, xp = self._fit(X)
+                                    ^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/decomposition/_pca.py", line 505, in _fit
+    X = validate_data(
+        ^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2944, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1101, in check_array
+    raise ValueError(
+ValueError: Found array with dim 4. PCA expected <= 2.
+
+2025-03-08 23:28:39,681 - TrafficRL - INFO - Q-value visualization saved to results/analysis/analysis_20250308_232703/agent_training/q_values
+2025-03-08 23:28:39,682 - TrafficRL - INFO - Agent analysis for training completed.
+2025-03-08 23:28:39,682 - TrafficRL - INFO - Generating comprehensive report...
+2025-03-08 23:28:39,686 - TrafficRL.Utils.Analysis - INFO - Report generation: Creating visualizations
+2025-03-08 23:28:39,687 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: reward_comparison.png
+2025-03-08 23:28:39,687 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: waiting_time_comparison.png
+2025-03-08 23:28:39,687 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: throughput_comparison.png
+2025-03-08 23:28:39,688 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution.png
+2025-03-08 23:28:39,688 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: congestion_performance.png
+2025-03-08 23:28:39,688 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: radar_chart_uniform.png
+2025-03-08 23:28:39,688 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: traffic_pattern_impact.png
+2025-03-08 23:28:39,688 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: density_waiting_correlation.png
+2025-03-08 23:28:39,688 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution_by_pattern.png
+2025-03-08 23:28:39,689 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: agent_performance_radar.png
+2025-03-08 23:28:39,689 - TrafficRL.Utils.Analysis - INFO - Found and included 0 benchmark plots in the report
+2025-03-08 23:28:39,689 - TrafficRL.Utils.Analysis - INFO - Comprehensive report generated at results/analysis/analysis_20250308_232703/report/analysis_report.html
+2025-03-08 23:28:39,691 - TrafficRL - INFO - Comprehensive analysis completed. Results in results/analysis/analysis_20250308_232703
+2025-03-08 23:28:39,695 - TrafficRL - INFO - Analysis completed. Results available in results/analysis/analysis_20250308_232703
+2025-03-08 23:28:39,695 - TrafficRL - INFO - HTML report available at: results/analysis/analysis_20250308_232703/report/analysis_report.html
+2025-03-08 23:35:18,780 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-08 23:35:18,789 - TrafficRL - INFO - Analyzing training metrics...
+2025-03-08 23:35:20,663 - TrafficRL.Utils.Analysis - INFO - Training analysis completed and saved to results/analysis/analysis_20250308_233518/training_training
+2025-03-08 23:35:20,663 - TrafficRL - INFO - Training analysis for training completed.
+2025-03-08 23:35:20,663 - TrafficRL - INFO - Running new benchmark across models and baselines...
+2025-03-08 23:35:20,663 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-08 23:35:20,663 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-08 23:35:20,663 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-08 23:35:20,665 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-08 23:35:25,704 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-08 23:35:25,706 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-08 23:35:25,706 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-08 23:35:25,706 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-08 23:35:25,706 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:35:30,352 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-08 23:35:30,353 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-08 23:35:30,353 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-08 23:35:30,353 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-08 23:35:30,353 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:35:34,986 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-08 23:35:34,986 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-08 23:35:34,987 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-08 23:35:34,987 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-08 23:35:34,987 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:35:39,643 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-08 23:35:39,643 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-08 23:35:39,643 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-08 23:35:39,643 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-08 23:35:39,643 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-08 23:35:44,142 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-08 23:35:44,142 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-08 23:35:44,143 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-08 23:35:44,143 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-08 23:35:44,143 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-08 23:35:48,862 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-08 23:35:48,862 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-08 23:35:48,862 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-08 23:35:48,862 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-08 23:35:48,862 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:35:53,615 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-08 23:35:53,616 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-08 23:35:53,616 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-08 23:35:53,616 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-08 23:35:53,616 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:35:58,230 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-08 23:35:58,230 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-08 23:35:58,230 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-08 23:35:58,230 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-08 23:35:58,230 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:36:03,042 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-08 23:36:03,042 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-08 23:36:03,042 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-08 23:36:03,042 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-08 23:36:03,042 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:36:03,044 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:36:03,044 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:36:05,292 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:36:05,331 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:36:15,766 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on uniform:
+2025-03-08 23:36:15,766 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 77274.61 ± 16505.91
+2025-03-08 23:36:15,767 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 220.87
+2025-03-08 23:36:15,767 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8796134.82
+2025-03-08 23:36:15,767 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.0%, EW=97.0%
+2025-03-08 23:36:15,769 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:36:15,769 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:36:15,777 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:36:15,794 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:36:26,611 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on rush_hour:
+2025-03-08 23:36:26,612 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 289406.64 ± 34200.18
+2025-03-08 23:36:26,612 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 232.06
+2025-03-08 23:36:26,612 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 13283531.94
+2025-03-08 23:36:26,612 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=2.0%, EW=98.0%
+2025-03-08 23:36:26,615 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:36:26,615 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:36:26,622 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:36:26,638 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:36:37,432 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on weekend:
+2025-03-08 23:36:37,432 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 143313.87 ± 34100.28
+2025-03-08 23:36:37,432 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 212.56
+2025-03-08 23:36:37,432 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9845543.02
+2025-03-08 23:36:37,432 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.6%, EW=96.4%
+2025-03-08 23:36:37,449 - TrafficRL.Utils.Benchmark - INFO - Benchmark results saved to results/analysis/analysis_20250308_233518/benchmark/benchmark_20250308_233520/benchmark_results.json
+2025-03-08 23:36:51,537 - TrafficRL.Utils.Benchmark - INFO - Benchmark visualizations created in results/analysis/analysis_20250308_233518/benchmark/benchmark_20250308_233520/plots
+2025-03-08 23:36:51,551 - TrafficRL - INFO - Benchmark completed.
+2025-03-08 23:36:51,551 - TrafficRL - INFO - Processing benchmark results...
+2025-03-08 23:36:51,551 - TrafficRL - INFO - Running comparative analysis...
+2025-03-08 23:36:52,925 - TrafficRL.Utils.Analysis - ERROR - Error in comparative analysis: Image data of dtype object cannot be converted to float
+2025-03-08 23:36:52,957 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 1987, in comparative_analysis
+    sns.heatmap(pattern_impact_data, annot=True, cmap="YlGnBu", fmt=".1f")
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 459, in heatmap
+    plotter.plot(ax, cbar_ax, kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 306, in plot
+    mesh = ax.pcolormesh(self.plot_data, cmap=self.cmap, **kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/__init__.py", line 1473, in inner
+    return func(
+           ^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 6434, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2146, in __init__
+    Collection.__init__(self, **kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 206, in __init__
+    self._internal_update(kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1216, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1192, in _update_props
+    ret.append(func(v))
+               ^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2020, in set_array
+    return super().set_array(A)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/cm.py", line 452, in set_array
+    raise TypeError(f"Image data of dtype {A.dtype} cannot be "
+TypeError: Image data of dtype object cannot be converted to float
+
+2025-03-08 23:36:52,957 - TrafficRL - INFO - Comparative analysis completed.
+2025-03-08 23:36:52,957 - TrafficRL - INFO - Analyzing agent behavior...
+2025-03-08 23:36:52,958 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:36:52,958 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:36:52,968 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:36:52,992 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:36:52,992 - TrafficRL - INFO - Successfully loaded model from results/training/best_model.pth for Q-value analysis
+2025-03-08 23:37:01,259 - TrafficRL.Utils.Analysis - ERROR - Error visualizing learning progress: Found array with dim 4. PCA expected <= 2.
+2025-03-08 23:37:01,266 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 1220, in visualize_learning_progress
+    pca_result = pca.fit_transform(combined_states)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/utils/_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/decomposition/_pca.py", line 468, in fit_transform
+    U, S, _, X, x_is_centered, xp = self._fit(X)
+                                    ^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/decomposition/_pca.py", line 505, in _fit
+    X = validate_data(
+        ^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2944, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1101, in check_array
+    raise ValueError(
+ValueError: Found array with dim 4. PCA expected <= 2.
+
+2025-03-08 23:37:01,267 - TrafficRL - INFO - Q-value visualization saved to results/analysis/analysis_20250308_233518/agent_training/q_values
+2025-03-08 23:37:01,267 - TrafficRL - INFO - Agent analysis for training completed.
+2025-03-08 23:37:01,267 - TrafficRL - INFO - Generating comprehensive report...
+2025-03-08 23:37:01,271 - TrafficRL.Utils.Analysis - INFO - Report generation: Creating visualizations
+2025-03-08 23:37:01,271 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: reward_comparison.png
+2025-03-08 23:37:01,271 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: waiting_time_comparison.png
+2025-03-08 23:37:01,272 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: throughput_comparison.png
+2025-03-08 23:37:01,272 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution.png
+2025-03-08 23:37:01,272 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: congestion_performance.png
+2025-03-08 23:37:01,273 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: radar_chart_uniform.png
+2025-03-08 23:37:01,273 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: traffic_pattern_impact.png
+2025-03-08 23:37:01,273 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: density_waiting_correlation.png
+2025-03-08 23:37:01,273 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution_by_pattern.png
+2025-03-08 23:37:01,273 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: agent_performance_radar.png
+2025-03-08 23:37:01,273 - TrafficRL.Utils.Analysis - INFO - Found and included 0 benchmark plots in the report
+2025-03-08 23:37:01,274 - TrafficRL.Utils.Analysis - INFO - Comprehensive report generated at results/analysis/analysis_20250308_233518/report/analysis_report.html
+2025-03-08 23:37:01,276 - TrafficRL - INFO - Comprehensive analysis completed. Results in results/analysis/analysis_20250308_233518
+2025-03-08 23:37:01,292 - TrafficRL - INFO - Analysis completed. Results available in results/analysis/analysis_20250308_233518
+2025-03-08 23:37:01,293 - TrafficRL - INFO - HTML report available at: results/analysis/analysis_20250308_233518/report/analysis_report.html
+2025-03-08 23:39:48,675 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-08 23:39:48,679 - TrafficRL - INFO - Analyzing training metrics...
+2025-03-08 23:39:50,503 - TrafficRL.Utils.Analysis - INFO - Training analysis completed and saved to results/analysis/analysis_20250308_233948/training_training
+2025-03-08 23:39:50,503 - TrafficRL - INFO - Training analysis for training completed.
+2025-03-08 23:39:50,503 - TrafficRL - INFO - Running new benchmark across models and baselines...
+2025-03-08 23:39:50,504 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-08 23:39:50,504 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-08 23:39:50,504 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-08 23:39:50,505 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-08 23:39:55,609 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-08 23:39:55,611 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-08 23:39:55,611 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-08 23:39:55,611 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-08 23:39:55,611 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:40:00,302 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-08 23:40:00,302 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-08 23:40:00,303 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-08 23:40:00,303 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-08 23:40:00,303 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:40:05,210 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-08 23:40:05,213 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-08 23:40:05,213 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-08 23:40:05,214 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-08 23:40:05,214 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:40:09,941 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-08 23:40:09,941 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-08 23:40:09,941 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-08 23:40:09,941 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-08 23:40:09,941 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-08 23:40:14,517 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-08 23:40:14,517 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-08 23:40:14,518 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-08 23:40:14,518 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-08 23:40:14,518 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-08 23:40:19,250 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-08 23:40:19,250 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-08 23:40:19,251 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-08 23:40:19,251 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-08 23:40:19,251 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:40:24,133 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-08 23:40:24,133 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-08 23:40:24,133 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-08 23:40:24,135 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-08 23:40:24,135 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:40:28,808 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-08 23:40:28,808 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-08 23:40:28,808 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-08 23:40:28,808 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-08 23:40:28,808 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:40:33,628 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-08 23:40:33,628 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-08 23:40:33,628 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-08 23:40:33,628 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-08 23:40:33,629 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:40:33,630 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:40:33,630 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:40:35,917 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:40:35,953 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:40:46,391 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on uniform:
+2025-03-08 23:40:46,391 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 77274.61 ± 16505.91
+2025-03-08 23:40:46,392 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 220.87
+2025-03-08 23:40:46,392 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8796134.82
+2025-03-08 23:40:46,392 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.0%, EW=97.0%
+2025-03-08 23:40:46,395 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:40:46,395 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:40:46,402 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:40:46,418 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:40:57,056 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on rush_hour:
+2025-03-08 23:40:57,056 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 289406.64 ± 34200.18
+2025-03-08 23:40:57,056 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 232.06
+2025-03-08 23:40:57,056 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 13283531.94
+2025-03-08 23:40:57,056 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=2.0%, EW=98.0%
+2025-03-08 23:40:57,059 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:40:57,059 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:40:57,066 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:40:57,081 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:41:07,918 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on weekend:
+2025-03-08 23:41:07,918 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 143313.87 ± 34100.28
+2025-03-08 23:41:07,918 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 212.56
+2025-03-08 23:41:07,918 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9845543.02
+2025-03-08 23:41:07,918 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.6%, EW=96.4%
+2025-03-08 23:41:07,936 - TrafficRL.Utils.Benchmark - INFO - Benchmark results saved to results/analysis/analysis_20250308_233948/benchmark/benchmark_20250308_233950/benchmark_results.json
+2025-03-08 23:41:22,283 - TrafficRL.Utils.Benchmark - INFO - Benchmark visualizations created in results/analysis/analysis_20250308_233948/benchmark/benchmark_20250308_233950/plots
+2025-03-08 23:41:22,294 - TrafficRL - INFO - Benchmark completed.
+2025-03-08 23:41:22,294 - TrafficRL - INFO - Processing benchmark results...
+2025-03-08 23:41:22,294 - TrafficRL - INFO - Running comparative analysis...
+2025-03-08 23:41:23,888 - TrafficRL.Utils.Analysis - ERROR - Error in comparative analysis: Image data of dtype object cannot be converted to float
+2025-03-08 23:41:23,907 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 1995, in comparative_analysis
+    sns.heatmap(pattern_impact_data, annot=True, cmap="YlGnBu", fmt=".1f")
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 459, in heatmap
+    plotter.plot(ax, cbar_ax, kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 306, in plot
+    mesh = ax.pcolormesh(self.plot_data, cmap=self.cmap, **kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/__init__.py", line 1473, in inner
+    return func(
+           ^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 6434, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2146, in __init__
+    Collection.__init__(self, **kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 206, in __init__
+    self._internal_update(kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1216, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1192, in _update_props
+    ret.append(func(v))
+               ^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2020, in set_array
+    return super().set_array(A)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/cm.py", line 452, in set_array
+    raise TypeError(f"Image data of dtype {A.dtype} cannot be "
+TypeError: Image data of dtype object cannot be converted to float
+
+2025-03-08 23:41:23,907 - TrafficRL - INFO - Comparative analysis completed.
+2025-03-08 23:41:23,907 - TrafficRL - INFO - Analyzing agent behavior...
+2025-03-08 23:41:23,908 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:41:23,908 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:41:23,917 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:41:23,948 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:41:23,949 - TrafficRL - INFO - Successfully loaded model from results/training/best_model.pth for Q-value analysis
+2025-03-08 23:41:33,298 - TrafficRL.Utils.Analysis - INFO - Reshaped states from (2, 10, 10, 80) to (2, 8000) for PCA
+2025-03-08 23:41:33,512 - TrafficRL.Utils.Analysis - WARNING - t-SNE visualization failed: perplexity must be less than n_samples
+2025-03-08 23:41:35,582 - TrafficRL.Utils.Analysis - INFO - Learning progress visualizations saved to results/analysis/analysis_20250308_233948/agent_training/q_values
+2025-03-08 23:41:35,583 - TrafficRL - INFO - Q-value visualization saved to results/analysis/analysis_20250308_233948/agent_training/q_values
+2025-03-08 23:41:35,584 - TrafficRL - INFO - Agent analysis for training completed.
+2025-03-08 23:41:35,584 - TrafficRL - INFO - Generating comprehensive report...
+2025-03-08 23:41:35,587 - TrafficRL.Utils.Analysis - INFO - Report generation: Creating visualizations
+2025-03-08 23:41:35,588 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: reward_comparison.png
+2025-03-08 23:41:35,588 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: waiting_time_comparison.png
+2025-03-08 23:41:35,588 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: throughput_comparison.png
+2025-03-08 23:41:35,588 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution.png
+2025-03-08 23:41:35,588 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: congestion_performance.png
+2025-03-08 23:41:35,589 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: radar_chart_uniform.png
+2025-03-08 23:41:35,589 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: traffic_pattern_impact.png
+2025-03-08 23:41:35,589 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: density_waiting_correlation.png
+2025-03-08 23:41:35,590 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution_by_pattern.png
+2025-03-08 23:41:35,590 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: agent_performance_radar.png
+2025-03-08 23:41:35,590 - TrafficRL.Utils.Analysis - INFO - Found and included 0 benchmark plots in the report
+2025-03-08 23:41:35,590 - TrafficRL.Utils.Analysis - INFO - Comprehensive report generated at results/analysis/analysis_20250308_233948/report/analysis_report.html
+2025-03-08 23:41:35,592 - TrafficRL - INFO - Comprehensive analysis completed. Results in results/analysis/analysis_20250308_233948
+2025-03-08 23:41:35,612 - TrafficRL - INFO - Analysis completed. Results available in results/analysis/analysis_20250308_233948
+2025-03-08 23:41:35,613 - TrafficRL - INFO - HTML report available at: results/analysis/analysis_20250308_233948/report/analysis_report.html
+2025-03-08 23:43:51,770 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-08 23:43:51,773 - TrafficRL - INFO - Analyzing training metrics...
+2025-03-08 23:43:53,482 - TrafficRL.Utils.Analysis - INFO - Training analysis completed and saved to results/analysis/analysis_20250308_234351/training_training
+2025-03-08 23:43:53,482 - TrafficRL - INFO - Training analysis for training completed.
+2025-03-08 23:43:53,482 - TrafficRL - INFO - Running new benchmark across models and baselines...
+2025-03-08 23:43:53,482 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-08 23:43:53,483 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-08 23:43:53,483 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-08 23:43:53,484 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-08 23:43:58,532 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-08 23:43:58,532 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-08 23:43:58,533 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-08 23:43:58,533 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-08 23:43:58,533 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:44:03,298 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-08 23:44:03,299 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-08 23:44:03,299 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-08 23:44:03,299 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-08 23:44:03,299 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:44:08,140 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-08 23:44:08,140 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-08 23:44:08,140 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-08 23:44:08,140 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-08 23:44:08,140 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:44:13,057 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-08 23:44:13,058 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-08 23:44:13,058 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-08 23:44:13,058 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-08 23:44:13,058 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-08 23:44:17,781 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-08 23:44:17,781 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-08 23:44:17,782 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-08 23:44:17,782 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-08 23:44:17,782 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-08 23:44:22,720 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-08 23:44:22,720 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-08 23:44:22,720 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-08 23:44:22,720 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-08 23:44:22,720 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:44:27,755 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-08 23:44:27,756 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-08 23:44:27,756 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-08 23:44:27,756 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-08 23:44:27,756 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:44:32,678 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-08 23:44:32,679 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-08 23:44:32,679 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-08 23:44:32,679 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-08 23:44:32,679 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:44:37,692 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-08 23:44:37,692 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-08 23:44:37,693 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-08 23:44:37,693 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-08 23:44:37,693 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:44:37,694 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:44:37,694 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:44:39,913 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:44:39,946 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:44:50,783 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on uniform:
+2025-03-08 23:44:50,783 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 77274.61 ± 16505.91
+2025-03-08 23:44:50,783 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 220.87
+2025-03-08 23:44:50,783 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8796134.82
+2025-03-08 23:44:50,783 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.0%, EW=97.0%
+2025-03-08 23:44:50,786 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:44:50,786 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:44:50,794 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:44:50,809 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:45:01,930 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on rush_hour:
+2025-03-08 23:45:01,931 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 289406.64 ± 34200.18
+2025-03-08 23:45:01,931 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 232.06
+2025-03-08 23:45:01,931 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 13283531.94
+2025-03-08 23:45:01,931 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=2.0%, EW=98.0%
+2025-03-08 23:45:01,934 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:45:01,934 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:45:01,941 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:45:01,957 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:45:13,136 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on weekend:
+2025-03-08 23:45:13,137 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 143313.87 ± 34100.28
+2025-03-08 23:45:13,137 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 212.56
+2025-03-08 23:45:13,137 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9845543.02
+2025-03-08 23:45:13,137 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.6%, EW=96.4%
+2025-03-08 23:45:13,156 - TrafficRL.Utils.Benchmark - INFO - Benchmark results saved to results/analysis/analysis_20250308_234351/benchmark/benchmark_20250308_234353/benchmark_results.json
+2025-03-08 23:45:27,114 - TrafficRL.Utils.Benchmark - INFO - Benchmark visualizations created in results/analysis/analysis_20250308_234351/benchmark/benchmark_20250308_234353/plots
+2025-03-08 23:45:27,126 - TrafficRL - INFO - Benchmark completed.
+2025-03-08 23:45:27,127 - TrafficRL - INFO - Processing benchmark results...
+2025-03-08 23:45:27,127 - TrafficRL - INFO - Running comparative analysis...
+2025-03-08 23:45:28,594 - TrafficRL.Utils.Analysis - ERROR - Error in comparative analysis: Image data of dtype object cannot be converted to float
+2025-03-08 23:45:28,608 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 2013, in comparative_analysis
+    sns.heatmap(pattern_impact_data, annot=True, cmap="YlGnBu", fmt=".1f")
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 459, in heatmap
+    plotter.plot(ax, cbar_ax, kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 306, in plot
+    mesh = ax.pcolormesh(self.plot_data, cmap=self.cmap, **kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/__init__.py", line 1473, in inner
+    return func(
+           ^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 6434, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2146, in __init__
+    Collection.__init__(self, **kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 206, in __init__
+    self._internal_update(kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1216, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1192, in _update_props
+    ret.append(func(v))
+               ^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2020, in set_array
+    return super().set_array(A)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/cm.py", line 452, in set_array
+    raise TypeError(f"Image data of dtype {A.dtype} cannot be "
+TypeError: Image data of dtype object cannot be converted to float
+
+2025-03-08 23:45:28,609 - TrafficRL - INFO - Comparative analysis completed.
+2025-03-08 23:45:28,609 - TrafficRL - INFO - Analyzing agent behavior...
+2025-03-08 23:45:28,610 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:45:28,610 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:45:28,619 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:45:28,644 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:45:28,644 - TrafficRL - INFO - Successfully loaded model from results/training/best_model.pth for Q-value analysis
+2025-03-08 23:45:37,116 - TrafficRL.Utils.Analysis - INFO - Reshaped states from (2, 10, 10, 80) to (2, 8000) for PCA
+2025-03-08 23:45:37,160 - TrafficRL.Utils.Analysis - WARNING - t-SNE visualization failed: perplexity must be less than n_samples
+2025-03-08 23:45:38,497 - TrafficRL.Utils.Analysis - INFO - Learning progress visualizations saved to results/analysis/analysis_20250308_234351/agent_training/q_values
+2025-03-08 23:45:38,498 - TrafficRL - INFO - Q-value visualization saved to results/analysis/analysis_20250308_234351/agent_training/q_values
+2025-03-08 23:45:38,499 - TrafficRL - INFO - Agent analysis for training completed.
+2025-03-08 23:45:38,499 - TrafficRL - INFO - Generating comprehensive report...
+2025-03-08 23:45:38,504 - TrafficRL.Utils.Analysis - INFO - Report generation: Creating visualizations
+2025-03-08 23:45:38,505 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: reward_comparison.png
+2025-03-08 23:45:38,505 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: waiting_time_comparison.png
+2025-03-08 23:45:38,505 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: throughput_comparison.png
+2025-03-08 23:45:38,505 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution.png
+2025-03-08 23:45:38,506 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: congestion_performance.png
+2025-03-08 23:45:38,506 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: radar_chart_uniform.png
+2025-03-08 23:45:38,506 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: traffic_pattern_impact.png
+2025-03-08 23:45:38,506 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: density_waiting_correlation.png
+2025-03-08 23:45:38,506 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution_by_pattern.png
+2025-03-08 23:45:38,507 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: agent_performance_radar.png
+2025-03-08 23:45:38,507 - TrafficRL.Utils.Analysis - INFO - Found and included 0 benchmark plots in the report
+2025-03-08 23:45:38,507 - TrafficRL.Utils.Analysis - INFO - Comprehensive report generated at results/analysis/analysis_20250308_234351/report/analysis_report.html
+2025-03-08 23:45:38,509 - TrafficRL - INFO - Comprehensive analysis completed. Results in results/analysis/analysis_20250308_234351
+2025-03-08 23:45:38,533 - TrafficRL - INFO - Analysis completed. Results available in results/analysis/analysis_20250308_234351
+2025-03-08 23:45:38,533 - TrafficRL - INFO - HTML report available at: results/analysis/analysis_20250308_234351/report/analysis_report.html
+2025-03-08 23:47:55,883 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-08 23:47:55,887 - TrafficRL - INFO - Analyzing training metrics...
+2025-03-08 23:47:57,704 - TrafficRL.Utils.Analysis - INFO - Training analysis completed and saved to results/analysis/analysis_20250308_234755/training_training
+2025-03-08 23:47:57,704 - TrafficRL - INFO - Training analysis for training completed.
+2025-03-08 23:47:57,704 - TrafficRL - INFO - Running new benchmark across models and baselines...
+2025-03-08 23:47:57,704 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-08 23:47:57,705 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-08 23:47:57,705 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-08 23:47:57,706 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-08 23:48:03,082 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-08 23:48:03,083 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-08 23:48:03,083 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-08 23:48:03,083 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-08 23:48:03,083 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:48:07,947 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-08 23:48:07,947 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-08 23:48:07,948 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-08 23:48:07,948 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-08 23:48:07,948 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:48:12,871 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-08 23:48:12,871 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-08 23:48:12,871 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-08 23:48:12,871 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-08 23:48:12,872 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:48:17,764 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-08 23:48:17,765 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-08 23:48:17,765 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-08 23:48:17,765 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-08 23:48:17,765 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-08 23:48:22,451 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-08 23:48:22,451 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-08 23:48:22,451 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-08 23:48:22,451 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-08 23:48:22,451 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-08 23:48:27,335 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-08 23:48:27,335 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-08 23:48:27,335 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-08 23:48:27,335 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-08 23:48:27,335 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:48:32,327 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-08 23:48:32,327 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-08 23:48:32,327 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-08 23:48:32,328 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-08 23:48:32,328 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:48:37,168 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-08 23:48:37,168 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-08 23:48:37,168 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-08 23:48:37,168 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-08 23:48:37,168 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:48:42,092 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-08 23:48:42,092 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-08 23:48:42,092 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-08 23:48:42,093 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-08 23:48:42,093 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:48:42,094 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:48:42,094 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:48:44,334 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:48:44,374 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:48:54,953 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on uniform:
+2025-03-08 23:48:54,954 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 77274.61 ± 16505.91
+2025-03-08 23:48:54,954 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 220.87
+2025-03-08 23:48:54,954 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8796134.82
+2025-03-08 23:48:54,955 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.0%, EW=97.0%
+2025-03-08 23:48:54,957 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:48:54,957 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:48:54,965 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:48:54,984 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:49:06,864 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on rush_hour:
+2025-03-08 23:49:06,865 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 289406.64 ± 34200.18
+2025-03-08 23:49:06,866 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 232.06
+2025-03-08 23:49:06,866 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 13283531.94
+2025-03-08 23:49:06,866 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=2.0%, EW=98.0%
+2025-03-08 23:49:06,869 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:49:06,869 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:49:06,876 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:49:06,894 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:49:17,859 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on weekend:
+2025-03-08 23:49:17,859 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 143313.87 ± 34100.28
+2025-03-08 23:49:17,859 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 212.56
+2025-03-08 23:49:17,859 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9845543.02
+2025-03-08 23:49:17,859 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.6%, EW=96.4%
+2025-03-08 23:49:17,879 - TrafficRL.Utils.Benchmark - INFO - Benchmark results saved to results/analysis/analysis_20250308_234755/benchmark/benchmark_20250308_234757/benchmark_results.json
+2025-03-08 23:49:32,242 - TrafficRL.Utils.Benchmark - INFO - Benchmark visualizations created in results/analysis/analysis_20250308_234755/benchmark/benchmark_20250308_234757/plots
+2025-03-08 23:49:32,253 - TrafficRL - INFO - Benchmark completed.
+2025-03-08 23:49:32,253 - TrafficRL - INFO - Processing benchmark results...
+2025-03-08 23:49:32,253 - TrafficRL - INFO - Running comparative analysis...
+2025-03-08 23:49:33,644 - TrafficRL.Utils.Analysis - ERROR - Error in comparative analysis: Image data of dtype object cannot be converted to float
+2025-03-08 23:49:33,659 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 2004, in comparative_analysis
+    sns.heatmap(pattern_impact_data, annot=True, cmap="YlGnBu", fmt=".1f")
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 459, in heatmap
+    plotter.plot(ax, cbar_ax, kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 306, in plot
+    mesh = ax.pcolormesh(self.plot_data, cmap=self.cmap, **kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/__init__.py", line 1473, in inner
+    return func(
+           ^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 6434, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2146, in __init__
+    Collection.__init__(self, **kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 206, in __init__
+    self._internal_update(kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1216, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1192, in _update_props
+    ret.append(func(v))
+               ^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2020, in set_array
+    return super().set_array(A)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/cm.py", line 452, in set_array
+    raise TypeError(f"Image data of dtype {A.dtype} cannot be "
+TypeError: Image data of dtype object cannot be converted to float
+
+2025-03-08 23:49:33,660 - TrafficRL - INFO - Comparative analysis completed.
+2025-03-08 23:49:33,660 - TrafficRL - INFO - Analyzing agent behavior...
+2025-03-08 23:49:33,661 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:49:33,661 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:49:33,670 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:49:33,695 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:49:33,696 - TrafficRL - INFO - Successfully loaded model from results/training/best_model.pth for Q-value analysis
+2025-03-08 23:49:41,920 - TrafficRL.Utils.Analysis - INFO - Reshaped states from (2, 10, 10, 80) to (2, 8000) for PCA
+2025-03-08 23:49:41,986 - TrafficRL.Utils.Analysis - WARNING - t-SNE visualization failed: perplexity must be less than n_samples
+2025-03-08 23:49:43,516 - TrafficRL.Utils.Analysis - INFO - Learning progress visualizations saved to results/analysis/analysis_20250308_234755/agent_training/q_values
+2025-03-08 23:49:43,517 - TrafficRL - INFO - Q-value visualization saved to results/analysis/analysis_20250308_234755/agent_training/q_values
+2025-03-08 23:49:43,518 - TrafficRL - INFO - Agent analysis for training completed.
+2025-03-08 23:49:43,518 - TrafficRL - INFO - Generating comprehensive report...
+2025-03-08 23:49:43,522 - TrafficRL.Utils.Analysis - INFO - Report generation: Creating visualizations
+2025-03-08 23:49:43,522 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: reward_comparison.png
+2025-03-08 23:49:43,522 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: waiting_time_comparison.png
+2025-03-08 23:49:43,522 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: throughput_comparison.png
+2025-03-08 23:49:43,523 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution.png
+2025-03-08 23:49:43,523 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: congestion_performance.png
+2025-03-08 23:49:43,523 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: radar_chart_uniform.png
+2025-03-08 23:49:43,523 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: traffic_pattern_impact.png
+2025-03-08 23:49:43,523 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: density_waiting_correlation.png
+2025-03-08 23:49:43,523 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution_by_pattern.png
+2025-03-08 23:49:43,524 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: agent_performance_radar.png
+2025-03-08 23:49:43,524 - TrafficRL.Utils.Analysis - INFO - Found and included 0 benchmark plots in the report
+2025-03-08 23:49:43,524 - TrafficRL.Utils.Analysis - INFO - Comprehensive report generated at results/analysis/analysis_20250308_234755/report/analysis_report.html
+2025-03-08 23:49:43,526 - TrafficRL - INFO - Comprehensive analysis completed. Results in results/analysis/analysis_20250308_234755
+2025-03-08 23:49:43,545 - TrafficRL - INFO - Analysis completed. Results available in results/analysis/analysis_20250308_234755
+2025-03-08 23:49:43,545 - TrafficRL - INFO - HTML report available at: results/analysis/analysis_20250308_234755/report/analysis_report.html
+2025-03-08 23:51:49,141 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-08 23:51:49,144 - TrafficRL - INFO - Analyzing training metrics...
+2025-03-08 23:51:50,937 - TrafficRL.Utils.Analysis - INFO - Training analysis completed and saved to results/analysis/analysis_20250308_235149/training_training
+2025-03-08 23:51:50,937 - TrafficRL - INFO - Training analysis for training completed.
+2025-03-08 23:51:50,938 - TrafficRL - INFO - Running new benchmark across models and baselines...
+2025-03-08 23:51:50,938 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-08 23:51:50,938 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-08 23:51:50,938 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-08 23:51:50,939 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-08 23:51:56,138 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-08 23:51:56,138 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-08 23:51:56,138 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-08 23:51:56,138 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-08 23:51:56,139 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:52:00,874 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-08 23:52:00,875 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-08 23:52:00,876 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-08 23:52:00,876 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-08 23:52:00,876 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:52:05,755 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-08 23:52:05,755 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-08 23:52:05,755 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-08 23:52:05,756 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-08 23:52:05,756 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:52:10,502 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-08 23:52:10,502 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-08 23:52:10,502 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-08 23:52:10,502 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-08 23:52:10,502 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-08 23:52:15,294 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-08 23:52:15,294 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-08 23:52:15,295 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-08 23:52:15,295 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-08 23:52:15,295 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-08 23:52:20,125 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-08 23:52:20,125 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-08 23:52:20,125 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-08 23:52:20,125 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-08 23:52:20,125 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:52:25,068 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-08 23:52:25,070 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-08 23:52:25,070 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-08 23:52:25,070 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-08 23:52:25,071 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:52:29,881 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-08 23:52:29,881 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-08 23:52:29,881 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-08 23:52:29,882 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-08 23:52:29,882 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:52:34,852 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-08 23:52:34,852 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-08 23:52:34,852 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-08 23:52:34,852 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-08 23:52:34,852 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:52:34,854 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:52:34,854 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:52:37,107 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:52:37,143 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:52:47,600 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on uniform:
+2025-03-08 23:52:47,600 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 77274.61 ± 16505.91
+2025-03-08 23:52:47,601 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 220.87
+2025-03-08 23:52:47,601 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8796134.82
+2025-03-08 23:52:47,601 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.0%, EW=97.0%
+2025-03-08 23:52:47,603 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:52:47,604 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:52:47,611 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:52:47,626 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:52:58,545 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on rush_hour:
+2025-03-08 23:52:58,546 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 289406.64 ± 34200.18
+2025-03-08 23:52:58,546 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 232.06
+2025-03-08 23:52:58,546 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 13283531.94
+2025-03-08 23:52:58,546 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=2.0%, EW=98.0%
+2025-03-08 23:52:58,548 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:52:58,548 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:52:58,556 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:52:58,571 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:53:09,591 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on weekend:
+2025-03-08 23:53:09,591 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 143313.87 ± 34100.28
+2025-03-08 23:53:09,591 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 212.56
+2025-03-08 23:53:09,592 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9845543.02
+2025-03-08 23:53:09,592 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.6%, EW=96.4%
+2025-03-08 23:53:09,611 - TrafficRL.Utils.Benchmark - INFO - Benchmark results saved to results/analysis/analysis_20250308_235149/benchmark/benchmark_20250308_235150/benchmark_results.json
+2025-03-08 23:53:23,982 - TrafficRL.Utils.Benchmark - INFO - Benchmark visualizations created in results/analysis/analysis_20250308_235149/benchmark/benchmark_20250308_235150/plots
+2025-03-08 23:53:23,994 - TrafficRL - INFO - Benchmark completed.
+2025-03-08 23:53:23,994 - TrafficRL - INFO - Processing benchmark results...
+2025-03-08 23:53:23,994 - TrafficRL - INFO - Running comparative analysis...
+2025-03-08 23:53:25,408 - TrafficRL.Utils.Analysis - ERROR - Error in comparative analysis: Image data of dtype object cannot be converted to float
+2025-03-08 23:53:25,425 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 2026, in comparative_analysis
+    sns.heatmap(pattern_impact_data, annot=True, cmap="YlGnBu", fmt=".1f")
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 459, in heatmap
+    plotter.plot(ax, cbar_ax, kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 306, in plot
+    mesh = ax.pcolormesh(self.plot_data, cmap=self.cmap, **kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/__init__.py", line 1473, in inner
+    return func(
+           ^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 6434, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2146, in __init__
+    Collection.__init__(self, **kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 206, in __init__
+    self._internal_update(kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1216, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1192, in _update_props
+    ret.append(func(v))
+               ^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2020, in set_array
+    return super().set_array(A)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/cm.py", line 452, in set_array
+    raise TypeError(f"Image data of dtype {A.dtype} cannot be "
+TypeError: Image data of dtype object cannot be converted to float
+
+2025-03-08 23:53:25,425 - TrafficRL - INFO - Comparative analysis completed.
+2025-03-08 23:53:25,425 - TrafficRL - INFO - Analyzing agent behavior...
+2025-03-08 23:53:25,426 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:53:25,426 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:53:25,437 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:53:25,463 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:53:25,463 - TrafficRL - INFO - Successfully loaded model from results/training/best_model.pth for Q-value analysis
+2025-03-08 23:53:34,258 - TrafficRL.Utils.Analysis - INFO - Reshaped states from (2, 10, 10, 80) to (2, 8000) for PCA
+2025-03-08 23:53:34,302 - TrafficRL.Utils.Analysis - WARNING - t-SNE visualization failed: perplexity must be less than n_samples
+2025-03-08 23:53:35,606 - TrafficRL.Utils.Analysis - INFO - Learning progress visualizations saved to results/analysis/analysis_20250308_235149/agent_training/q_values
+2025-03-08 23:53:35,607 - TrafficRL - INFO - Q-value visualization saved to results/analysis/analysis_20250308_235149/agent_training/q_values
+2025-03-08 23:53:35,608 - TrafficRL - INFO - Agent analysis for training completed.
+2025-03-08 23:53:35,608 - TrafficRL - INFO - Generating comprehensive report...
+2025-03-08 23:53:35,612 - TrafficRL.Utils.Analysis - INFO - Report generation: Creating visualizations
+2025-03-08 23:53:35,612 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: reward_comparison.png
+2025-03-08 23:53:35,613 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: waiting_time_comparison.png
+2025-03-08 23:53:35,613 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: throughput_comparison.png
+2025-03-08 23:53:35,613 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution.png
+2025-03-08 23:53:35,613 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: congestion_performance.png
+2025-03-08 23:53:35,614 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: radar_chart_uniform.png
+2025-03-08 23:53:35,614 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: traffic_pattern_impact.png
+2025-03-08 23:53:35,614 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: density_waiting_correlation.png
+2025-03-08 23:53:35,614 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution_by_pattern.png
+2025-03-08 23:53:35,615 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: agent_performance_radar.png
+2025-03-08 23:53:35,615 - TrafficRL.Utils.Analysis - INFO - Found and included 0 benchmark plots in the report
+2025-03-08 23:53:35,616 - TrafficRL.Utils.Analysis - INFO - Comprehensive report generated at results/analysis/analysis_20250308_235149/report/analysis_report.html
+2025-03-08 23:53:35,618 - TrafficRL - INFO - Comprehensive analysis completed. Results in results/analysis/analysis_20250308_235149
+2025-03-08 23:53:35,640 - TrafficRL - INFO - Analysis completed. Results available in results/analysis/analysis_20250308_235149
+2025-03-08 23:53:35,640 - TrafficRL - INFO - HTML report available at: results/analysis/analysis_20250308_235149/report/analysis_report.html
+2025-03-08 23:56:54,816 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-08 23:56:54,826 - TrafficRL - INFO - Analyzing training metrics...
+2025-03-08 23:56:56,662 - TrafficRL.Utils.Analysis - INFO - Training analysis completed and saved to results/analysis/analysis_20250308_235654/training_training
+2025-03-08 23:56:56,662 - TrafficRL - INFO - Training analysis for training completed.
+2025-03-08 23:56:56,662 - TrafficRL - INFO - Running new benchmark across models and baselines...
+2025-03-08 23:56:56,663 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-08 23:56:56,663 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-08 23:56:56,663 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-08 23:56:56,664 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-08 23:57:01,704 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-08 23:57:01,705 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-08 23:57:01,705 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-08 23:57:01,705 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-08 23:57:01,705 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:57:06,558 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-08 23:57:06,558 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-08 23:57:06,558 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-08 23:57:06,558 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-08 23:57:06,558 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:57:11,444 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-08 23:57:11,445 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-08 23:57:11,445 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-08 23:57:11,445 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-08 23:57:11,446 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-08 23:57:16,264 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-08 23:57:16,264 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-08 23:57:16,264 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-08 23:57:16,264 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-08 23:57:16,264 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-08 23:57:20,937 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-08 23:57:20,938 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-08 23:57:20,938 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-08 23:57:20,938 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-08 23:57:20,938 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-08 23:57:25,764 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-08 23:57:25,765 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-08 23:57:25,765 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-08 23:57:25,765 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-08 23:57:25,765 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:57:30,771 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-08 23:57:30,771 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-08 23:57:30,771 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-08 23:57:30,771 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-08 23:57:30,771 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:57:35,575 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-08 23:57:35,575 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-08 23:57:35,575 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-08 23:57:35,575 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-08 23:57:35,575 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-08 23:57:40,595 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-08 23:57:40,596 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-08 23:57:40,596 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-08 23:57:40,596 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-08 23:57:40,596 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-08 23:57:40,597 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:57:40,597 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:57:42,843 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:57:42,880 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:57:53,581 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on uniform:
+2025-03-08 23:57:53,581 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 77274.61 ± 16505.91
+2025-03-08 23:57:53,581 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 220.87
+2025-03-08 23:57:53,581 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8796134.82
+2025-03-08 23:57:53,582 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.0%, EW=97.0%
+2025-03-08 23:57:53,584 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:57:53,584 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:57:53,591 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:57:53,607 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:58:04,812 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on rush_hour:
+2025-03-08 23:58:04,813 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 289406.64 ± 34200.18
+2025-03-08 23:58:04,813 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 232.06
+2025-03-08 23:58:04,813 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 13283531.94
+2025-03-08 23:58:04,813 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=2.0%, EW=98.0%
+2025-03-08 23:58:04,815 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:58:04,816 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:58:04,822 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:58:04,845 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:58:16,276 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on weekend:
+2025-03-08 23:58:16,276 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 143313.87 ± 34100.28
+2025-03-08 23:58:16,276 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 212.56
+2025-03-08 23:58:16,276 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9845543.02
+2025-03-08 23:58:16,276 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.6%, EW=96.4%
+2025-03-08 23:58:16,294 - TrafficRL.Utils.Benchmark - INFO - Benchmark results saved to results/analysis/analysis_20250308_235654/benchmark/benchmark_20250308_235656/benchmark_results.json
+2025-03-08 23:58:30,359 - TrafficRL.Utils.Benchmark - INFO - Benchmark visualizations created in results/analysis/analysis_20250308_235654/benchmark/benchmark_20250308_235656/plots
+2025-03-08 23:58:30,369 - TrafficRL - INFO - Benchmark completed.
+2025-03-08 23:58:30,370 - TrafficRL - INFO - Processing benchmark results...
+2025-03-08 23:58:30,370 - TrafficRL - INFO - Running comparative analysis...
+2025-03-08 23:58:31,926 - TrafficRL.Utils.Analysis - ERROR - Error in comparative analysis: Image data of dtype object cannot be converted to float
+2025-03-08 23:58:31,943 - TrafficRL.Utils.Analysis - ERROR - Traceback (most recent call last):
+  File "/Users/charles/Desktop/STUDY/Polytechnique - MScT AI & VC/Courses/M1/S2/Atonomous Agents/Final_Project/TrafficRL/traffic_rl/utils/analysis.py", line 1998, in comparative_analysis
+    sns.heatmap(pattern_impact_data, annot=True, cmap="YlGnBu", fmt=".1f")
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 459, in heatmap
+    plotter.plot(ax, cbar_ax, kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/seaborn/matrix.py", line 306, in plot
+    mesh = ax.pcolormesh(self.plot_data, cmap=self.cmap, **kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/__init__.py", line 1473, in inner
+    return func(
+           ^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/axes/_axes.py", line 6434, in pcolormesh
+    collection = mcoll.QuadMesh(
+                 ^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2146, in __init__
+    Collection.__init__(self, **kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 206, in __init__
+    self._internal_update(kwargs)
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1216, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/artist.py", line 1192, in _update_props
+    ret.append(func(v))
+               ^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/collections.py", line 2020, in set_array
+    return super().set_array(A)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charles/.pyenv/versions/3.12.5/lib/python3.12/site-packages/matplotlib/cm.py", line 452, in set_array
+    raise TypeError(f"Image data of dtype {A.dtype} cannot be "
+TypeError: Image data of dtype object cannot be converted to float
+
+2025-03-08 23:58:31,943 - TrafficRL - INFO - Comparative analysis completed.
+2025-03-08 23:58:31,943 - TrafficRL - INFO - Analyzing agent behavior...
+2025-03-08 23:58:31,944 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-08 23:58:31,944 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-08 23:58:31,952 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-08 23:58:31,979 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-08 23:58:31,979 - TrafficRL - INFO - Successfully loaded model from results/training/best_model.pth for Q-value analysis
+2025-03-08 23:58:40,647 - TrafficRL.Utils.Analysis - INFO - Reshaped states from (2, 10, 10, 80) to (2, 8000) for PCA
+2025-03-08 23:58:40,694 - TrafficRL.Utils.Analysis - WARNING - t-SNE visualization failed: perplexity must be less than n_samples
+2025-03-08 23:58:41,926 - TrafficRL.Utils.Analysis - INFO - Learning progress visualizations saved to results/analysis/analysis_20250308_235654/agent_training/q_values
+2025-03-08 23:58:41,928 - TrafficRL - INFO - Q-value visualization saved to results/analysis/analysis_20250308_235654/agent_training/q_values
+2025-03-08 23:58:41,929 - TrafficRL - INFO - Agent analysis for training completed.
+2025-03-08 23:58:41,929 - TrafficRL - INFO - Generating comprehensive report...
+2025-03-08 23:58:41,932 - TrafficRL.Utils.Analysis - INFO - Report generation: Creating visualizations
+2025-03-08 23:58:41,933 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: reward_comparison.png
+2025-03-08 23:58:41,933 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: waiting_time_comparison.png
+2025-03-08 23:58:41,933 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: throughput_comparison.png
+2025-03-08 23:58:41,933 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution.png
+2025-03-08 23:58:41,934 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: congestion_performance.png
+2025-03-08 23:58:41,934 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: radar_chart_uniform.png
+2025-03-08 23:58:41,935 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: traffic_pattern_impact.png
+2025-03-08 23:58:41,935 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: density_waiting_correlation.png
+2025-03-08 23:58:41,935 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution_by_pattern.png
+2025-03-08 23:58:41,936 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: agent_performance_radar.png
+2025-03-08 23:58:41,936 - TrafficRL.Utils.Analysis - INFO - Found and included 0 benchmark plots in the report
+2025-03-08 23:58:41,936 - TrafficRL.Utils.Analysis - INFO - Comprehensive report generated at results/analysis/analysis_20250308_235654/report/analysis_report.html
+2025-03-08 23:58:41,938 - TrafficRL - INFO - Comprehensive analysis completed. Results in results/analysis/analysis_20250308_235654
+2025-03-08 23:58:41,959 - TrafficRL - INFO - Analysis completed. Results available in results/analysis/analysis_20250308_235654
+2025-03-08 23:58:41,959 - TrafficRL - INFO - HTML report available at: results/analysis/analysis_20250308_235654/report/analysis_report.html
+2025-03-09 00:00:14,712 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-09 00:00:14,715 - TrafficRL - INFO - Analyzing training metrics...
+2025-03-09 00:00:16,894 - TrafficRL.Utils.Analysis - INFO - Training analysis completed and saved to results/analysis/analysis_20250309_000014/training_training
+2025-03-09 00:00:16,895 - TrafficRL - INFO - Training analysis for training completed.
+2025-03-09 00:00:16,895 - TrafficRL - INFO - Running new benchmark across models and baselines...
+2025-03-09 00:00:16,895 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-09 00:00:16,895 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-09 00:00:16,895 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-09 00:00:16,897 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-09 00:00:22,253 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-09 00:00:22,254 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-09 00:00:22,254 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-09 00:00:22,254 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-09 00:00:22,254 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-09 00:00:27,110 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-09 00:00:27,110 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-09 00:00:27,110 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-09 00:00:27,110 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-09 00:00:27,110 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-09 00:00:31,880 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-09 00:00:31,880 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-09 00:00:31,880 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-09 00:00:31,880 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-09 00:00:31,880 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-09 00:00:36,655 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-09 00:00:36,656 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-09 00:00:36,656 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-09 00:00:36,656 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-09 00:00:36,656 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-09 00:00:41,238 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-09 00:00:41,238 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-09 00:00:41,238 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-09 00:00:41,239 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-09 00:00:41,239 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-09 00:00:45,988 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-09 00:00:45,988 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-09 00:00:45,988 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-09 00:00:45,988 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-09 00:00:45,989 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-09 00:00:50,861 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-09 00:00:50,861 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-09 00:00:50,861 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-09 00:00:50,861 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-09 00:00:50,861 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-09 00:00:55,528 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-09 00:00:55,529 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-09 00:00:55,529 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-09 00:00:55,529 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-09 00:00:55,529 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-09 00:01:00,469 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-09 00:01:00,470 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-09 00:01:00,470 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-09 00:01:00,470 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-09 00:01:00,470 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-09 00:01:00,471 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-09 00:01:00,471 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-09 00:01:02,718 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-09 00:01:02,751 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-09 00:01:13,587 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on uniform:
+2025-03-09 00:01:13,591 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 77274.61 ± 16505.91
+2025-03-09 00:01:13,591 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 220.87
+2025-03-09 00:01:13,591 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8796134.82
+2025-03-09 00:01:13,591 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.0%, EW=97.0%
+2025-03-09 00:01:13,594 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-09 00:01:13,594 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-09 00:01:13,602 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-09 00:01:13,617 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-09 00:01:24,923 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on rush_hour:
+2025-03-09 00:01:24,923 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 289406.64 ± 34200.18
+2025-03-09 00:01:24,924 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 232.06
+2025-03-09 00:01:24,924 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 13283531.94
+2025-03-09 00:01:24,924 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=2.0%, EW=98.0%
+2025-03-09 00:01:24,926 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-09 00:01:24,926 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-09 00:01:24,934 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-09 00:01:24,949 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-09 00:01:36,361 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on weekend:
+2025-03-09 00:01:36,361 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 143313.87 ± 34100.28
+2025-03-09 00:01:36,362 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 212.56
+2025-03-09 00:01:36,362 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9845543.02
+2025-03-09 00:01:36,362 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.6%, EW=96.4%
+2025-03-09 00:01:36,380 - TrafficRL.Utils.Benchmark - INFO - Benchmark results saved to results/analysis/analysis_20250309_000014/benchmark/benchmark_20250309_000016/benchmark_results.json
+2025-03-09 00:01:50,451 - TrafficRL.Utils.Benchmark - INFO - Benchmark visualizations created in results/analysis/analysis_20250309_000014/benchmark/benchmark_20250309_000016/plots
+2025-03-09 00:01:50,460 - TrafficRL - INFO - Benchmark completed.
+2025-03-09 00:01:50,461 - TrafficRL - INFO - Processing benchmark results...
+2025-03-09 00:01:50,461 - TrafficRL - INFO - Running comparative analysis...
+2025-03-09 00:01:53,264 - TrafficRL.Utils.Analysis - INFO - Comparative analysis completed and saved to results/analysis/analysis_20250309_000014/comparative
+2025-03-09 00:01:53,264 - TrafficRL - INFO - Comparative analysis completed.
+2025-03-09 00:01:53,264 - TrafficRL - INFO - Analyzing agent behavior...
+2025-03-09 00:01:53,265 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-09 00:01:53,265 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-09 00:01:53,274 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-09 00:01:53,291 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-09 00:01:53,292 - TrafficRL - INFO - Successfully loaded model from results/training/best_model.pth for Q-value analysis
+2025-03-09 00:02:01,652 - TrafficRL.Utils.Analysis - INFO - Reshaped states from (2, 10, 10, 80) to (2, 8000) for PCA
+2025-03-09 00:02:01,693 - TrafficRL.Utils.Analysis - WARNING - t-SNE visualization failed: perplexity must be less than n_samples
+2025-03-09 00:02:02,708 - TrafficRL.Utils.Analysis - INFO - Learning progress visualizations saved to results/analysis/analysis_20250309_000014/agent_training/q_values
+2025-03-09 00:02:02,713 - TrafficRL - INFO - Q-value visualization saved to results/analysis/analysis_20250309_000014/agent_training/q_values
+2025-03-09 00:02:02,714 - TrafficRL - INFO - Agent analysis for training completed.
+2025-03-09 00:02:02,714 - TrafficRL - INFO - Generating comprehensive report...
+2025-03-09 00:02:02,717 - TrafficRL.Utils.Analysis - INFO - Report generation: Creating visualizations
+2025-03-09 00:02:02,718 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: reward_comparison.png
+2025-03-09 00:02:02,719 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: waiting_time_comparison.png
+2025-03-09 00:02:02,719 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: throughput_comparison.png
+2025-03-09 00:02:02,720 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution.png
+2025-03-09 00:02:02,720 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: congestion_performance.png
+2025-03-09 00:02:02,720 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: radar_chart_uniform.png
+2025-03-09 00:02:02,720 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: traffic_pattern_impact.png
+2025-03-09 00:02:02,720 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: density_waiting_correlation.png
+2025-03-09 00:02:02,721 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution_by_pattern.png
+2025-03-09 00:02:02,721 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: agent_performance_radar.png
+2025-03-09 00:02:02,721 - TrafficRL.Utils.Analysis - INFO - Found and included 0 benchmark plots in the report
+2025-03-09 00:02:02,723 - TrafficRL.Utils.Analysis - INFO - Comprehensive report generated at results/analysis/analysis_20250309_000014/report/analysis_report.html
+2025-03-09 00:02:02,725 - TrafficRL - INFO - Comprehensive analysis completed. Results in results/analysis/analysis_20250309_000014
+2025-03-09 00:02:02,738 - TrafficRL - INFO - Analysis completed. Results available in results/analysis/analysis_20250309_000014
+2025-03-09 00:02:02,738 - TrafficRL - INFO - HTML report available at: results/analysis/analysis_20250309_000014/report/analysis_report.html
+2025-03-09 00:05:19,671 - TrafficRL - INFO - Logging initialized. Log file: logs/log
+2025-03-09 00:05:19,674 - TrafficRL - INFO - Analyzing training metrics...
+2025-03-09 00:05:21,435 - TrafficRL.Utils.Analysis - INFO - Training analysis completed and saved to results/analysis/analysis_20250309_000519/training_training
+2025-03-09 00:05:21,435 - TrafficRL - INFO - Training analysis for training completed.
+2025-03-09 00:05:21,435 - TrafficRL - INFO - Running new benchmark across models and baselines...
+2025-03-09 00:05:21,435 - TrafficRL.Agents.FixedTiming - INFO - Fixed timing agent initialized with phase duration: 30
+2025-03-09 00:05:21,435 - TrafficRL.Agents.FixedTiming - INFO - Adaptive timing agent initialized with phase duration range: 10-60
+2025-03-09 00:05:21,436 - TrafficRL.Agents.Base - INFO - BaseAgent initialized with state_size=80, action_size=2
+2025-03-09 00:05:21,436 - TrafficRL.Agents.Base - INFO - RandomAgent initialized with action space size: 2
+2025-03-09 00:05:26,685 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on uniform:
+2025-03-09 00:05:26,686 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 262140.62 ± 18215.43
+2025-03-09 00:05:26,686 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 175.25
+2025-03-09 00:05:26,686 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10944529.64
+2025-03-09 00:05:26,687 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-09 00:05:31,564 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on rush_hour:
+2025-03-09 00:05:31,564 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 31147.79 ± 1255.99
+2025-03-09 00:05:31,564 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 237.58
+2025-03-09 00:05:31,564 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8232909.97
+2025-03-09 00:05:31,565 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-09 00:05:36,455 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for FixedTiming on weekend:
+2025-03-09 00:05:36,455 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 296203.02 ± 1638.84
+2025-03-09 00:05:36,455 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 149.49
+2025-03-09 00:05:36,455 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10740523.25
+2025-03-09 00:05:36,455 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=51.0%, EW=49.0%
+2025-03-09 00:05:41,296 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on uniform:
+2025-03-09 00:05:41,296 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 248331.34 ± 14045.31
+2025-03-09 00:05:41,296 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 184.56
+2025-03-09 00:05:41,296 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10940006.17
+2025-03-09 00:05:41,296 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=48.9%, EW=51.1%
+2025-03-09 00:05:46,001 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on rush_hour:
+2025-03-09 00:05:46,001 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 59717.62 ± 1526.19
+2025-03-09 00:05:46,001 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 231.81
+2025-03-09 00:05:46,001 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8620905.84
+2025-03-09 00:05:46,002 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.0%, EW=51.0%
+2025-03-09 00:05:50,771 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for AdaptiveTiming on weekend:
+2025-03-09 00:05:50,772 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 234542.63 ± 14491.83
+2025-03-09 00:05:50,772 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 162.97
+2025-03-09 00:05:50,772 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9929924.22
+2025-03-09 00:05:50,772 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-09 00:05:55,671 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on uniform:
+2025-03-09 00:05:55,671 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 251697.90 ± 55625.12
+2025-03-09 00:05:55,671 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 173.80
+2025-03-09 00:05:55,671 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10681128.91
+2025-03-09 00:05:55,672 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-09 00:06:00,388 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on rush_hour:
+2025-03-09 00:06:00,388 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 73914.21 ± 42218.52
+2025-03-09 00:06:00,388 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 230.92
+2025-03-09 00:06:00,388 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8881686.14
+2025-03-09 00:06:00,389 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=50.1%, EW=49.9%
+2025-03-09 00:06:05,455 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for Random on weekend:
+2025-03-09 00:06:05,456 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 237832.00 ± 48914.65
+2025-03-09 00:06:05,456 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 165.40
+2025-03-09 00:06:05,456 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 10096101.69
+2025-03-09 00:06:05,456 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=49.6%, EW=50.4%
+2025-03-09 00:06:05,457 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-09 00:06:05,457 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-09 00:06:07,671 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-09 00:06:07,703 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-09 00:06:18,191 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on uniform:
+2025-03-09 00:06:18,191 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 77274.61 ± 16505.91
+2025-03-09 00:06:18,191 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 220.87
+2025-03-09 00:06:18,191 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 8796134.82
+2025-03-09 00:06:18,191 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.0%, EW=97.0%
+2025-03-09 00:06:18,194 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-09 00:06:18,194 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-09 00:06:18,203 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-09 00:06:18,217 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-09 00:06:29,056 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on rush_hour:
+2025-03-09 00:06:29,056 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 289406.64 ± 34200.18
+2025-03-09 00:06:29,057 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 232.06
+2025-03-09 00:06:29,057 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 13283531.94
+2025-03-09 00:06:29,057 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=2.0%, EW=98.0%
+2025-03-09 00:06:29,059 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-09 00:06:29,059 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-09 00:06:29,066 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-09 00:06:29,081 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-09 00:06:40,221 - TrafficRL.Utils.Benchmark - INFO - Benchmark results for TrainedModel on weekend:
+2025-03-09 00:06:40,221 - TrafficRL.Utils.Benchmark - INFO -   Average Reward: 143313.87 ± 34100.28
+2025-03-09 00:06:40,221 - TrafficRL.Utils.Benchmark - INFO -   Average Waiting Time: 212.56
+2025-03-09 00:06:40,221 - TrafficRL.Utils.Benchmark - INFO -   Average Throughput: 9845543.02
+2025-03-09 00:06:40,222 - TrafficRL.Utils.Benchmark - INFO -   Action Distribution: NS=3.6%, EW=96.4%
+2025-03-09 00:06:40,234 - TrafficRL.Utils.Benchmark - INFO - Benchmark results saved to results/analysis/analysis_20250309_000519/benchmark/benchmark_20250309_000521/benchmark_results.json
+2025-03-09 00:06:54,223 - TrafficRL.Utils.Benchmark - INFO - Benchmark visualizations created in results/analysis/analysis_20250309_000519/benchmark/benchmark_20250309_000521/plots
+2025-03-09 00:06:54,232 - TrafficRL - INFO - Benchmark completed.
+2025-03-09 00:06:54,233 - TrafficRL - INFO - Processing benchmark results...
+2025-03-09 00:06:54,233 - TrafficRL - INFO - Running comparative analysis...
+2025-03-09 00:06:57,068 - TrafficRL.Utils.Analysis - INFO - Comparative analysis completed and saved to results/analysis/analysis_20250309_000519/comparative
+2025-03-09 00:06:57,069 - TrafficRL - INFO - Comparative analysis completed.
+2025-03-09 00:06:57,069 - TrafficRL - INFO - Analyzing agent behavior...
+2025-03-09 00:06:57,069 - TrafficRL.Agent - INFO - Using device: cpu
+2025-03-09 00:06:57,070 - TrafficRL.Agent - INFO - Using Dueling DQN architecture
+2025-03-09 00:06:57,077 - TrafficRL.Agent - INFO - Using Prioritized Experience Replay
+2025-03-09 00:06:57,102 - TrafficRL.Agent - INFO - Model loaded successfully from results/training/best_model.pth
+2025-03-09 00:06:57,102 - TrafficRL - INFO - Successfully loaded model from results/training/best_model.pth for Q-value analysis
+2025-03-09 00:07:05,545 - TrafficRL.Utils.Analysis - INFO - Reshaped states from (2, 10, 10, 80) to (2, 8000) for PCA
+2025-03-09 00:07:05,587 - TrafficRL.Utils.Analysis - WARNING - t-SNE visualization failed: perplexity must be less than n_samples
+2025-03-09 00:07:06,548 - TrafficRL.Utils.Analysis - INFO - Learning progress visualizations saved to results/analysis/analysis_20250309_000519/agent_training/q_values
+2025-03-09 00:07:06,553 - TrafficRL - INFO - Q-value visualization saved to results/analysis/analysis_20250309_000519/agent_training/q_values
+2025-03-09 00:07:06,553 - TrafficRL - INFO - Agent analysis for training completed.
+2025-03-09 00:07:06,554 - TrafficRL - INFO - Generating comprehensive report...
+2025-03-09 00:07:06,557 - TrafficRL.Utils.Analysis - INFO - Report generation: Creating visualizations
+2025-03-09 00:07:06,562 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: action_distribution.png
+2025-03-09 00:07:06,562 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: congestion_performance.png
+2025-03-09 00:07:06,562 - TrafficRL.Utils.Analysis - WARNING - Could not find benchmark plot: radar_chart_uniform.png
+2025-03-09 00:07:06,568 - TrafficRL.Utils.Analysis - INFO - Found and included 7 benchmark plots in the report
+2025-03-09 00:07:06,568 - TrafficRL.Utils.Analysis - INFO - Comprehensive report generated at results/analysis/analysis_20250309_000519/report/analysis_report.html
+2025-03-09 00:07:06,571 - TrafficRL - INFO - Comprehensive analysis completed. Results in results/analysis/analysis_20250309_000519
+2025-03-09 00:07:06,582 - TrafficRL - INFO - Analysis completed. Results available in results/analysis/analysis_20250309_000519
+2025-03-09 00:07:06,583 - TrafficRL - INFO - HTML report available at: results/analysis/analysis_20250309_000519/report/analysis_report.html

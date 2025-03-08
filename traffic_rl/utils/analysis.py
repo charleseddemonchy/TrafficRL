@@ -35,6 +35,9 @@ def analyze_training_metrics(metrics, save_dir="results"):
         # Create directory if it doesn't exist
         os.makedirs(save_dir, exist_ok=True)
         
+        # Set consistent plot style
+        set_plot_style()
+        
         # Extract metrics
         rewards = metrics.get("rewards", [])
         avg_rewards = metrics.get("avg_rewards", [])
@@ -70,72 +73,76 @@ def analyze_training_metrics(metrics, save_dir="results"):
         # Plot rewards
         if rewards:
             plt.figure(figsize=(12, 6))
-            plt.plot(rewards, alpha=0.6, label='Episode Reward')
-            plt.plot(avg_rewards, label='Avg Reward (100 episodes)')
+            plt.plot(rewards, alpha=0.6, label='Episode Reward', color='#3498db')
+            plt.plot(avg_rewards, label='Avg Reward (100 episodes)', color='#2c3e50', linewidth=2)
             if eval_rewards:
                 # Plot evaluation rewards at their corresponding episodes
                 eval_episodes = [i * metrics.get("eval_frequency", 20) for i in range(len(eval_rewards))]
-                plt.plot(eval_episodes, eval_rewards, 'ro-', label='Evaluation Reward')
+                plt.plot(eval_episodes, eval_rewards, 'ro-', label='Evaluation Reward', color='#e74c3c', markersize=5)
             
             plt.xlabel('Episode')
             plt.ylabel('Reward')
-            plt.title('Training Rewards Over Time')
-            plt.legend()
-            plt.grid(True)
-            plt.savefig(os.path.join(save_dir, "reward_plot.png"))
+            plt.title('Training Rewards Over Time', fontweight='bold')
+            plt.legend(frameon=True, fancybox=True, shadow=True)
+            plt.grid(True, linestyle='--', alpha=0.3)
+            plt.tight_layout()
+            plt.savefig(os.path.join(save_dir, "reward_plot.png"), dpi=300, bbox_inches='tight')
             plt.close()
         
         # Plot losses
         if losses:
             plt.figure(figsize=(12, 6))
-            plt.plot(losses)
+            plt.plot(losses, color='#e74c3c', linewidth=1.5)
             plt.xlabel('Episode')
             plt.ylabel('Loss')
-            plt.title('Training Loss Over Time')
-            plt.grid(True)
-            plt.savefig(os.path.join(save_dir, "loss_plot.png"))
+            plt.title('Training Loss Over Time', fontweight='bold')
+            plt.grid(True, linestyle='--', alpha=0.3)
+            plt.tight_layout()
+            plt.savefig(os.path.join(save_dir, "loss_plot.png"), dpi=300, bbox_inches='tight')
             plt.close()
         
         # Plot epsilon decay
         if epsilons:
             plt.figure(figsize=(12, 6))
-            plt.plot(epsilons)
+            plt.plot(epsilons, color='#9b59b6', linewidth=2)
             plt.xlabel('Episode')
             plt.ylabel('Epsilon')
-            plt.title('Exploration Rate (Epsilon) Over Time')
-            plt.grid(True)
-            plt.savefig(os.path.join(save_dir, "epsilon_plot.png"))
+            plt.title('Exploration Rate (Epsilon) Over Time', fontweight='bold')
+            plt.grid(True, linestyle='--', alpha=0.3)
+            plt.tight_layout()
+            plt.savefig(os.path.join(save_dir, "epsilon_plot.png"), dpi=300, bbox_inches='tight')
             plt.close()
         
         # Plot learning rate
         if learning_rates:
             plt.figure(figsize=(12, 6))
-            plt.plot(learning_rates)
+            plt.plot(learning_rates, color='#2ecc71', linewidth=2)
             plt.xlabel('Episode')
             plt.ylabel('Learning Rate')
-            plt.title('Learning Rate Over Time')
-            plt.grid(True)
-            plt.savefig(os.path.join(save_dir, "learning_rate_plot.png"))
+            plt.title('Learning Rate Over Time', fontweight='bold')
+            plt.grid(True, linestyle='--', alpha=0.3)
+            plt.tight_layout()
+            plt.savefig(os.path.join(save_dir, "learning_rate_plot.png"), dpi=300, bbox_inches='tight')
             plt.close()
         
         # Plot waiting times and throughput
         if waiting_times and throughputs:
             fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10))
             
-            ax1.plot(waiting_times)
+            ax1.plot(waiting_times, color='#e67e22', linewidth=1.5)
             ax1.set_xlabel('Episode')
             ax1.set_ylabel('Average Waiting Time')
-            ax1.set_title('Average Waiting Time Per Episode')
-            ax1.grid(True)
+            ax1.set_title('Average Waiting Time Per Episode', fontweight='bold')
+            ax1.grid(True, linestyle='--', alpha=0.3)
             
-            ax2.plot(throughputs)
+            ax2.plot(throughputs, color='#27ae60', linewidth=1.5)
             ax2.set_xlabel('Episode')
             ax2.set_ylabel('Average Throughput')
-            ax2.set_title('Average Throughput Per Episode')
-            ax2.grid(True)
+            ax2.set_title('Average Throughput Per Episode', fontweight='bold')
+            ax2.grid(True, linestyle='--', alpha=0.3)
             
             plt.tight_layout()
-            plt.savefig(os.path.join(save_dir, "performance_metrics.png"))
+            plt.savefig(os.path.join(save_dir, "performance_metrics.png"), dpi=300, bbox_inches='tight')
             plt.close()
         
         # Save summary statistics
@@ -393,20 +400,24 @@ def comparative_analysis(results, save_dir="results"):
         plt.savefig(os.path.join(save_dir, "agent_performance_radar.png"))
         plt.close()
         
-        # 1. Traffic Pattern Impact Analysis
-        # Create a heatmap showing how different traffic patterns affect each agent
+        # 1. Traffic Pattern Impact Analysis - Simple Bar Chart
         plt.figure(figsize=(12, 8))
         
-        # Prepare data for heatmap
-        pattern_impact_data = pd.DataFrame(index=agent_types, columns=traffic_patterns)
-        for agent in agent_types:
-            for pattern in traffic_patterns:
+        # Create a direct bar chart using matplotlib directly
+        bar_width = 0.8 / len(agent_types)
+        
+        for i, agent in enumerate(agent_types):
+            agent_rewards = []
+            x_positions = []
+            
+            for j, pattern in enumerate(traffic_patterns):
                 key = f"{agent}_{pattern}"
                 if key in results:
-                    pattern_impact_data.loc[agent, pattern] = results[key].get("avg_reward", 0)
-        
-        # Plot heatmap
-        sns.heatmap(pattern_impact_data, annot=True, cmap="YlGnBu", fmt=".1f")
+                    reward = float(results[key].get("avg_reward", 0))
+                    agent_rewards.append(reward)
+                    x_positions.append(j + (i - len(agent_types)/2 + 0.5) * bar_width)
+            
+            plt.bar(x_positions, agent_rewards, width=bar_width, label=agent)
         plt.title("Traffic Pattern Impact on Agent Performance (Reward)")
         plt.ylabel("Agent")
         plt.xlabel("Traffic Pattern")
@@ -1001,6 +1012,33 @@ def visualize_decision_timing(episode_data, save_dir="results"):
         return {}
 
 
+# Define a consistent style for all plots
+def set_plot_style():
+    """Set a consistent, modern style for all plots."""
+    plt.style.use('seaborn-v0_8-whitegrid')
+    
+    # Custom style settings
+    plt.rcParams['font.family'] = 'sans-serif'
+    plt.rcParams['font.sans-serif'] = ['Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', 'sans-serif']
+    plt.rcParams['axes.labelsize'] = 12
+    plt.rcParams['axes.titlesize'] = 14
+    plt.rcParams['xtick.labelsize'] = 10
+    plt.rcParams['ytick.labelsize'] = 10
+    plt.rcParams['legend.fontsize'] = 10
+    plt.rcParams['figure.titlesize'] = 16
+    
+    # Modern, minimal grid
+    plt.rcParams['axes.grid'] = True
+    plt.rcParams['grid.alpha'] = 0.3
+    plt.rcParams['grid.linestyle'] = '--'
+    
+    # Improved figure aesthetics
+    plt.rcParams['figure.facecolor'] = 'white'
+    plt.rcParams['axes.facecolor'] = 'white'
+    plt.rcParams['savefig.dpi'] = 300
+    plt.rcParams['savefig.bbox'] = 'tight'
+    plt.rcParams['savefig.pad_inches'] = 0.1
+
 def visualize_learning_progress(q_values_history, states_history, save_dir="results"):
     """
     Visualize the learning progress of the agent.
@@ -1022,58 +1060,136 @@ def visualize_learning_progress(q_values_history, states_history, save_dir="resu
             logger.warning("No Q-values or states history provided for learning progress visualization")
             return {}
         
+        # Set consistent plot style
+        set_plot_style()
+        
         visualization_paths = {}
         
-        # 1. Q-value Surface Plot
-        if q_values_history and len(q_values_history) > 0:
-            # Create a figure with subplots for different training stages
-            n_stages = min(len(q_values_history), 4)  # Show up to 4 stages
-            fig = plt.figure(figsize=(16, 4 * n_stages))
-            
-            # Select stages to visualize (beginning, middle, end)
-            stage_indices = [0]
-            if n_stages > 2:
-                stage_indices.append(len(q_values_history) // 2)
-            stage_indices.append(len(q_values_history) - 1)
-            
-            for i, stage_idx in enumerate(stage_indices):
-                q_values = q_values_history[stage_idx]
+        # Create a figure for Q-value visualization
+        # We'll create a 2x2 grid of plots:
+        # - Top row: Q-values for NS Green action (0)
+        # - Bottom row: Q-values for EW Green action (1)
+        # - Left column: Current light state is NS Green (0)
+        # - Right column: Current light state is EW Green (1)
+        
+        fig, axes = plt.subplots(2, 2, figsize=(16, 12))
+        
+        # Get the latest stage
+        latest_q_values = q_values_history[-1]
+        
+        # Plot titles and labels
+        light_state_labels = ["Current: NS Green", "Current: EW Green"]
+        action_labels = ["Action: Keep/Set NS Green", "Action: Keep/Set EW Green"]
+        
+        # Use a consistent colormap
+        cmap = 'viridis'
+        
+        # Create heatmaps for each combination of current light state and action
+        for light_idx, light_state in enumerate(light_state_labels):
+            for action_idx, action_label in enumerate(action_labels):
+                ax = axes[action_idx, light_idx]
                 
-                # Reshape Q-values if needed
-                if len(q_values.shape) == 1:
-                    # Assume it's a flattened 2D grid with 2 actions per state
-                    grid_size = int(np.sqrt(q_values.shape[0] // 2))
-                    q_values = q_values.reshape(grid_size, grid_size, 2)
+                # Get Q-values for this light state and action
+                q_values = latest_q_values[light_idx][:, :, action_idx]
                 
-                # Create 3D surface plot for each action
-                for action in range(q_values.shape[-1]):
-                    ax = fig.add_subplot(len(stage_indices), 2, i*2 + action + 1, projection='3d')
-                    
-                    # Create grid coordinates
-                    x = np.arange(q_values.shape[0])
-                    y = np.arange(q_values.shape[1])
-                    x, y = np.meshgrid(x, y)
-                    
-                    # Plot surface
-                    surf = ax.plot_surface(x, y, q_values[:, :, action], cmap='viridis', 
-                                         linewidth=0, antialiased=False)
-                    
-                    # Add labels
-                    ax.set_xlabel('NS Density')
-                    ax.set_ylabel('EW Density')
-                    ax.set_zlabel('Q-Value')
-                    ax.set_title(f"Action {action} Q-Values (Stage {stage_idx})")
-                    
-                    # Add colorbar
-                    fig.colorbar(surf, ax=ax, shrink=0.5, aspect=5)
+                # Create heatmap with improved aesthetics
+                im = ax.imshow(q_values, cmap=cmap, origin='lower', 
+                              extent=[0, 1, 0, 1], aspect='auto')
+                
+                # Add colorbar with consistent styling
+                cbar = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+                cbar.set_label('Q-Value', fontsize=10)
+                cbar.ax.tick_params(labelsize=8)
+                
+                # Add labels and title with consistent styling
+                ax.set_xlabel('East-West Density')
+                ax.set_ylabel('North-South Density')
+                ax.set_title(f"{light_state}\n{action_label}", fontweight='bold')
+                
+                # Add subtle grid
+                ax.grid(True, linestyle='--', alpha=0.3)
+                
+                # Add decision boundary
+                # Find where action 0 has higher Q-value than action 1 (or vice versa)
+                if action_idx == 0:
+                    # For NS Green action, highlight where it's the better action
+                    other_q_values = latest_q_values[light_idx][:, :, 1]
+                    better_action = q_values > other_q_values
+                    # Draw contour around regions where this action is better
+                    ax.contour(np.linspace(0, 1, q_values.shape[1]), 
+                              np.linspace(0, 1, q_values.shape[0]),
+                              better_action, levels=[0.5], colors='white', linewidths=2)
+        
+        # Add a main title to the figure
+        fig.suptitle('Q-Value Analysis by Light State and Action', fontsize=16, fontweight='bold', y=0.98)
+        
+        plt.tight_layout(rect=[0, 0, 1, 0.96])  # Adjust for the suptitle
+        
+        # Save figure with high quality
+        q_surface_path = os.path.join(save_dir, "q_value_surface_plots.png")
+        plt.savefig(q_surface_path, dpi=300, bbox_inches='tight')
+        plt.close()
+        visualization_paths["q_surface"] = q_surface_path
+        
+        # Create a second visualization: Q-value difference plot
+        # This shows which action is preferred in which state
+        fig, axes = plt.subplots(1, 2, figsize=(16, 7))
+        
+        # Use a consistent diverging colormap
+        cmap = plt.cm.RdYlGn  # Red-Yellow-Green colormap
+        
+        for light_idx, light_state in enumerate(light_state_labels):
+            ax = axes[light_idx]
             
-            plt.tight_layout()
+            # Calculate Q-value difference (Action 0 - Action 1)
+            # Positive values mean NS Green is preferred, negative mean EW Green is preferred
+            q_diff = latest_q_values[light_idx][:, :, 0] - latest_q_values[light_idx][:, :, 1]
             
-            # Save figure
-            q_surface_path = os.path.join(save_dir, "q_value_surface_plots.png")
-            plt.savefig(q_surface_path)
-            plt.close()
-            visualization_paths["q_surface"] = q_surface_path
+            # Find max absolute value for symmetric color scaling
+            max_abs_diff = np.max(np.abs(q_diff))
+            
+            # Create heatmap with improved aesthetics
+            im = ax.imshow(q_diff, cmap=cmap, origin='lower', 
+                          extent=[0, 1, 0, 1], aspect='auto',
+                          vmin=-max_abs_diff, vmax=max_abs_diff)
+            
+            # Add colorbar with consistent styling
+            cbar = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+            cbar.set_label('Q-Value Difference\n(NS Green - EW Green)', fontsize=10)
+            cbar.ax.tick_params(labelsize=8)
+            
+            # Add labels and title with consistent styling
+            ax.set_xlabel('East-West Density')
+            ax.set_ylabel('North-South Density')
+            ax.set_title(f"Action Preference with {light_state}", fontweight='bold')
+            
+            # Add subtle grid
+            ax.grid(True, linestyle='--', alpha=0.3)
+            
+            # Add decision boundary at Q-diff = 0
+            ax.contour(np.linspace(0, 1, q_diff.shape[1]), 
+                      np.linspace(0, 1, q_diff.shape[0]),
+                      q_diff, levels=[0], colors='black', linewidths=2)
+            
+            # Add diagonal line (where NS density = EW density)
+            ax.plot([0, 1], [0, 1], 'k--', alpha=0.5)
+            
+            # Annotate regions with improved styling
+            ax.text(0.25, 0.75, "NS Green\nPreferred", ha='center', va='center', 
+                   color='black', fontweight='bold', bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', boxstyle='round,pad=0.3'))
+            ax.text(0.75, 0.25, "EW Green\nPreferred", ha='center', va='center', 
+                   color='black', fontweight='bold', bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', boxstyle='round,pad=0.3'))
+        
+        # Add a main title to the figure
+        fig.suptitle('Action Preference Analysis by Light State', fontsize=16, fontweight='bold', y=0.98)
+        
+        plt.tight_layout(rect=[0, 0, 1, 0.96])  # Adjust for the suptitle
+        
+        # Save figure with high quality
+        q_diff_path = os.path.join(save_dir, "q_value_difference_plots.png")
+        plt.savefig(q_diff_path, dpi=300, bbox_inches='tight')
+        plt.close()
+        visualization_paths["q_diff"] = q_diff_path
         
         # 2. State Representation Visualization using t-SNE or PCA
         if states_history and len(states_history) > 0:
@@ -1099,6 +1215,13 @@ def visualize_learning_progress(q_values_history, states_history, save_dir="resu
             
             # Combine states from all stages
             combined_states = np.vstack(selected_states)
+            
+            # Reshape states if they have more than 2 dimensions
+            if combined_states.ndim > 2:
+                # Flatten all dimensions except the first one (samples)
+                orig_shape = combined_states.shape
+                combined_states = combined_states.reshape(orig_shape[0], -1)
+                logger.info(f"Reshaped states from {orig_shape} to {combined_states.shape} for PCA")
             
             # Apply dimensionality reduction
             plt.figure(figsize=(12, 10))
@@ -1374,7 +1497,96 @@ def visualize_fairness_metrics(episode_data, save_dir="results"):
                 mad = np.abs(np.subtract.outer(x, x)).mean()
                 # Relative mean absolute difference
                 rmad = mad / np.mean(x)
-                #
+                # Gini coefficient
+                return rmad / 2
+            
+            # Calculate Gini coefficients for each agent
+            gini_data = []
+            
+            for agent in episode_data['agent'].unique():
+                agent_data = episode_data[episode_data['agent'] == agent]
+                
+                for pattern in agent_data['pattern'].unique():
+                    pattern_data = agent_data[agent_data['pattern'] == pattern]
+                    
+                    for _, row in pattern_data.iterrows():
+                        # Calculate Gini coefficient for this episode
+                        waiting_times = [row['ns_waiting_time'], row['ew_waiting_time']]
+                        gini_coef = gini(waiting_times)
+                        
+                        gini_data.append({
+                            'agent': agent,
+                            'pattern': pattern,
+                            'gini_coefficient': gini_coef
+                        })
+            
+            if gini_data:
+                gini_df = pd.DataFrame(gini_data)
+                
+                # Create box plot of Gini coefficients by agent
+                sns.boxplot(x='agent', y='gini_coefficient', hue='pattern', data=gini_df)
+                plt.xlabel('Agent')
+                plt.ylabel('Gini Coefficient')
+                plt.title('Fairness (Gini Coefficient) by Agent and Traffic Pattern')
+                plt.legend(title='Traffic Pattern')
+                plt.grid(True, axis='y')
+                
+                # Save figure
+                gini_path = os.path.join(save_dir, "fairness_gini_coefficient.png")
+                plt.savefig(gini_path)
+                plt.close()
+                visualization_paths["gini_coefficient"] = gini_path
+        
+        # 3. Direction Bias Analysis
+        if all(col in episode_data.columns for col in ['ns_waiting_time', 'ew_waiting_time']):
+            plt.figure(figsize=(12, 8))
+            
+            # Calculate direction bias (NS waiting time - EW waiting time)
+            bias_data = []
+            
+            for agent in episode_data['agent'].unique():
+                agent_data = episode_data[episode_data['agent'] == agent]
+                
+                for pattern in agent_data['pattern'].unique():
+                    pattern_data = agent_data[agent_data['pattern'] == pattern]
+                    
+                    # Calculate average bias for this agent and pattern
+                    avg_ns_waiting = pattern_data['ns_waiting_time'].mean()
+                    avg_ew_waiting = pattern_data['ew_waiting_time'].mean()
+                    bias = avg_ns_waiting - avg_ew_waiting
+                    
+                    bias_data.append({
+                        'agent': agent,
+                        'pattern': pattern,
+                        'direction_bias': bias
+                    })
+            
+            if bias_data:
+                bias_df = pd.DataFrame(bias_data)
+                
+                # Create bar chart of direction bias
+                sns.barplot(x='agent', y='direction_bias', hue='pattern', data=bias_df)
+                plt.axhline(y=0, color='r', linestyle='-', alpha=0.3)
+                plt.xlabel('Agent')
+                plt.ylabel('Direction Bias (NS - EW Waiting Time)')
+                plt.title('Direction Bias by Agent and Traffic Pattern')
+                plt.legend(title='Traffic Pattern')
+                plt.grid(True, axis='y')
+                
+                # Save figure
+                bias_path = os.path.join(save_dir, "direction_bias.png")
+                plt.savefig(bias_path)
+                plt.close()
+                visualization_paths["direction_bias"] = bias_path
+        
+        logger.info(f"Fairness metrics visualizations saved to {save_dir}")
+        return visualization_paths
+    
+    except Exception as e:
+        logger.error(f"Error visualizing fairness metrics: {e}")
+        import traceback
+        logger.error(traceback.format_exc())
+        return {}
 """
 Analysis Utilities
 ================
@@ -1770,23 +1982,30 @@ def comparative_analysis(results, save_dir="results"):
         plt.savefig(os.path.join(save_dir, "agent_performance_radar.png"))
         plt.close()
         
-        # 1. Traffic Pattern Impact Analysis
-        # Create a heatmap showing how different traffic patterns affect each agent
+        # 1. Traffic Pattern Impact Analysis - Simple Bar Chart
         plt.figure(figsize=(12, 8))
         
-        # Prepare data for heatmap
-        pattern_impact_data = pd.DataFrame(index=agent_types, columns=traffic_patterns)
-        for agent in agent_types:
+        # Create a grouped bar chart
+        x = np.arange(len(traffic_patterns))
+        width = 0.8 / len(agent_types)
+        
+        for i, agent in enumerate(agent_types):
+            rewards = []
             for pattern in traffic_patterns:
                 key = f"{agent}_{pattern}"
                 if key in results:
-                    pattern_impact_data.loc[agent, pattern] = results[key].get("avg_reward", 0)
+                    rewards.append(results[key].get("avg_reward", 0))
+                else:
+                    rewards.append(0)
+            
+            plt.bar(x + (i - len(agent_types)/2 + 0.5) * width, rewards, width, label=agent)
         
-        # Plot heatmap
-        sns.heatmap(pattern_impact_data, annot=True, cmap="YlGnBu", fmt=".1f")
-        plt.title("Traffic Pattern Impact on Agent Performance (Reward)")
-        plt.ylabel("Agent")
-        plt.xlabel("Traffic Pattern")
+        plt.xlabel('Traffic Pattern')
+        plt.ylabel('Average Reward')
+        plt.title('Traffic Pattern Impact on Agent Performance (Reward)')
+        plt.xticks(x, traffic_patterns)
+        plt.legend(title="Agent")
+        plt.grid(True, axis='y')
         plt.tight_layout()
         plt.savefig(os.path.join(save_dir, "traffic_pattern_impact.png"))
         plt.close()
@@ -2172,8 +2391,22 @@ def create_comprehensive_report(training_metrics=None, benchmark_results=None, a
                 "results/benchmark/plots",  # Plots subdirectory
                 os.path.dirname(save_dir) if save_dir.endswith("/report") else save_dir,  # Parent of report dir
                 os.path.join(os.path.dirname(save_dir), "benchmark") if save_dir.endswith("/report") else os.path.join(save_dir, "benchmark"),  # Sibling benchmark dir
-                os.path.join(os.path.dirname(save_dir), "benchmark/plots") if save_dir.endswith("/report") else os.path.join(save_dir, "benchmark/plots")  # Plots in sibling benchmark dir
+                os.path.join(os.path.dirname(save_dir), "benchmark/plots") if save_dir.endswith("/report") else os.path.join(save_dir, "benchmark/plots"),  # Plots in sibling benchmark dir
+                os.path.join(os.path.dirname(save_dir), "comparative") if save_dir.endswith("/report") else os.path.join(save_dir, "comparative"),  # Comparative directory
+                os.path.join(os.path.dirname(os.path.dirname(save_dir)), "benchmark/benchmark_*/plots") if save_dir.endswith("/report") else None  # Wildcard path for benchmark plots
             ]
+            
+            # Add wildcard expansion for benchmark plots
+            expanded_dirs = []
+            for dir_path in benchmark_dirs:
+                if dir_path and "*" in dir_path:
+                    import glob
+                    matching_dirs = glob.glob(dir_path)
+                    expanded_dirs.extend(matching_dirs)
+                elif dir_path:
+                    expanded_dirs.append(dir_path)
+            
+            benchmark_dirs = expanded_dirs
             
             # Track which plots we've found
             found_plots = set()
